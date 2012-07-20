@@ -18,23 +18,20 @@ The goals are to provide:
  * a platform to identify and correct implementation errors
  * a public arena to identifying areas of ambiguity and variability
 
-Sample documents should be available under an open license and involve sample 
-data (not PHI), but ideally they'd represent the actual output of real export 
-pipelines.
-
 Is anyone willing and able to participate?  If there are barriers
 (organizational, technical, cultural, or otherwise), can we break them down?
-Discuss any concerns [here](./issues)
+Discuss any concerns [here](https://github.com/chb/sample_ccdas/issues)
 
 ### How?
 
-*All comers welcome*!
-
-To contribute samples, just:
+*All comers welcome*! To contribute samples, just:
  1.  Fork this repository to your GitHub account
  2.  Add an example file
  3.  Issue a GitHub "Pull request"
 
 ... or just share by e-mail with `joshua dot mandel at childrens.harvard.edu`
 
-
+### Fine print
+Sample documents should be available under an open license and involve sample 
+data (not PHI), but ideally they'd represent the actual output of real export 
+pipelines.
