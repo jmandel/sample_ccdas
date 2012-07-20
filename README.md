@@ -33,5 +33,5 @@ Discuss any concerns [here](https://github.com/chb/sample_ccdas/issues)
 
 ### Fine print
 Sample documents should be available under an open license and should not 
-involve sample data (not PHI).  Ideally these documents would represent 
-actual output of real export pipelines.
+involve PHI.  Ideally these documents would represent actual output of 
+real export pipelines.
