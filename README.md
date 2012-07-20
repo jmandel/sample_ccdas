@@ -18,12 +18,11 @@ The goals are to provide:
  * a platform to identify and correct implementation errors
  * a public arena to identify areas of ambiguity and variability
 
-Is anyone willing and able to participate?  If there are barriers
-(organizational, technical, cultural, or otherwise), can we break them down?
-Discuss any concerns [here](https://github.com/chb/sample_ccdas/issues)
+### Why not?
+If there are barriers (organizational, technical, cultural, or otherwise),
+can we break them down? [Discuss](https://github.com/chb/sample_ccdas/issues).
 
 ### How?
-
 *All comers welcome*! To contribute samples, just:
  1.  Fork this repository to your GitHub account
  2.  Add an example file
