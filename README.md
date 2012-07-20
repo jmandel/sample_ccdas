@@ -16,7 +16,7 @@ benefit immensely from a public collection of examples that can be:
 The goals are to provide:
  * examples for the developer community 
  * a platform to identify and correct implementation errors
- * a public arena to identifying areas of ambiguity and variability
+ * a public arena to identify areas of ambiguity and variability
 
 Is anyone willing and able to participate?  If there are barriers
 (organizational, technical, cultural, or otherwise), can we break them down?
