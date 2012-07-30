@@ -1,0 +1,931 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="cda.xsl"
+      ?>
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdtc="urn:hl7-org:sdtc" classCode="DOCCLIN" moodCode="EVN">
+	<realmCode code="US"/>
+	<typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040"/>
+	<templateId root="2.16.840.1.113883.10.20.22.1.2"/>
+	<templateId root="2.16.840.1.113883.10.20.22.1.1"/>
+	<id root="28A334FE-9348-4AE5-A48C-6174F3D766A4"/>
+	<code code="34133-9" codeSystem="2.16.840.1.113883.6.1" displayName="Summarization of episode note"/>
+	<title>Continuity of Care Document: 10/26/2010 to 10/28/2010</title>
+	<effectiveTime value="20101028092016.829-0500"/>
+	<confidentialityCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.5.25"/>
+	<languageCode code="en-US"/>
+	<recordTarget typeCode="RCT" contextControlCode="OP">
+		<patientRole classCode="PAT">
+			<id root="2.16.840.1.113883.3.13.300.1.1.2.1" extension="9473"/>
+			<addr use="HP">
+				<streetAddressLine>266 York Street</streetAddressLine>
+				<city>Morton</city>
+				<state>IL</state>
+				<postalCode>61550-    </postalCode>
+				<country>US</country>
+			</addr>
+			<telecom use="HP" value="tel:+13093548275"/>
+			<patient classCode="PSN" determinerCode="INSTANCE">
+				<name use="L">
+					<given>Victoria</given>
+					<given>E</given>
+					<family>Wade</family>
+				</name>
+				<administrativeGenderCode code="F" displayName="Female" codeSystem="2.16.840.1.113883.5.1">
+					<originalText>Female</originalText>
+				</administrativeGenderCode>
+				<birthTime value="19540323000000.000-0600"/>
+				<languageCommunication>
+					<languageCode nullFlavor="UNK"/>
+					<modeCode nullFlavor="NI"/>
+				</languageCommunication>
+			</patient>
+		</patientRole>
+	</recordTarget>
+	<author typeCode="AUT" contextControlCode="OP">
+		<time value="20101028092016.829-0500"/>
+		<assignedAuthor classCode="ASSIGNED">
+			<id nullFlavor="NI"/>
+			<addr nullFlavor="NI"/>
+			<telecom nullFlavor="NI"/>
+			<assignedPerson>
+				<name>
+					<given nullFlavor="NA"/>
+					<family>Auto Generated</family>
+				</name>
+			</assignedPerson>
+			<representedOrganization>
+				<name>Baseline West Medical Center</name>
+				<telecom nullFlavor="NI"/>
+				<addr nullFlavor="NI"/>
+			</representedOrganization>
+		</assignedAuthor>
+	</author>
+	<custodian typeCode="CST">
+		<assignedCustodian classCode="ASSIGNED">
+			<representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+				<id root="2.16.840.1.113883.3.13.300.1.1.2"/>
+				<name>Baseline West Medical Center</name>
+				<telecom use="WP" value="tel:+18162011202"/>
+				<addr use="WP">
+					<streetAddressLine>1500 Baseline Beltway</streetAddressLine>
+					<city>Kansas City</city>
+					<state>MO</state>
+					<postalCode>64118-    </postalCode>
+					<country>US</country>
+				</addr>
+			</representedCustodianOrganization>
+		</assignedCustodian>
+	</custodian>
+	<documentationOf typeCode="DOC">
+		<serviceEvent classCode="PCPR" moodCode="EVN">
+			<effectiveTime>
+				<low value="20101026091700.000-0500"/>
+				<high value="20101028092015.977-0500"/>
+			</effectiveTime>
+			<performer typeCode="PRF">
+				<templateId root="2.16.840.1.113883.3.88.11.83.4"/>
+				<templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.3"/>
+				<functionCode code="CP" displayName="Consulting Provider" codeSystem="2.16.840.1.113883.12.443">
+					<originalText>Consulting Physician</originalText>
+				</functionCode>
+				<time>
+					<low nullFlavor="NI"/>
+					<high nullFlavor="NI"/>
+				</time>
+				<assignedEntity classCode="ASSIGNED">
+					<id root="2.16.840.1.113883.4.6" extension="8877443210"/>
+					<addr nullFlavor="NI"/>
+					<telecom nullFlavor="NI"/>
+					<assignedPerson>
+						<name>
+							<given>Evan</given>
+							<family>Ward</family>
+							<suffix>MD</suffix>
+						</name>
+					</assignedPerson>
+				</assignedEntity>
+			</performer>
+			<performer typeCode="PRF">
+				<functionCode code="PP" displayName="Primary Care Provider" codeSystem="2.16.840.1.113883.12.443">
+					<originalText>Primary Care Provider</originalText>
+				</functionCode>
+				<time>
+					<low  nullFlavor="NI"/>
+					<high  nullFlavor="NI"/>
+				</time>
+				<assignedEntity classCode="ASSIGNED">
+					<id root="2.16.840.1.113883.4.6" extension="8877996546"/>
+					<addr use="WP">
+						<streetAddressLine>2800 Rockcreek Parkway</streetAddressLine>
+						<city>Kansas City</city>
+						<state>MO</state>
+						<postalCode>64116-    </postalCode>
+						<country>US</country>
+					</addr>
+					<telecom use="WP" value="tel:+18162012811"/>
+					<assignedPerson>
+						<name>
+							<given>EV</given>
+							<family>Easley</family>
+							<suffix>MD</suffix>
+						</name>
+					</assignedPerson>
+				</assignedEntity>
+			</performer>
+			<performer typeCode="PRF">
+				<templateId root="2.16.840.1.113883.3.88.11.83.4"/>
+				<templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.3"/>
+				<functionCode code="CP" displayName="Consulting Provider" codeSystem="2.16.840.1.113883.12.443">
+					<originalText>Consulting Physician</originalText>
+				</functionCode>
+				<time>
+					<low nullFlavor="NI"/>
+					<high nullFlavor="NI"/>
+				</time>
+				<assignedEntity classCode="ASSIGNED">
+					<id root="2.16.840.1.113883.4.6" extension="6257677609"/>
+					<addr use="WP">
+						<streetAddressLine>Base Physician Office</streetAddressLine>
+						<streetAddressLine>2800 Rockcreek Parkway</streetAddressLine>
+						<streetAddressLine>(816)201-1190   Fax (816)571-1190</streetAddressLine>
+						<city>Kansas City</city>
+						<state>MO</state>
+						<postalCode>64117-    </postalCode>
+						<country>US</country>
+					</addr>
+					<telecom nullFlavor="NI"/>
+					<assignedPerson>
+						<name>
+							<given>Lee</given>
+							<family>Morris</family>
+							<suffix>MD</suffix>
+						</name>
+					</assignedPerson>
+				</assignedEntity>
+			</performer>
+		</serviceEvent>
+	</documentationOf>
+	<component typeCode="COMP">
+		<structuredBody classCode="DOCBODY" moodCode="EVN">
+			<component typeCode="COMP" contextConductionInd="true">
+				<section classCode="DOCSECT" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.2.5"/>
+					<code code="11450-4" codeSystem="2.16.840.1.113883.6.1" displayName="Problem List"/>
+					<title>Problem List</title>
+					<text>
+						<table border="1" width="95%">
+							<colgroup>
+								<col width="20%"/>
+								<col width="20%"/>
+								<col width="20%"/>
+								<col width="20%"/>
+								<col width="20%"/>
+							</colgroup>
+							<thead>
+								<tr>
+									<th>Type</th>
+									<th>Problem</th>
+									<th>Effective Dates</th>
+									<th>Status</th>
+									<th>Health Status</th>
+									<th>Informant</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Problem</td>
+									<td>
+										<content ID="PROB1369198">CEREBRAL ARTERY OCCLUSION, UNSPECIFIED, WITH CEREBRAL INFARCTION</content>
+									</td>
+									<td>07/09/2009</td>
+									<td>Active</td>
+									<td></td>
+									<td></td>
+								</tr>
+								<tr>
+									<td>Problem</td>
+									<td>
+										<content ID="PROB1369206">Chronic Obstruct Airways Disease</content>
+									</td>
+									<td>08/12/2007</td>
+									<td>Active</td>
+									<td> </td>
+									<td> </td>
+								</tr>
+								<tr>
+									<td>Problem</td>
+									<td>
+										<content ID="PROB1369210">Hypertension, essential</content>
+									</td>
+									<td>05/16/2006</td>
+									<td>Active</td>
+									<td> </td>
+									<td> </td>
+								</tr>
+								<tr>
+									<td>Problem</td>
+									<td>
+										<content ID="PROB1369194">SYNCOPE AND COLLAPSE</content>
+									</td>
+									<td>02/15/2010</td>
+									<td>Active</td>
+									<td> </td>
+									<td> </td>
+								</tr>
+								<tr>
+									<td>Problem</td>
+									<td>
+										<content ID="PROB1369202">Urinary tract infection</content>
+									</td>
+									<td>09/22/2008</td>
+									<td>Active</td>
+									<td> </td>
+									<td> </td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry typeCode="DRIV" contextConductionInd="true">
+						<act classCode="ACT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+							<id root="CFA98865-0D16-4045-9C25-D45B9751C101"/>
+							<code nullFlavor="NA"/>
+							<statusCode code="active"/>
+							<effectiveTime>
+								<low value="20090709"/>
+							</effectiveTime>
+							<entryRelationship typeCode="SUBJ" inversionInd="false">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+									<id root="DD1E8337-0006-4E75-B244-36EB26D18971"/>
+									<code code="55607006" displayName="Problem" codeSystem="2.16.840.1.113883.6.96"/>
+									<text>
+										<reference value="#PROB1369198"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime>
+										<low value="20090709"/>
+									</effectiveTime>
+									<value xsi:type="CD" nullFlavor="OTH">
+										<originalText>
+											<reference value="#PROB1369198"/>
+										</originalText>
+										<translation code="434.91" displayName="CEREBRAL ARTERY OCCLUSION, UNSPECIFIED, WITH CEREBRAL INFARCTION" codeSystem="2.16.840.1.113883.6.104" codeSystemName="ICD-9-CM"/>
+									</value>
+									<entryRelationship typeCode="REFR">
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+											<code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+											<statusCode code="completed"/>
+											<value xsi:type="CD" code="55561003" displayName="Active" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+										</observation>
+									</entryRelationship>
+								</observation>
+							</entryRelationship>
+						</act>
+					</entry>
+					<entry typeCode="DRIV" contextConductionInd="true">
+						<act classCode="ACT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+							<id root="8A021706-C5A3-4E4C-B2D8-F7B4E7168B62"/>
+							<code nullFlavor="NA"/>
+							<statusCode code="active"/>
+							<effectiveTime>
+								<low value="20070812"/>
+							</effectiveTime>
+							<entryRelationship typeCode="SUBJ" inversionInd="false">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+									<id root="4B69C554-A55E-463C-8845-8EB457046974"/>
+									<code code="55607006" displayName="Problem" codeSystem="2.16.840.1.113883.6.96"/>
+									<text>
+										<reference value="#PROB1369206"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime>
+										<low value="20070812"/>
+									</effectiveTime>
+									<value xsi:type="CD" nullFlavor="OTH">
+										<originalText>
+											<reference value="#PROB1369206"/>
+										</originalText>
+										<translation code="496" displayName="Chronic Obstruct Airways Disease" codeSystem="2.16.840.1.113883.6.104" codeSystemName="ICD-9-CM"/>
+									</value>
+									<entryRelationship typeCode="REFR">
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+											<code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+											<statusCode code="completed"/>
+											<value xsi:type="CD" code="55561003" displayName="Active" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+										</observation>
+									</entryRelationship>
+								</observation>
+							</entryRelationship>
+						</act>
+					</entry>
+					<entry typeCode="DRIV" contextConductionInd="true">
+						<act classCode="ACT" moodCode="EVN">
+							<id root="41128CFF-6F8A-4B2C-9AA7-23942A222AAC"/>
+							<code nullFlavor="NA"/>
+							<statusCode code="active"/>
+							<effectiveTime>
+								<low value="20060516"/>
+							</effectiveTime>
+							<entryRelationship typeCode="SUBJ" inversionInd="false">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+									<id root="69087E60-310C-4327-B363-48F2DD33BBAF"/>
+									<code code="55607006" displayName="Problem" codeSystem="2.16.840.1.113883.6.96"/>
+									<text>
+										<reference value="#PROB1369210"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime>
+										<low value="20060516"/>
+									</effectiveTime>
+									<value xsi:type="CD" nullFlavor="OTH">
+										<originalText>
+											<reference value="#PROB1369210"/>
+										</originalText>
+										<translation code="401.9" displayName="Hypertension, essential" codeSystem="2.16.840.1.113883.6.104" codeSystemName="ICD-9-CM"/>
+									</value>
+									<entryRelationship typeCode="REFR">
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+											<code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+											<statusCode code="completed"/>
+											<value xsi:type="CD" code="55561003" displayName="Active" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+										</observation>
+									</entryRelationship>
+								</observation>
+							</entryRelationship>
+						</act>
+					</entry>
+					<entry typeCode="DRIV" contextConductionInd="true">
+						<act classCode="ACT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+							<id root="BFBD2BC5-B5A3-4AB7-B273-5AE79D600E69"/>
+							<code nullFlavor="NA"/>
+							<statusCode code="active"/>
+							<effectiveTime>
+								<low value="20100215"/>
+							</effectiveTime>
+							<entryRelationship typeCode="SUBJ" inversionInd="false">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+									<id root="1799BE60-6174-40C1-AE3E-66043D63AEDD"/>
+									<code code="55607006" displayName="Problem" codeSystem="2.16.840.1.113883.6.96"/>
+									<text>
+										<reference value="#PROB1369194"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime>
+										<low value="20100215"/>
+									</effectiveTime>
+									<value xsi:type="CD" nullFlavor="OTH">
+										<originalText>
+											<reference value="#PROB1369194"/>
+										</originalText>
+										<translation code="780.2" displayName="SYNCOPE AND COLLAPSE" codeSystem="2.16.840.1.113883.6.104" codeSystemName="ICD-9-CM"/>
+									</value>
+									<entryRelationship typeCode="REFR">
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+											<code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+											<statusCode code="completed"/>
+											<value xsi:type="CD" code="55561003" displayName="Active" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+										</observation>
+									</entryRelationship>
+								</observation>
+							</entryRelationship>
+						</act>
+					</entry>
+					<entry typeCode="DRIV" contextConductionInd="true">
+						<act classCode="ACT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+							<id root="8EC156B6-82D6-4F6D-ADD2-0C74F81281F5"/>
+							<code nullFlavor="NA"/>
+							<statusCode code="active"/>
+							<effectiveTime>
+								<low value="20080922"/>
+							</effectiveTime>
+							<entryRelationship typeCode="SUBJ" inversionInd="false">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+									<id root="E61A8960-119A-448C-BDCF-911836D50C0D"/>
+									<code code="55607006" displayName="Problem" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+									<text>
+										<reference value="#PROB1369202"/>
+									</text>
+									<statusCode code="completed"/>
+									<effectiveTime>
+										<low value="20080922"/>
+									</effectiveTime>
+									<value xsi:type="CD" nullFlavor="OTH">
+										<originalText>
+											<reference value="#PROB1369202"/>
+										</originalText>
+										<translation code="599.0" displayName="Urinary tract infection" codeSystem="2.16.840.1.113883.6.104" codeSystemName="ICD-9-CM"/>
+									</value>
+									<entryRelationship typeCode="REFR">
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+											<code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+											<statusCode code="completed"/>
+											<value xsi:type="CD" code="55561003" displayName="Active" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+										</observation>
+									</entryRelationship>
+								</observation>
+							</entryRelationship>
+						</act>
+					</entry>
+				</section>
+			</component>
+			<component typeCode="COMP" contextConductionInd="true">
+				<section classCode="DOCSECT" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.2.1.1"/>
+					<code code="10160-0" codeSystem="2.16.840.1.113883.6.1" displayName="History of medication use"/>
+					<title>Medications</title>
+					<text>
+						<table border="1" width="95%">
+							<colgroup>
+								<col width="20%"/>
+								<col width="35%"/>
+								<col width="15%"/>
+								<col width="15%"/>
+								<col width="15%"/>
+							</colgroup>
+							<thead>
+								<tr>
+									<th>Medication</th>
+									<th>Instructions</th>
+									<th>Start Date</th>
+									<th>End Date</th>
+									<th>Status</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>
+										<content ID="MED192281804">lisinopril 10 mg oral tablet</content>
+									</td>
+									<td>
+										<content ID="DISP32223596">= 1 cap(s), PO, Once Daily, 10 cap(s)</content>
+									</td>
+									<td>09/22/2008</td>
+									<td>10/02/2008</td>
+									<td>Ordered</td>
+								</tr>
+								<tr>
+									<td>
+										<content ID="MED32223597">Lipitor 20 mg oral tablet</content>
+									</td>
+									<td>
+										<content ID="DISP32223597">2 puff(s), INH, QID, 14 g</content>
+									</td>
+									<td>08/14/2007</td>
+									<td> </td>
+									<td>Ordered</td>
+								</tr>
+								<tr>
+									<td>
+										<content ID="MED32223594">Tavist</content>
+									</td>
+									<td>
+										<content ID="DISP32223594">75 mg = 1 tab(s), PO, Once Daily, 30 tab(s)</content>
+									</td>
+									<td>07/15/2009</td>
+									<td> </td>
+									<td>Ordered</td>
+								</tr>
+								<tr>
+									<td>
+										<content ID="MED32223595">aspirin</content>
+									</td>
+									<td>
+										<content ID="DISP32223595">5 mg = 1 tab(s), PO, Once Daily, 30 tab(s)</content>
+									</td>
+									<td>07/15/2009</td>
+									<td> </td>
+									<td>Ordered</td>
+								</tr>
+								<tr>
+									<td>
+										<content ID="MED32223598">Catapres 0.1 mg oral tablet</content>
+									</td>
+									<td>
+										<content ID="DISP32223598">0.1 mg = 1 tab(s), PO, BID, 180 tab(s)</content>
+									</td>
+									<td>05/16/2006</td>
+									<td> </td>
+									<td>Ordered</td>
+								</tr>
+								<tr>
+									<td>
+										<content ID="MED32223593">Zestril 30 mg oral tablet</content>
+									</td>
+									<td>
+										<content ID="DISP32223593">30 mg = 1 tab(s), PO, Once Daily, 30 tab(s)</content>
+									</td>
+									<td>07/15/2009</td>
+									<td> </td>
+									<td>Ordered</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry typeCode="DRIV" contextConductionInd="true">
+						<substanceAdministration classCode="SBADM" moodCode="INT">
+							<templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+							<id root="17550700-741A-4C7E-BDF0-60CA6573D4AB"/>
+							<text>
+								<reference value="#DISP32223596"/>
+							</text>
+							<statusCode code="completed"/>
+							<effectiveTime xsi:type="IVL_TS">
+								<low value="20080922085800.000-0500"/>
+								<high nullFlavor="UNK"/>
+							</effectiveTime>
+							<routeCode code="C38288" displayName="Oral" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+							<doseQuantity value="1.0" unit="1">
+								<translation value="1.0">
+									<originalText>cap(s)</originalText>
+								</translation>
+							</doseQuantity>
+							<consumable typeCode="CSM">
+								<manufacturedProduct classCode="MANU">
+									<templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+									<manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+										<code code="314076" displayName="????" codeSystemName="RxNorm" codeSystem="2.16.840.1.113883.6.88">
+											<originalText>
+												<reference value="#MED192281804"/>
+											</originalText>
+											<translation code="d00732" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+											<translation code="18388" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+										</code>
+									</manufacturedMaterial>
+								</manufacturedProduct>
+							</consumable>
+							<entryRelationship typeCode="REFR">
+								<supply classCode="SPLY" moodCode="INT">
+									<templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+									<id root="B106AAEA-B62C-4046-A67D-A610251C91A2"/>
+									<statusCode code="completed"/>
+									<effectiveTime value="20081002085800.000-0500"/>
+									<repeatNumber value="1"/>
+									<author typeCode="AUT" contextControlCode="OP">
+										<time value="20101028085853.000-0500"/>
+										<assignedAuthor classCode="ASSIGNED">
+											<id root="2.16.840.1.113883.4.6" extension="6257677609"/>
+											<addr use="WP">
+												<streetAddressLine>Base Physician Office</streetAddressLine>
+												<streetAddressLine>2800 Rockcreek Parkway</streetAddressLine>
+												<streetAddressLine>(816)201-1190   Fax (816)571-1190</streetAddressLine>
+												<city>Kansas City</city>
+												<state>MO</state>
+												<postalCode>64117-    </postalCode>
+												<country>US</country>
+											</addr>
+											<telecom nullFlavor="UNK"/>
+											<assignedPerson>
+												<name>
+													<given>Lee</given>
+													<family>Morris</family>
+													<suffix>MD</suffix>
+												</name>
+											</assignedPerson>
+										</assignedAuthor>
+									</author>
+								</supply>
+							</entryRelationship>
+						</substanceAdministration>
+					</entry>
+					<entry typeCode="DRIV" contextConductionInd="true">
+						<substanceAdministration classCode="SBADM" moodCode="INT">
+							<templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+							<id root="9A9452C9-F4F4-41C0-A143-8DE507EA51FE"/>
+							<text>
+								<reference value="#DISP32223597"/>
+							</text>
+							<statusCode code="active"/>
+							<effectiveTime xsi:type="IVL_TS">
+								<low value="20070814085900.000-0500"/>
+								<high nullFlavor="UNK"/>
+							</effectiveTime>
+							<routeCode code="C38288" displayName="Oral" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+							<doseQuantity value="2.0" unit="1">
+								<translation value="2.0">
+									<originalText>tablet(s)</originalText>
+								</translation>
+							</doseQuantity>
+							<consumable typeCode="CSM">
+								<manufacturedProduct classCode="MANU">
+									<templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+									<manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+										<code code="617310" displayName="????" codeSystemName="RxNorm" codeSystem="2.16.840.1.113883.6.88">
+											<originalText>
+												<reference value="#MED32223597"/>
+											</originalText>
+											<translation code="617318" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"/>
+											<translation code="d04105" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+											<translation code="16357" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+										</code>
+									</manufacturedMaterial>
+								</manufacturedProduct>
+							</consumable>
+							<entryRelationship typeCode="REFR">
+								<supply classCode="SPLY" moodCode="INT">
+									<templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+									<id root="6B08A516-B82A-49CD-A406-F3D1564AE71E"/>
+									<statusCode code="completed"/>
+									<repeatNumber value="1"/>
+									<author typeCode="AUT" contextControlCode="OP">
+										<time value="20101028085925.000-0500"/>
+										<assignedAuthor classCode="ASSIGNED">
+											<id root="2.16.840.1.113883.4.6" extension="6257677609"/>
+											<addr use="WP">
+												<streetAddressLine>Base Physician Office</streetAddressLine>
+												<streetAddressLine>2800 Rockcreek Parkway</streetAddressLine>
+												<streetAddressLine>(816)201-1190   Fax (816)571-1190</streetAddressLine>
+												<city>Kansas City</city>
+												<state>MO</state>
+												<postalCode>64117-    </postalCode>
+												<country>US</country>
+											</addr>
+											<telecom nullFlavor="UNK"/>
+											<assignedPerson>
+												<name>
+													<given>Lee</given>
+													<family>Morris</family>
+													<suffix>MD</suffix>
+												</name>
+											</assignedPerson>
+										</assignedAuthor>
+									</author>
+								</supply>
+							</entryRelationship>
+						</substanceAdministration>
+					</entry>
+					<entry typeCode="DRIV" contextConductionInd="true">
+						<substanceAdministration classCode="SBADM" moodCode="INT">
+							<templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+							<id root="1D60050A-2C6F-4FA5-9CC6-12CF7BE7B4D2"/>
+							<text>
+								<reference value="#DISP32223594"/>
+							</text>
+							<statusCode code="active"/>
+							<effectiveTime xsi:type="IVL_TS">
+								<low value="20090715085800.000-0500"/>
+								<high nullFlavor="UNK"/>
+							</effectiveTime>
+							<routeCode code="C38288" displayName="Oral" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+							<doseQuantity value="75.0" unit="1">
+								<translation value="75.0">
+									<originalText>mg</originalText>
+								</translation>
+							</doseQuantity>
+							<consumable typeCode="CSM">
+								<manufacturedProduct classCode="MANU">
+									<templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+									<manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+										<code nullFlavor="OTH">
+											<originalText>
+												<reference value="#MED32223594"/>
+											</originalText>
+											<translation code="42602" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm"/>
+											<translation code="d00780" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+											<translation code="2294" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+										</code>
+									</manufacturedMaterial>
+								</manufacturedProduct>
+							</consumable>
+							<entryRelationship typeCode="REFR">
+								<supply classCode="SPLY" moodCode="INT">
+									<templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+									<id root="7845C131-BAFE-4E4B-A3D9-0EF8C806CBFE"/>
+									<statusCode code="completed"/>
+									<repeatNumber value="1"/>
+									<author typeCode="AUT" contextControlCode="OP">
+										<time value="20101028085805.000-0500"/>
+										<assignedAuthor classCode="ASSIGNED">
+											<id root="2.16.840.1.113883.4.6" extension="6257677609"/>
+											<addr use="WP">
+												<streetAddressLine>Base Physician Office</streetAddressLine>
+												<streetAddressLine>2800 Rockcreek Parkway</streetAddressLine>
+												<streetAddressLine>(816)201-1190   Fax (816)571-1190</streetAddressLine>
+												<city>Kansas City</city>
+												<state>MO</state>
+												<postalCode>64117-    </postalCode>
+												<country>US</country>
+											</addr>
+											<telecom nullFlavor="UNK"/>
+											<assignedPerson>
+												<name>
+													<given>Lee</given>
+													<family>Morris</family>
+													<suffix>MD</suffix>
+												</name>
+											</assignedPerson>
+										</assignedAuthor>
+									</author>
+								</supply>
+							</entryRelationship>
+						</substanceAdministration>
+					</entry>
+					<entry typeCode="DRIV" contextConductionInd="true">
+						<substanceAdministration classCode="SBADM" moodCode="INT">
+							<templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+							<id root="8A964259-1791-4249-AEE3-A5F218091E02"/>
+							<text>
+								<reference value="#DISP32223595"/>
+							</text>
+							<statusCode code="active"/>
+							<effectiveTime xsi:type="IVL_TS">
+								<low value="20090715085800.000-0500"/>
+								<high nullFlavor="UNK"/>
+							</effectiveTime>
+							<routeCode code="C38288" displayName="Oral" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+							<doseQuantity value="5.0" unit="1">
+								<translation value="5.0">
+									<originalText>mg</originalText>
+								</translation>
+							</doseQuantity>
+							<consumable typeCode="CSM">
+								<manufacturedProduct classCode="MANU">
+									<templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+									<manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+										<code nullFlavor="OTH">
+											<originalText>
+												<reference value="#MED32223595"/>
+											</originalText>
+											<translation code="d00170" codeSystem="2.16.840.1.113883.6.314" codeSystemName="multum-drug-id"/>
+											<translation code="12101" codeSystem="2.16.840.1.113883.6.312" codeSystemName="multum-drug-synonym-id"/>
+										</code>
+									</manufacturedMaterial>
+								</manufacturedProduct>
+							</consumable>
+							<entryRelationship typeCode="REFR">
+								<supply classCode="SPLY" moodCode="INT">
+									<templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+									<id root="4CD72CBC-4F0A-48FC-9D16-F037D6A44E61"/>
+									<statusCode code="completed"/>
+									<repeatNumber value="1"/>
+									<author typeCode="AUT" contextControlCode="OP">
+										<time value="20101028085832.000-0500"/>
+										<assignedAuthor classCode="ASSIGNED">
+											<id root="2.16.840.1.113883.4.6" extension="6257677609"/>
+											<addr use="WP">
+												<streetAddressLine>Base Physician Office</streetAddressLine>
+												<streetAddressLine>2800 Rockcreek Parkway</streetAddressLine>
+												<streetAddressLine>(816)201-1190   Fax (816)571-1190</streetAddressLine>
+												<city>Kansas City</city>
+												<state>MO</state>
+												<postalCode>64117-    </postalCode>
+												<country>US</country>
+											</addr>
+											<telecom nullFlavor="UNK"/>
+											<assignedPerson>
+												<name>
+													<given>Lee</given>
+													<family>Morris</family>
+													<suffix>MD</suffix>
+												</name>
+											</assignedPerson>
+										</assignedAuthor>
+									</author>
+								</supply>
+							</entryRelationship>
+						</substanceAdministration>
+					</entry>
+					<entry typeCode="DRIV" contextConductionInd="true">
+						<substanceAdministration classCode="SBADM" moodCode="INT">
+							<templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+							<id root="7BAC669A-A1AF-470E-9226-47620574B161"/>
+							<text>
+								<reference value="#DISP32223598"/>
+							</text>
+							<statusCode code="active"/>
+							<effectiveTime xsi:type="IVL_TS">
+								<low value="20060516085900.000-0500"/>
+								<high nullFlavor="UNK"/>
+							</effectiveTime>
+							<routeCode code="C38288" displayName="Oral" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+							<doseQuantity value="0.1" unit="1">
+								<translation value="0.1">
+									<originalText>mg</originalText>
+								</translation>
+							</doseQuantity>
+							<consumable typeCode="CSM">
+								<manufacturedProduct classCode="MANU">
+									<templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+									<manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+										<code code="17326" displayName="clonidine" codeSystemName="Multum" codeSystem="2.16.840.1.113883.6.27">
+											<originalText>
+												<reference value="#MED32223598"/>
+											</originalText>
+											<translation nullFlavor="OTH" codeSystemName="RxNorm" codeSystem="2.16.840.1.113883.6.88"/>
+										</code>
+									</manufacturedMaterial>
+								</manufacturedProduct>
+							</consumable>
+							<entryRelationship typeCode="REFR">
+								<supply classCode="SPLY" moodCode="INT">
+									<templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+									<id root="7FA364F7-79FB-4D3C-ADF5-4092D560BC29"/>
+									<statusCode code="completed"/>
+									<repeatNumber value="1"/>
+									<author typeCode="AUT" contextControlCode="OP">
+										<time value="20101028085948.000-0500"/>
+										<assignedAuthor classCode="ASSIGNED">
+											<id root="2.16.840.1.113883.4.6" extension="6257677609"/>
+											<addr use="WP">
+												<streetAddressLine>Base Physician Office</streetAddressLine>
+												<streetAddressLine>2800 Rockcreek Parkway</streetAddressLine>
+												<streetAddressLine>(816)201-1190   Fax (816)571-1190</streetAddressLine>
+												<city>Kansas City</city>
+												<state>MO</state>
+												<postalCode>64117-    </postalCode>
+												<country>US</country>
+											</addr>
+											<telecom nullFlavor="UNK"/>
+											<assignedPerson>
+												<name>
+													<given>Lee</given>
+													<family>Morris</family>
+													<suffix>MD</suffix>
+												</name>
+											</assignedPerson>
+										</assignedAuthor>
+									</author>
+								</supply>
+							</entryRelationship>
+						</substanceAdministration>
+					</entry>
+					<entry typeCode="DRIV" contextConductionInd="true">
+						<substanceAdministration classCode="SBADM" moodCode="INT">
+							<templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+							<id root="1A357919-6450-4A9A-8EAB-C8E2E270FA21"/>
+							<text>
+								<reference value="#DISP32223593"/>
+							</text>
+							<statusCode code="completed"/>
+							<effectiveTime xsi:type="IVL_TS">
+								<low value="20090715085700.000-0500"/>
+								<high nullFlavor="UNK"/>
+							</effectiveTime>
+							<routeCode code="C38288" displayName="Oral" codeSystem="2.16.840.1.113883.3.26.1.1" codeSystemName="NCI Thesaurus"/>
+							<doseQuantity value="30.0" unit="1">
+								<translation value="30.0">
+									<originalText>mg</originalText>
+								</translation>
+							</doseQuantity>
+							<consumable typeCode="CSM">
+								<manufacturedProduct classCode="MANU">
+									<templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+									<manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+										<code code="16552" displayName="lisinopril" codeSystemName="Multum" codeSystem="2.16.840.1.113883.6.27">
+											<originalText>
+												<reference value="#MED32223593"/>
+											</originalText>
+											<translation nullFlavor="OTH" codeSystemName="RxNorm" codeSystem="2.16.840.1.113883.6.88"/>
+										</code>
+									</manufacturedMaterial>
+								</manufacturedProduct>
+							</consumable>
+							<entryRelationship typeCode="REFR">
+								<supply classCode="SPLY" moodCode="INT">
+									<templateId root="2.16.840.1.113883.10.20.22.4.17"/>
+									<id root="031A4F1D-0535-459B-8227-F02E16BCD418"/>
+									<statusCode code="completed"/>
+									<repeatNumber value="1"/>
+									<author typeCode="AUT" contextControlCode="OP">
+										<time value="20101028085740.000-0500"/>
+										<assignedAuthor classCode="ASSIGNED">
+											<id root="2.16.840.1.113883.4.6" extension="6257677609"/>
+											<addr use="WP">
+												<streetAddressLine>Base Physician Office</streetAddressLine>
+												<streetAddressLine>2800 Rockcreek Parkway</streetAddressLine>
+												<streetAddressLine>(816)201-1190   Fax (816)571-1190</streetAddressLine>
+												<city>Kansas City</city>
+												<state>MO</state>
+												<postalCode>64117-    </postalCode>
+												<country>US</country>
+											</addr>
+											<telecom nullFlavor="UNK"/>
+											<assignedPerson>
+												<name>
+													<given>Lee</given>
+													<family>Morris</family>
+													<suffix>MD</suffix>
+												</name>
+											</assignedPerson>
+										</assignedAuthor>
+									</author>
+								</supply>
+							</entryRelationship>
+						</substanceAdministration>
+					</entry>
+				</section>
+			</component>
+		</structuredBody>
+	</component>
+</ClinicalDocument>
