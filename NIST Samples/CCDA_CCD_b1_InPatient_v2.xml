@@ -1983,8 +1983,6 @@ PROBLEM LIST
                      <effectiveTime>
                         <low
                            value="20120806"/>
-                        <high
-                           value="20120806"/>
                      </effectiveTime>
                      <entryRelationship
                         typeCode="SUBJ">
@@ -2007,7 +2005,7 @@ PROBLEM LIST
                            <statusCode
                               code="completed"/>
                            <effectiveTime>
-                              <low
+                              <low 
                                  value="20120806"/>
                            </effectiveTime>
                            <value
@@ -2103,8 +2101,6 @@ PROBLEM LIST
                      <effectiveTime>
                         <low
                            value="20070103"/>
-                        <high
-                           value="20120806"/>
                      </effectiveTime>
                      <entryRelationship
                         typeCode="SUBJ">
@@ -2127,8 +2123,8 @@ PROBLEM LIST
                            <statusCode
                               code="completed"/>
                            <effectiveTime>
-                              <low
-                                 value="20120806"/>
+			      <low
+				 value="20070103"/>
                            </effectiveTime>
                            <value
                               xsi:type="CD"
@@ -2152,7 +2148,7 @@ PROBLEM LIST
                                     code="completed"/>
                                  <value
                                     xsi:type="PQ"
-                                    value="60"
+                                    value="59"
                                     unit="a"/>
                               </observation>
                            </entryRelationship>
