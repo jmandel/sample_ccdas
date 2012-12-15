@@ -2526,7 +2526,7 @@ PROBLEM LIST
                         <low
                            value="20120806"/>
                         <high
-                           value="20120806"/>
+                           value="20120813"/>
                      </effectiveTime>
                      <entryRelationship
                         typeCode="SUBJ">
@@ -2550,7 +2550,7 @@ PROBLEM LIST
                               code="completed"/>
                            <effectiveTime>
                               <low value="20120806"/>
-                              <high value="20120806"/>
+                              <high value="20120813"/>
                            </effectiveTime>
                            <value
                               xsi:type="CD"
