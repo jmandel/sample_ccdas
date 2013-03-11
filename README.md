@@ -1,4 +1,8 @@
-## Sample CCDA Documents
+# Share Your C-CDA with the SMART Community
+* By copy/paste: @http://bit.ly/contribute-ccda
+* By forking this repository and sumitting a pull request
+
+# Sample CCDA Documents
 ### (Consolidated Clinical Document Architecture)
 
 ### What
