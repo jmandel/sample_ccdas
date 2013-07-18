@@ -97,8 +97,8 @@
           <originalText>Surgeon</originalText>
         </functionCode>
         <time>
-          <low value="201209091910-0400" />
-          <high value="201209161910-0400" />
+          <low value="20121221" />
+          <high value="20121221" />
         </time>
         <assignedEntity>
           <id extension="999999999" root="2.16.840.1.113883.4.6" />
