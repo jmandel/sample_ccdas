@@ -1,4 +1,4 @@
-<?xml-stylesheet type="text/xsl" href="./Content/xsl/cda.xsl"?>
+<?xml-stylesheet type="text/xsl" href="./Content/xsl/CDA.xsl"?>
 <!-- CCDA document implemented according to the implementation guide available at http://www.hl7.org/implement/standards/product_brief.cfm?product_id=258 
                  This document implements the operative note template, including all of its required sections and some of its optional sections.
                  Other structured fields from the operative report are implemented as simple sections without LOINC coding.
