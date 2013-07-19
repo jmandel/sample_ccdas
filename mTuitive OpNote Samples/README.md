@@ -86,7 +86,7 @@ only 1 is allowed. The schema will hopefully be relaxed in a future version to a
 >Location:     /ClinicalDocument[1]  
 >Test: 	count(//cda:section[cda:templateId/@root='2.16.840.1.113883.10.20.22.2.27'])=1
 
-The SMART C-CDA Scorecard ranks each document at 72%.  100% of applicable best practices are met.  The documents are 
+The [SMART C-CDA Scorecard](http://ccda-scorecard.smartplatforms.org/) ranks each document at 72%.  100% of applicable best practices are met.  The documents are 
 scored lower for missing structured vitals, which we suspect is a mistake because our documents do not include vitals. 
 This tool was particularly helpful in finding coding inconsitencies, such as mismatched LOINC display names.
 
