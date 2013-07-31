@@ -1,0 +1,1748 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type='text/xsl' href='http://researchservice.greenwaymedical.com/stylesheets/ccd.xsl'?>
+<ClinicalDocument xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xmlns="urn:hl7-org:v3"
+ xmlns:voc="urn:hl7-org:v3/voc">
+  <realmCode code="US" />
+  <typeId root="2.16.840.1.113883.1.3" extension="POCD_HD000040" />
+  <templateId root="2.16.840.1.113883.10.20.22.1.1" />
+  <templateId root="2.16.840.1.113883.10.20.22.1.2" />
+  <id root="2.16.840.1.113883.3.441" extension="2ff573b6ddd84d8ab49fe9b4b3d600da" />
+  <code code="34133-9" displayName="Summarization of episode note" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+  <title>MU2 Export Summary</title>
+  <effectiveTime value="20130701103449-0400" />
+  <confidentialityCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" />
+  <languageCode code="en-US" />
+  <setId root="2.16.840.1.113883.3.441" extension="1" />
+  <versionNumber value="1" />
+  <recordTarget typeCode="RCT" contextControlCode="OP">
+    <patientRole classCode="PAT">
+      <id root="2.16.840.1.113883.3.441.1.50.300011.51" extension="26562" />
+      <addr>
+        <streetAddressLine nullFlavor="UNK" />
+        <streetAddressLine nullFlavor="UNK" />
+        <city nullFlavor="UNK" />
+        <state>GA</state>
+        <postalCode nullFlavor="UNK" />
+        <country>US</country>
+      </addr>
+      <telecom use="HP" nullFlavor="UNK" />
+      <patient classCode="PSN" determinerCode="INSTANCE">
+        <name>
+          <given>Maria</given>
+          <family>Hernandez</family>
+        </name>
+        <administrativeGenderCode code="F" displayName="Female" codeSystem="2.16.840.1.113883.5.1" codeSystemName="Administrative Gender Code" />
+        <birthTime value="19660218" />
+        <maritalStatusCode code="S" displayName="Never Married" codeSystem="2.16.840.1.113883.5.2" codeSystemName="HL7v3 Marital Status Value Set" />
+        <raceCode code="2106-3" displayName="White" codeSystem="2.16.840.1.113883.6.238" codeSystemName="CDC Race Code Value Set" />
+        <ethnicGroupCode code="2135-2" displayName="Hispanic or Latino" codeSystem="2.16.840.1.113883.6.238" codeSystemName="OMB Standards for Race and Ethnicity" />
+        <languageCommunication>
+          <languageCode code="spa" />
+        </languageCommunication>
+      </patient>
+      <providerOrganization classCode="ORG" determinerCode="INSTANCE">
+        <id root="2.16.840.1.113883.3.441.1.50" extension="300011" />
+        <name>Get Well Clinic</name>
+        <telecom use="WP" value="555-555-1004" />
+        <addr>
+          <streetAddressLine>1004 Healthcare Dr. practice</streetAddressLine>
+          <streetAddressLine nullFlavor="UNK" />
+          <city>Portland</city>
+          <state>OR</state>
+          <postalCode>97005</postalCode>
+          <country>United States</country>
+        </addr>
+      </providerOrganization>
+    </patientRole>
+  </recordTarget>
+  <author typeCode="AUT" contextControlCode="OP">
+    <time nullFlavor="UNK" />
+    <assignedAuthor classCode="ASSIGNED">
+      <id root="2.16.840.1.113883.4.6" extension="c0e07db8b52f4f12943a91d2403d26d5" />
+      <addr>
+        <streetAddressLine>1004 Healthcare Dr. practice</streetAddressLine>
+        <streetAddressLine nullFlavor="UNK" />
+        <city>Portland</city>
+        <state>OR</state>
+        <postalCode>97005</postalCode>
+        <country>United States</country>
+      </addr>
+      <telecom use="WP" value="555-555-1004" />
+      <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+        <name nullFlavor="UNK" />
+      </assignedPerson>
+      <representedOrganization>
+        <id root="2.16.840.1.113883.3.441.1.50" extension="300011" />
+        <name>Get Well Clinic</name>
+        <telecom use="WP" value="555-555-1004" />
+        <addr>
+          <streetAddressLine>1004 Healthcare Dr. practice</streetAddressLine>
+          <streetAddressLine nullFlavor="UNK" />
+          <city>Portland</city>
+          <state>OR</state>
+          <postalCode>97005</postalCode>
+          <country>United States</country>
+        </addr>
+      </representedOrganization>
+    </assignedAuthor>
+  </author>
+  <informant>
+    <assignedEntity>
+      <id nullFlavor="NA" />
+      <addr>
+        <streetAddressLine>1004 Healthcare Dr. practice</streetAddressLine>
+        <streetAddressLine nullFlavor="UNK" />
+        <city>Portland</city>
+        <state>OR</state>
+        <postalCode>97005</postalCode>
+        <country>United States</country>
+      </addr>
+      <telecom use="WP" value="555-555-1004" />
+      <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+        <name nullFlavor="UNK" />
+      </assignedPerson>
+      <representedOrganization>
+        <id root="2.16.840.1.113883.3.441.1.50" extension="300011" />
+        <name>Get Well Clinic</name>
+        <telecom use="WP" value="555-555-1004" />
+        <addr>
+          <streetAddressLine>1004 Healthcare Dr. practice</streetAddressLine>
+          <streetAddressLine nullFlavor="UNK" />
+          <city>Portland</city>
+          <state>OR</state>
+          <postalCode>97005</postalCode>
+          <country>United States</country>
+        </addr>
+      </representedOrganization>
+    </assignedEntity>
+  </informant>
+  <custodian typeCode="CST">
+    <assignedCustodian classCode="ASSIGNED">
+      <representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+        <id root="2.16.840.1.113883.3.441.1.50" extension="300011" />
+        <name>Get Well Clinic</name>
+        <telecom use="WP" value="555-555-1004" />
+        <addr>
+          <streetAddressLine>1004 Healthcare Dr. practice</streetAddressLine>
+          <streetAddressLine nullFlavor="UNK" />
+          <city>Portland</city>
+          <state>OR</state>
+          <postalCode>97005</postalCode>
+          <country>United States</country>
+        </addr>
+      </representedCustodianOrganization>
+    </assignedCustodian>
+  </custodian>
+  <documentationOf typeCode="DOC">
+    <serviceEvent classCode="PCPR" moodCode="EVN">
+      <effectiveTime nullFlavor="UNK">
+        <low nullFlavor="UNK" />
+        <high nullFlavor="UNK" />
+      </effectiveTime>
+      <performer typeCode="PRF">
+        <templateId root="2.16.840.1.113883.3.88.11.83.4" />
+        <templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.3" />
+        <functionCode code="PP" displayName="Primary CareProvider" codeSystem="2.16.840.1.113883.12.443" codeSystemName="Provider Role" />
+        <time nullFlavor="UNK">
+          <low nullFlavor="UNK" />
+          <high nullFlavor="UNK" />
+        </time>
+        <assignedEntity>
+          <id root="2.16.840.1.113883.4.6" extension="UNK" />
+          <addr nullFlavor="UNK" />
+          <telecom use="WP" nullFlavor="UNK" />
+          <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+            <name nullFlavor="UNK" />
+          </assignedPerson>
+        </assignedEntity>
+      </performer>
+      <performer typeCode="PRF">
+        <templateId root="2.16.840.1.113883.3.88.11.83.4" />
+        <templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.3" />
+        <assignedEntity>
+          <id root="2.16.840.1.113883.4.6" extension="UNK" />
+          <code code="-1" displayName="PCP" codeSystemName="GMTDynamic" />
+          <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+            <name>
+              <given>James</given>
+              <family>Getwell M.D.</family>
+            </name>
+          </assignedPerson>
+        </assignedEntity>
+      </performer>
+      <performer typeCode="PRF">
+        <templateId root="2.16.840.1.113883.3.88.11.83.4" />
+        <templateId root="1.3.6.1.4.1.19376.1.5.3.1.2.3" />
+        <assignedEntity>
+          <id root="2.16.840.1.113883.4.6" />
+          <code code="-1" displayName="Care Provider" codeSystemName="GMTDynamic" />
+          <assignedPerson classCode="PSN" determinerCode="INSTANCE">
+            <name>
+              <given>Patricia</given>
+              <family>Primary</family>
+            </name>
+          </assignedPerson>
+        </assignedEntity>
+      </performer>
+    </serviceEvent>
+  </documentationOf>
+  <component>
+    <structuredBody classCode="DOCBODY" moodCode="EVN">
+      <templateId root="2.16.840.1.113883.10" extension="MPL_CDAR2_LEVEL1-2REF_US_I2_2005SEP" />
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.1" />
+          <id root="2.16.840.1.113883.3.441" extension="710a4d395a3c45e6" />
+          <code code="42349-1" displayName="REASON FOR REFERRAL" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Reason for Referral</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <table border="1">
+              <thead>
+                <tr>
+                  <th>Reason for Referral</th>
+                  <th>Plan Date</th>
+                  <th>Provider</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td ID="ref_4b2296c11c2b46809854022d8f1f7fbf_referral_1_reason">Pulmonary Functional test</td>
+                  <td ID="ref_4b2296c11c2b46809854022d8f1f7fbf_referral_1_planDate">
+                  </td>
+                  <td ID="ref_4b2296c11c2b46809854022d8f1f7fbf_referral_1_provider"> George Lung, 987 Anymed Way, , Portland, OR, 97005, 555-555-1049</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+        </section>
+      </component>
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.2.6.1" />
+          <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.57" extension="5f01e07a65334a60" />
+          <code code="48765-2" displayName="Allergies, adverse reactions, alerts" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Allergies and Adverse Reactions</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <table border="1">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Reaction</th>
+                  <th>Notes</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td ID="ref_ff1d6b9def7b47d598024672c632cb9e_allergy_name_1">penicillin G benzathine</td>
+                  <td ID="ref_ff1d6b9def7b47d598024672c632cb9e_allergy_reaction_1">Hives</td>
+                  <td ID="ref_ff1d6b9def7b47d598024672c632cb9e_allergy_comment_1">Active</td>
+                </tr>
+                <tr>
+                  <td ID="ref_ff1d6b9def7b47d598024672c632cb9e_allergy_name_2">codeine sulfate</td>
+                  <td ID="ref_ff1d6b9def7b47d598024672c632cb9e_allergy_reaction_2">Swelling</td>
+                  <td ID="ref_ff1d6b9def7b47d598024672c632cb9e_allergy_comment_2">Active</td>
+                </tr>
+                <tr>
+                  <td ID="ref_ff1d6b9def7b47d598024672c632cb9e_allergy_name_3">aspirin</td>
+                  <td ID="ref_ff1d6b9def7b47d598024672c632cb9e_allergy_reaction_3">Anaphaylaxis</td>
+                  <td ID="ref_ff1d6b9def7b47d598024672c632cb9e_allergy_comment_3">active</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.30" />
+              <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.57" extension="1307" />
+              <code code="48765-2" displayName="Allergies, adverse reactions, alerts" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+              <statusCode code="active" />
+              <effectiveTime>
+                <low nullFlavor="UNK" />
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.7" />
+                  <id root="2.16.840.1.113883.3.441" extension="03d2b31b04fd4042a24423b657750245" />
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                  <statusCode code="completed" />
+                  <effectiveTime>
+                    <low nullFlavor="UNK" />
+                  </effectiveTime>
+                  <value xsi:type="CD" code="419199007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Allergy to substance (disorder)" />
+                  <participant typeCode="CSM">
+                    <time nullFlavor="UNK" />
+                    <participantRole classCode="MANU">
+                      <addr nullFlavor="UNK" />
+                      <telecom use="" nullFlavor="UNK" />
+                      <playingEntity classCode="MMAT" determinerCode="INSTANCE">
+                        <code code="215674" displayName="Bicillin L-A" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
+                          <originalText>
+                            <reference value="#ref_ff1d6b9def7b47d598024672c632cb9e_allergy_name_1" />
+                          </originalText>
+                          <translation code="3727" displayName="penicillin G benzathine" codeSystem="2.16.840.1.113883.6.64" codeSystemName="FDBDRUG" />
+                        </code>
+                        <name>penicillin G benzathine</name>
+                      </playingEntity>
+                    </participantRole>
+                  </participant>
+                  <entryRelationship typeCode="MFST" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.9" />
+                      <id root="2.16.840.1.113883.3.441" extension="01d88ab270da48fd854c56fa96d413f3" />
+                      <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                      <text>Hives<reference value="#ref_ff1d6b9def7b47d598024672c632cb9e_allergy_reaction_1" /></text>
+                      <statusCode code="completed" />
+                      <effectiveTime nullFlavor="UNK">
+                        <low nullFlavor="UNK" />
+                        <high nullFlavor="UNK" />
+                      </effectiveTime>
+                      <value xsi:type="CD" nullFlavor="OTH" />
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="SUBJ" inversionInd="true">
+                    <act classCode="ACT" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.40" />
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2" />
+                      <code code="48767-8" displayName="Annotation Comment" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                      <text>
+                        <reference value="#ref_ff1d6b9def7b47d598024672c632cb9e_allergy_comment_1" />
+                      </text>
+                      <statusCode code="completed" />
+                    </act>
+                  </entryRelationship>
+                  <entryRelationship typeCode="REFR" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.28" />
+                      <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CE" code="55561003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Active" />
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.30" />
+              <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.57" extension="1308" />
+              <code code="48765-2" displayName="Allergies, adverse reactions, alerts" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+              <statusCode code="active" />
+              <effectiveTime>
+                <low nullFlavor="UNK" />
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.7" />
+                  <id root="2.16.840.1.113883.3.441" extension="b08fc9d8cea24041bd45204e94bf1612" />
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                  <statusCode code="completed" />
+                  <effectiveTime>
+                    <low nullFlavor="UNK" />
+                  </effectiveTime>
+                  <value xsi:type="CD" code="419199007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Allergy to substance (disorder)" />
+                  <participant typeCode="CSM">
+                    <time nullFlavor="UNK" />
+                    <participantRole classCode="MANU">
+                      <addr nullFlavor="UNK" />
+                      <telecom use="" nullFlavor="UNK" />
+                      <playingEntity classCode="MMAT" determinerCode="INSTANCE">
+                        <code nullFlavor="NA">
+                          <originalText>
+                            <reference value="#ref_ff1d6b9def7b47d598024672c632cb9e_allergy_name_2" />
+                          </originalText>
+                        </code>
+                        <name>codeine sulfate</name>
+                      </playingEntity>
+                    </participantRole>
+                  </participant>
+                  <entryRelationship typeCode="MFST" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.9" />
+                      <id root="2.16.840.1.113883.3.441" extension="ff01ed6e19e34d71b3bc31f8a85da380" />
+                      <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                      <text>Swelling<reference value="#ref_ff1d6b9def7b47d598024672c632cb9e_allergy_reaction_2" /></text>
+                      <statusCode code="completed" />
+                      <effectiveTime nullFlavor="UNK">
+                        <low nullFlavor="UNK" />
+                        <high nullFlavor="UNK" />
+                      </effectiveTime>
+                      <value xsi:type="CD" nullFlavor="OTH" />
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="SUBJ" inversionInd="true">
+                    <act classCode="ACT" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.40" />
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2" />
+                      <code code="48767-8" displayName="Annotation Comment" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                      <text>
+                        <reference value="#ref_ff1d6b9def7b47d598024672c632cb9e_allergy_comment_2" />
+                      </text>
+                      <statusCode code="completed" />
+                    </act>
+                  </entryRelationship>
+                  <entryRelationship typeCode="REFR" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.28" />
+                      <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CE" code="55561003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Active" />
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.30" />
+              <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.57" extension="1309" />
+              <code code="48765-2" displayName="Allergies, adverse reactions, alerts" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+              <statusCode code="active" />
+              <effectiveTime>
+                <low nullFlavor="UNK" />
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.7" />
+                  <id root="2.16.840.1.113883.3.441" extension="fcf74626a1b343cfb887d2afeebe0f3f" />
+                  <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                  <statusCode code="completed" />
+                  <effectiveTime>
+                    <low nullFlavor="UNK" />
+                  </effectiveTime>
+                  <value xsi:type="CD" code="419199007" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Allergy to substance (disorder)" />
+                  <participant typeCode="CSM">
+                    <time nullFlavor="UNK" />
+                    <participantRole classCode="MANU">
+                      <addr nullFlavor="UNK" />
+                      <telecom use="" nullFlavor="UNK" />
+                      <playingEntity classCode="MMAT" determinerCode="INSTANCE">
+                        <code code="1001473" displayName="Ecpirin" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm">
+                          <originalText>
+                            <reference value="#ref_ff1d6b9def7b47d598024672c632cb9e_allergy_name_3" />
+                          </originalText>
+                          <translation code="1076" displayName="aspirin" codeSystem="2.16.840.1.113883.6.64" codeSystemName="FDBDRUG" />
+                        </code>
+                        <name>aspirin</name>
+                      </playingEntity>
+                    </participantRole>
+                  </participant>
+                  <entryRelationship typeCode="MFST" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.9" />
+                      <id root="2.16.840.1.113883.3.441" extension="7fb347f76b5e4b7aaa06f65c746fe7e2" />
+                      <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+                      <text>Anaphaylaxis<reference value="#ref_ff1d6b9def7b47d598024672c632cb9e_allergy_reaction_3" /></text>
+                      <statusCode code="completed" />
+                      <effectiveTime nullFlavor="UNK">
+                        <low nullFlavor="UNK" />
+                        <high nullFlavor="UNK" />
+                      </effectiveTime>
+                      <value xsi:type="CD" nullFlavor="OTH" />
+                    </observation>
+                  </entryRelationship>
+                  <entryRelationship typeCode="SUBJ" inversionInd="true">
+                    <act classCode="ACT" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.1.40" />
+                      <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.2" />
+                      <code code="48767-8" displayName="Annotation Comment" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                      <text>
+                        <reference value="#ref_ff1d6b9def7b47d598024672c632cb9e_allergy_comment_3" />
+                      </text>
+                      <statusCode code="completed" />
+                    </act>
+                  </entryRelationship>
+                  <entryRelationship typeCode="REFR" inversionInd="true">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.28" />
+                      <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                      <statusCode code="completed" />
+                      <value xsi:type="CE" code="55561003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Active" />
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.2.10" />
+          <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.72" extension="3fd2c0e260e34e26" />
+          <code code="18776-5" displayName="Treatment Plan" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Plan of Treatment</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <table border="1">
+              <thead>
+                <tr>
+                  <th>Planned Activity</th>
+                  <th>Comments</th>
+                  <th>Planned Date</th>
+                  <th>Planned Time</th>
+                  <th>Plan/Goal</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedActivity_1">Pulmonary Functional test</td>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedComments_1">
+                  </td>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedDate_1">
+                  </td>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedTime_1">
+                  </td>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedGoal_1">
+                  </td>
+                </tr>
+                <tr>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedActivity_2">Smoking Cessation Plan</td>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedComments_2">
+                  </td>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedDate_2">9/25/2012</td>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedTime_2">12:00 AM</td>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedGoal_2">Resources and instructions provided during visit</td>
+                </tr>
+                <tr>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedActivity_3">Smoking Cessation: Goal</td>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedComments_3">
+                  </td>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedDate_3">9/25/2012</td>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedTime_3">12:00 AM</td>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedGoal_3">Quit smoking</td>
+                </tr>
+                <tr>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedActivity_4">Weight Loss Plan</td>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedComments_4">
+                  </td>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedDate_4">9/25/2012</td>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedTime_4">12:00 AM</td>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedGoal_4">Resources and instructions provided during visit.</td>
+                </tr>
+                <tr>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedActivity_5">Weight Loss: Goal</td>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedComments_5">
+                  </td>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedDate_5">9/25/2012</td>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedTime_5">12:00 AM</td>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedGoal_5">BMI &lt; 25</td>
+                </tr>
+                <tr>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedActivity_6">Preventative Health Plan</td>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedComments_6">
+                  </td>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedDate_6">9/25/2012</td>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedTime_6">12:00 AM</td>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedGoal_6">Annual pap smear, mammogram, annual breast exam.</td>
+                </tr>
+                <tr>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedActivity_7">Chest X-Ray, PA and Lateral Views</td>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedComments_7">
+                  </td>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedDate_7">1/24/2013</td>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedTime_7">12:00 AM</td>
+                  <td ID="ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedGoal_7">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry>
+            <observation classCode="OBS" moodCode="RQO">
+              <templateId root="2.16.840.1.113883.10.20.22.4.44" />
+              <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.72" extension="1159" />
+              <code nullFlavor="NA" />
+              <text>Pulmonary Functional test<reference value="#ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedActivity_1" /></text>
+              <statusCode code="new" />
+              <effectiveTime nullFlavor="UNK" />
+              <interpretationCode nullFlavor="NA" />
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="RQO">
+              <templateId root="2.16.840.1.113883.10.20.22.4.44" />
+              <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.72" extension="2228" />
+              <code nullFlavor="NA" />
+              <text>Smoking Cessation Plan<reference value="#ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedActivity_2" /></text>
+              <statusCode code="new" />
+              <effectiveTime value="20120925" />
+              <interpretationCode nullFlavor="NA" />
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="RQO">
+              <templateId root="2.16.840.1.113883.10.20.22.4.44" />
+              <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.72" extension="2229" />
+              <code nullFlavor="NA" />
+              <text>Smoking Cessation: Goal<reference value="#ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedActivity_3" /></text>
+              <statusCode code="new" />
+              <effectiveTime value="20120925" />
+              <interpretationCode nullFlavor="NA" />
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="RQO">
+              <templateId root="2.16.840.1.113883.10.20.22.4.44" />
+              <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.72" extension="2230" />
+              <code nullFlavor="NA" />
+              <text>Weight Loss Plan<reference value="#ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedActivity_4" /></text>
+              <statusCode code="new" />
+              <effectiveTime value="20120925" />
+              <interpretationCode nullFlavor="NA" />
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="RQO">
+              <templateId root="2.16.840.1.113883.10.20.22.4.44" />
+              <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.72" extension="2231" />
+              <code nullFlavor="NA" />
+              <text>Weight Loss: Goal<reference value="#ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedActivity_5" /></text>
+              <statusCode code="new" />
+              <effectiveTime value="20120925" />
+              <interpretationCode nullFlavor="NA" />
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="RQO">
+              <templateId root="2.16.840.1.113883.10.20.22.4.44" />
+              <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.72" extension="2232" />
+              <code nullFlavor="NA" />
+              <text>Preventative Health Plan<reference value="#ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedActivity_6" /></text>
+              <statusCode code="new" />
+              <effectiveTime value="20120925" />
+              <interpretationCode nullFlavor="NA" />
+            </observation>
+          </entry>
+          <entry>
+            <procedure classCode="PROC" moodCode="INT" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.41" />
+              <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.72" extension="61404" />
+              <code code="71020" displayName="Chest X-Ray, PA and Lateral Views" codeSystem="CPT" codeSystemName="Current Procedural Terminology" />
+              <text>Chest X-Ray, PA and Lateral Views<reference value="#ref_f2fc7d5bea374a4a9606c9c7470ee3d6_planOfTreatment__plannedActivity_7" /></text>
+              <statusCode code="new" />
+              <effectiveTime value="20130124" />
+              <approachSiteCode nullFlavor="NA" />
+              <targetSiteCode nullFlavor="NA" />
+            </procedure>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.2.1.1" />
+          <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.58" extension="499ce68120bb456d" />
+          <code code="10160-0" displayName="History of medication use" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Medications</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <table border="1">
+              <thead>
+                <tr>
+                  <th colspan="5">Expired</th>
+                </tr>
+                <tr>
+                  <th>Name</th>
+                  <th>Start Date</th>
+                  <th>Expiration Date</th>
+                  <th>SIG</th>
+                  <th>Comments</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td ID="ref_7f647260697e4ecc95aa7f8a68ad9aa9_medication_name_1">metoprolol tartrate Oral Tablet 25 mg</td>
+                  <td ID="ref_7f647260697e4ecc95aa7f8a68ad9aa9_medication_startDate_1">1/1/2013</td>
+                  <td ID="ref_7f647260697e4ecc95aa7f8a68ad9aa9_medication_expirationDate_1">1/31/2013</td>
+                  <td ID="ref_7f647260697e4ecc95aa7f8a68ad9aa9_medication_sig_1">take 1 tablet (25 mg) by oral route once daily for 30 days</td>
+                  <td ID="ref_7f647260697e4ecc95aa7f8a68ad9aa9_medication_comments_1">
+                  </td>
+                </tr>
+                <tr>
+                  <td ID="ref_7f647260697e4ecc95aa7f8a68ad9aa9_medication_name_2">Proventil HFA Inhalation HFA Aerosol Inhaler 90 mcg/actuation</td>
+                  <td ID="ref_7f647260697e4ecc95aa7f8a68ad9aa9_medication_startDate_2">1/1/2013</td>
+                  <td ID="ref_7f647260697e4ecc95aa7f8a68ad9aa9_medication_expirationDate_2">1/31/2013</td>
+                  <td ID="ref_7f647260697e4ecc95aa7f8a68ad9aa9_medication_sig_2">inhale 2 puffs by inhalation route every 4 hours as needed for 30 days</td>
+                  <td ID="ref_7f647260697e4ecc95aa7f8a68ad9aa9_medication_comments_2">
+                  </td>
+                </tr>
+                <tr>
+                  <td ID="ref_7f647260697e4ecc95aa7f8a68ad9aa9_medication_name_3">azithromycin Oral Tablet 500 mg</td>
+                  <td ID="ref_7f647260697e4ecc95aa7f8a68ad9aa9_medication_startDate_3">1/24/2013</td>
+                  <td ID="ref_7f647260697e4ecc95aa7f8a68ad9aa9_medication_expirationDate_3">2/23/2013</td>
+                  <td ID="ref_7f647260697e4ecc95aa7f8a68ad9aa9_medication_sig_3">take 1 tablet by oral route daily for 30 days , then 250 mg once daily for the next 4 days</td>
+                  <td ID="ref_7f647260697e4ecc95aa7f8a68ad9aa9_medication_comments_3">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry>
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" />
+              <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.58" extension="2052" />
+              <text>take 1 tablet (25 mg) by oral route once daily for 30 days<reference value="#ref_7f647260697e4ecc95aa7f8a68ad9aa9_medication_sig_1" /></text>
+              <statusCode code="completed" />
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20130101000000" />
+                <high value="20130131000000" />
+              </effectiveTime>
+              <routeCode nullFlavor="NA">
+                <originalText>
+                  <reference value="Oral" />
+                </originalText>
+              </routeCode>
+              <doseQuantity value="1" unit="tablet" />
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                  <manufacturedMaterial classCode="MMAT">
+                    <code code="453953" displayName="metoprolol tartrate Oral Tablet 25 mg">
+                      <originalText>
+                        <reference value="#ref_7f647260697e4ecc95aa7f8a68ad9aa9_medication_name_1" />
+                      </originalText>
+                      <translation code="866924" displayName="Metoprolol Tartrate 25 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" />
+                    </code>
+                    <name>metoprolol tartrate</name>
+                    <lotNumberText nullFlavor="UNK" />
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <entryRelationship typeCode="REFR" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47" />
+                  <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CE" code="421139008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED" displayName="No Longer Active">
+                    <originalText>Expired - </originalText>
+                  </value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="SUBJ" inversionInd="true">
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.1.49" />
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3" />
+                  <code code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode" />
+                  <text>
+                    <reference value="#ref_7f647260697e4ecc95aa7f8a68ad9aa9_medication_comments_1" />
+                  </text>
+                  <statusCode code="completed" />
+                </act>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry>
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" />
+              <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.58" extension="2053" />
+              <text>inhale 2 puffs by inhalation route every 4 hours as needed for 30 days<reference value="#ref_7f647260697e4ecc95aa7f8a68ad9aa9_medication_sig_2" /></text>
+              <statusCode code="completed" />
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20130101000000" />
+                <high value="20130131000000" />
+              </effectiveTime>
+              <routeCode nullFlavor="NA">
+                <originalText>
+                  <reference value="Inhalation" />
+                </originalText>
+              </routeCode>
+              <doseQuantity value="2" />
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                  <manufacturedMaterial classCode="MMAT">
+                    <code code="267456" displayName="Proventil HFA Inhalation HFA Aerosol Inhaler 90 mcg/actuation">
+                      <originalText>
+                        <reference value="#ref_7f647260697e4ecc95aa7f8a68ad9aa9_medication_name_2" />
+                      </originalText>
+                      <translation code="745679" displayName="200 ACTUAT Albuterol 0.09 MG/ACTUAT Metered Dose Inhaler" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" />
+                    </code>
+                    <name>Proventil HFA</name>
+                    <lotNumberText nullFlavor="UNK" />
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <entryRelationship typeCode="REFR" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47" />
+                  <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CE" code="421139008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED" displayName="No Longer Active">
+                    <originalText>Expired - </originalText>
+                  </value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="SUBJ" inversionInd="true">
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.1.49" />
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3" />
+                  <code code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode" />
+                  <text>
+                    <reference value="#ref_7f647260697e4ecc95aa7f8a68ad9aa9_medication_comments_2" />
+                  </text>
+                  <statusCode code="completed" />
+                </act>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+          <entry>
+            <substanceAdministration classCode="SBADM" moodCode="INT" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.16" />
+              <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.58" extension="2054" />
+              <text>take 1 tablet by oral route daily for 30 days , then 250 mg once daily for the next 4 days<reference value="#ref_7f647260697e4ecc95aa7f8a68ad9aa9_medication_sig_3" /></text>
+              <statusCode code="completed" />
+              <effectiveTime xsi:type="IVL_TS">
+                <low value="20130124000000" />
+                <high value="20130223000000" />
+              </effectiveTime>
+              <routeCode nullFlavor="NA">
+                <originalText>
+                  <reference value="Oral" />
+                </originalText>
+              </routeCode>
+              <doseQuantity value="1" unit="tablet" />
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.23" />
+                  <manufacturedMaterial classCode="MMAT">
+                    <code code="445655" displayName="azithromycin Oral Tablet 500 mg">
+                      <originalText>
+                        <reference value="#ref_7f647260697e4ecc95aa7f8a68ad9aa9_medication_name_3" />
+                      </originalText>
+                      <translation code="248656" displayName="Azithromycin 500 MG Oral Tablet" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" />
+                    </code>
+                    <name>azithromycin</name>
+                    <lotNumberText nullFlavor="UNK" />
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <entryRelationship typeCode="REFR" inversionInd="true">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.47" />
+                  <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CE" code="421139008" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED" displayName="No Longer Active">
+                    <originalText>Expired - </originalText>
+                  </value>
+                </observation>
+              </entryRelationship>
+              <entryRelationship typeCode="SUBJ" inversionInd="true">
+                <act classCode="ACT" moodCode="INT">
+                  <templateId root="2.16.840.1.113883.10.20.1.49" />
+                  <templateId root="1.3.6.1.4.1.19376.1.5.3.1.4.3" />
+                  <code code="PINSTRUCT" codeSystem="1.3.6.1.4.1.19376.1.5.3.2" codeSystemName="IHEActCode" />
+                  <text>
+                    <reference value="#ref_7f647260697e4ecc95aa7f8a68ad9aa9_medication_comments_3" />
+                  </text>
+                  <statusCode code="completed" />
+                </act>
+              </entryRelationship>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.2.2.1" />
+          <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.60" extension="866f95b8d64548eb" />
+          <code code="11369-6" displayName="History of immunizations" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>History Of Immunizations</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <table border="1">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Date Admin</th>
+                  <th>Mfg Name</th>
+                  <th>Mfg Code</th>
+                  <th>Trade Name</th>
+                  <th>Lot#</th>
+                  <th>Route</th>
+                  <th>Inj</th>
+                  <th>Vis Given</th>
+                  <th>Vis Pub</th>
+                  <th>CVX</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td ID="ref_fc69808329824630a972e27fd4ce985e_immunization_name_1">Influenza Adult</td>
+                  <td ID="ref_fc69808329824630a972e27fd4ce985e_immunization_adminDate_1">9/25/2012</td>
+                  <td ID="ref_fc69808329824630a972e27fd4ce985e_immunization_man_1">Abbott Laboratories</td>
+                  <td ID="ref_fc69808329824630a972e27fd4ce985e_immunization_manCode_1">AB</td>
+                  <td ID="ref_fc69808329824630a972e27fd4ce985e_immunization_trade_1">Fluzone</td>
+                  <td ID="ref_fc69808329824630a972e27fd4ce985e_immunization_lot_1">v45353534</td>
+                  <td ID="ref_fc69808329824630a972e27fd4ce985e_immunization_route_1">Intramuscular</td>
+                  <td ID="ref_fc69808329824630a972e27fd4ce985e_immunization_injSite_1">Left Arm</td>
+                  <td ID="ref_fc69808329824630a972e27fd4ce985e_immunization_visGivDate_1">1/14/2013</td>
+                  <td ID="ref_fc69808329824630a972e27fd4ce985e_immunization_visPubDate_1">9/3/1980</td>
+                  <td ID="ref_fc69808329824630a972e27fd4ce985e_immunization_cvx_1">88</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry>
+            <substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+              <templateId root="2.16.840.1.113883.10.20.22.4.52" />
+              <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.60" extension="1151" />
+              <code code="IMMUNIZ" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode" />
+              <text>
+                <reference value="#ref_fc69808329824630a972e27fd4ce985e_immunization_name_1" />
+              </text>
+              <statusCode code="completed" />
+              <effectiveTime value="20120925000000" />
+              <routeCode nullFlavor="NA" />
+              <approachSiteCode nullFlavor="NA" />
+              <doseQuantity value="0.5" />
+              <consumable typeCode="CSM">
+                <manufacturedProduct classCode="MANU">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.54" />
+                  <manufacturedMaterial classCode="MMAT">
+                    <code code="88" displayName="influenza, NOS" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX">
+                      <originalText>
+                        <reference value="#ref_fc69808329824630a972e27fd4ce985e_immunization_name_1" />
+                      </originalText>
+                    </code>
+                    <name nullFlavor="UNK" />
+                    <lotNumberText>v45353534</lotNumberText>
+                  </manufacturedMaterial>
+                </manufacturedProduct>
+              </consumable>
+              <performer>
+                <assignedEntity>
+                  <id root="2.16.840.1.113883.3.441" extension="e8c58daf600046b695d349e5fba15ed9" />
+                  <addr>
+                    <streetAddressLine>1234 test</streetAddressLine>
+                    <streetAddressLine nullFlavor="UNK" />
+                    <city>Norcross</city>
+                    <state>GA</state>
+                    <postalCode>30091</postalCode>
+                    <country>United States</country>
+                  </addr>
+                  <telecom value="770-888-3333" />
+                  <assignedPerson>
+                    <name>
+                      <given>Mike</given>
+                      <family>Hardy</family>
+                    </name>
+                  </assignedPerson>
+                  <representedOrganization>
+                    <id root="2.16.840.1.113883.3.441" extension="bdf27f1c4ef04f3ebb6a239cc25e7787" />
+                    <name nullFlavor="UNK" />
+                    <telecom use="WP" value="770-888-3333" />
+                    <addr>
+                      <streetAddressLine>1234 test</streetAddressLine>
+                      <streetAddressLine nullFlavor="UNK" />
+                      <city>Norcross</city>
+                      <state>GA</state>
+                      <postalCode>30091</postalCode>
+                      <country>United States</country>
+                    </addr>
+                  </representedOrganization>
+                </assignedEntity>
+              </performer>
+            </substanceAdministration>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.2.5.1" />
+          <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.61" extension="009529a98ad54f73" />
+          <code code="11450-4" displayName="Problem list" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Problem List</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <table border="1">
+              <thead>
+                <tr>
+                  <th>Description</th>
+                  <th>Status</th>
+                  <th>Onset</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td ID="ref_21c30145fcbe417599f4cd27b21d56ff_problem_name_1">Acute Pharyngitis</td>
+                  <td ID="ref_21c30145fcbe417599f4cd27b21d56ff_problem_status_1">Resolved</td>
+                  <td ID="ref_21c30145fcbe417599f4cd27b21d56ff_problem_onset_1">10/28/2011</td>
+                </tr>
+                <tr>
+                  <td ID="ref_21c30145fcbe417599f4cd27b21d56ff_problem_name_2">Essential Hypertension</td>
+                  <td ID="ref_21c30145fcbe417599f4cd27b21d56ff_problem_status_2">Active</td>
+                  <td ID="ref_21c30145fcbe417599f4cd27b21d56ff_problem_onset_2">09/25/2012</td>
+                </tr>
+                <tr>
+                  <td ID="ref_21c30145fcbe417599f4cd27b21d56ff_problem_name_3">Pneumonia</td>
+                  <td ID="ref_21c30145fcbe417599f4cd27b21d56ff_problem_status_3">Active</td>
+                  <td ID="ref_21c30145fcbe417599f4cd27b21d56ff_problem_onset_3">01/24/2013</td>
+                </tr>
+                <tr>
+                  <td ID="ref_21c30145fcbe417599f4cd27b21d56ff_problem_name_4">Asthma</td>
+                  <td ID="ref_21c30145fcbe417599f4cd27b21d56ff_problem_status_4">Active</td>
+                  <td ID="ref_21c30145fcbe417599f4cd27b21d56ff_problem_onset_4">1/1/2013</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3" />
+              <id root="2.16.840.1.113883.3.441" extension="c5df6f29978b472f9fd6359c08a65c65" />
+              <code code="CONC" codeSystem="2.16.840.1.113883.5.6" />
+              <statusCode code="active" />
+              <effectiveTime nullFlavor="UNK">
+                <low value="20111028000000" />
+                <high value="20121028000000" />
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                  <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.61" extension="1346" />
+                  <code nullFlavor="NA" />
+                  <text>Acute Pharyngitis<reference value="#ref_21c30145fcbe417599f4cd27b21d56ff_problem_name_1" /></text>
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="UNK">
+                    <low value="20111028000000" />
+                    <high value="20121028000000" />
+                  </effectiveTime>
+                  <value xsi:type="CD" nullFlavor="UNK">
+                    <translation code="363746003" displayName="Acute Pharyngitis" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                      <originalText>
+                        <reference value="#ref_21c30145fcbe417599f4cd27b21d56ff_problem_name_1" />
+                      </originalText>
+                    </translation>
+                  </value>
+                  <entryRelationship typeCode="REFR" inversionInd="false">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.6" />
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="SNOMED CT" />
+                      <text>Resolved<reference value="#ref_21c30145fcbe417599f4cd27b21d56ff_problem_status_1" /></text>
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" code="413322009" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Resolved" />
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3" />
+              <id root="2.16.840.1.113883.3.441" extension="626f8d7d3a44474b8799a57726e7d34e" />
+              <code code="CONC" codeSystem="2.16.840.1.113883.5.6" />
+              <statusCode code="active" />
+              <effectiveTime nullFlavor="UNK">
+                <low value="20120925000000" />
+                <high nullFlavor="UNK" />
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                  <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.61" extension="1347" />
+                  <code nullFlavor="NA" />
+                  <text>Essential Hypertension<reference value="#ref_21c30145fcbe417599f4cd27b21d56ff_problem_name_2" /></text>
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="UNK">
+                    <low value="20120925000000" />
+                    <high nullFlavor="UNK" />
+                  </effectiveTime>
+                  <value xsi:type="CD" nullFlavor="UNK">
+                    <translation nullFlavor="NA">
+                      <originalText>
+                        <reference value="#ref_21c30145fcbe417599f4cd27b21d56ff_problem_name_2" />
+                      </originalText>
+                    </translation>
+                  </value>
+                  <entryRelationship typeCode="REFR" inversionInd="false">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.6" />
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="SNOMED CT" />
+                      <text>Active<reference value="#ref_21c30145fcbe417599f4cd27b21d56ff_problem_status_2" /></text>
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" code="55561003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Active" />
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3" />
+              <id root="2.16.840.1.113883.3.441" extension="f892ab125ce04d89bd0d16ccdf956665" />
+              <code code="CONC" codeSystem="2.16.840.1.113883.5.6" />
+              <statusCode code="active" />
+              <effectiveTime nullFlavor="UNK">
+                <low value="20130124000000" />
+                <high nullFlavor="UNK" />
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                  <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.61" extension="1423" />
+                  <code nullFlavor="NA" />
+                  <text>Pneumonia<reference value="#ref_21c30145fcbe417599f4cd27b21d56ff_problem_name_3" /></text>
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="UNK">
+                    <low value="20130124000000" />
+                    <high nullFlavor="UNK" />
+                  </effectiveTime>
+                  <value xsi:type="CD" nullFlavor="UNK">
+                    <translation code="233604007" displayName="Pneumonia" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                      <originalText>
+                        <reference value="#ref_21c30145fcbe417599f4cd27b21d56ff_problem_name_3" />
+                      </originalText>
+                    </translation>
+                  </value>
+                  <entryRelationship typeCode="REFR" inversionInd="false">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.6" />
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="SNOMED CT" />
+                      <text>Active<reference value="#ref_21c30145fcbe417599f4cd27b21d56ff_problem_status_3" /></text>
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" code="55561003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Active" />
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+          <entry>
+            <act classCode="ACT" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.3" />
+              <id root="2.16.840.1.113883.3.441" extension="03d47a912565436b897bf9fdb15f7429" />
+              <code code="CONC" codeSystem="2.16.840.1.113883.5.6" />
+              <statusCode code="active" />
+              <effectiveTime nullFlavor="UNK">
+                <low value="20130101000000" />
+                <high nullFlavor="UNK" />
+              </effectiveTime>
+              <entryRelationship typeCode="SUBJ" inversionInd="false">
+                <observation classCode="OBS" moodCode="EVN" negationInd="false">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+                  <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.61" extension="1424" />
+                  <code nullFlavor="NA" />
+                  <text>Asthma<reference value="#ref_21c30145fcbe417599f4cd27b21d56ff_problem_name_4" /></text>
+                  <statusCode code="completed" />
+                  <effectiveTime nullFlavor="UNK">
+                    <low value="20130101000000" />
+                    <high nullFlavor="UNK" />
+                  </effectiveTime>
+                  <value xsi:type="CD" nullFlavor="UNK">
+                    <translation code="195967001" displayName="Asthma" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT">
+                      <originalText>
+                        <reference value="#ref_21c30145fcbe417599f4cd27b21d56ff_problem_name_4" />
+                      </originalText>
+                    </translation>
+                  </value>
+                  <entryRelationship typeCode="REFR" inversionInd="false">
+                    <observation classCode="OBS" moodCode="EVN">
+                      <templateId root="2.16.840.1.113883.10.20.22.4.6" />
+                      <code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="SNOMED CT" />
+                      <text>Active<reference value="#ref_21c30145fcbe417599f4cd27b21d56ff_problem_status_4" /></text>
+                      <statusCode code="completed" />
+                      <value xsi:type="CD" code="55561003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Active" />
+                    </observation>
+                  </entryRelationship>
+                </observation>
+              </entryRelationship>
+            </act>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.2.4.1" />
+          <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.55" extension="0afe9bde1a3544ca" />
+          <code code="8716-3" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Vital Signs</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <table border="1">
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Time</th>
+                  <th>BP-Sys(mm[Hg]</th>
+                  <th>BP-Dia(mm[Hg])</th>
+                  <th>HR(bpm)</th>
+                  <th>RR(rpm)</th>
+                  <th>Temp</th>
+                  <th>WT</th>
+                  <th>HT</th>
+                  <th>BMI</th>
+                  <th>BSA</th>
+                  <th>BMI Percentile</th>
+                  <th>O2 Sat(%)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_date_1">10/28/2011</td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_time_1">5:11:00 PM</td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_bpSystolic_1">114 mmHg</td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_bpDiastolic_1">76 mmHg</td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_hr_1">
+                  </td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_rr_1">
+                  </td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_temp_1">
+                  </td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_wt_1">150 lbs</td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_ht_1">64 in</td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_bmi_1">25.7472 kg/m²</td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_bsa_1">1.7528 m²</td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_bmiPercentile_1">
+                  </td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_o2_1">
+                  </td>
+                </tr>
+                <tr>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_date_2">9/25/2012</td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_time_2">5:18:00 PM</td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_bpSystolic_2">155 mmHg</td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_bpDiastolic_2">94 mmHg</td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_hr_2">
+                  </td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_rr_2">
+                  </td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_temp_2">
+                  </td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_wt_2">155 lbs</td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_ht_2">64 in</td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_bmi_2">26.6054 kg/m²</td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_bsa_2">1.7818 m²</td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_bmiPercentile_2">
+                  </td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_o2_2">
+                  </td>
+                </tr>
+                <tr>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_date_3">1/24/2013</td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_time_3">12:36:00 PM</td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_bpSystolic_3">120 mmHg</td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_bpDiastolic_3">80 mmHg</td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_hr_3">
+                  </td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_rr_3">
+                  </td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_temp_3">
+                  </td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_wt_3">162 lbs</td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_ht_3">64 in</td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_bmi_3">27.807 kg/m²</td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_bsa_3">1.8216 m²</td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_bmiPercentile_3">
+                  </td>
+                  <td ID="ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_o2_3">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" />
+              <id root="2.16.840.1.113883.3.441" extension="7d7a2dfd05274ffe9db52d8b4f4bf3c6" />
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+              <statusCode code="completed" />
+              <effectiveTime value="20111028171100" />
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.55" extension="2216" />
+                  <code code="8462-4" displayName="BP Diastolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <text>Blood Pressure - Diastolic<reference value="#ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_bpDiastolic_1" /></text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20111028171100" />
+                  <value xsi:type="PQ" value="76" unit="mm[Hg]" />
+                  <interpretationCode nullFlavor="NA" />
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.55" extension="2217" />
+                  <code code="8480-6" displayName="BP Systolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <text>Blood Pressure - Systolic<reference value="#ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_bpSystolic_1" /></text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20111028171100" />
+                  <value xsi:type="PQ" value="114" unit="mm[Hg]" />
+                  <interpretationCode nullFlavor="NA" />
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.55" extension="2218" />
+                  <code code="41909-3" displayName="Body Mass Index" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <text>Body Mass Index<reference value="#ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_bmi_1" /></text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20111028171100" />
+                  <value xsi:type="PQ" value="25.7472" unit="kg/m²" />
+                  <interpretationCode nullFlavor="NA" />
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.55" extension="2220" />
+                  <code code="8302-2" displayName="Body Height (Measured)" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <text>Height<reference value="#ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_ht_1" /></text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20111028171100" />
+                  <value xsi:type="PQ" value="64" unit="[in_us]" />
+                  <interpretationCode nullFlavor="NA" />
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.55" extension="2221" />
+                  <code code="3141-9" displayName="Body Weight (Measured)" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <text>Weight<reference value="#ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_wt_1" /></text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20111028171100" />
+                  <value xsi:type="PQ" value="150" unit="[lb_av]" />
+                  <interpretationCode nullFlavor="NA" />
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" />
+              <id root="2.16.840.1.113883.3.441" extension="0ccce75ff0db44cbadcae38bc45c3d93" />
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+              <statusCode code="completed" />
+              <effectiveTime value="20120925171800" />
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.55" extension="2222" />
+                  <code code="8462-4" displayName="BP Diastolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <text>Blood Pressure - Diastolic<reference value="#ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_bpDiastolic_2" /></text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20120925171800" />
+                  <value xsi:type="PQ" value="94" unit="mm[Hg]" />
+                  <interpretationCode nullFlavor="NA" />
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.55" extension="2223" />
+                  <code code="8480-6" displayName="BP Systolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <text>Blood Pressure - Systolic<reference value="#ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_bpSystolic_2" /></text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20120925171800" />
+                  <value xsi:type="PQ" value="155" unit="mm[Hg]" />
+                  <interpretationCode nullFlavor="NA" />
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.55" extension="2224" />
+                  <code code="41909-3" displayName="Body Mass Index" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <text>Body Mass Index<reference value="#ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_bmi_2" /></text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20120925171800" />
+                  <value xsi:type="PQ" value="26.6054" unit="kg/m²" />
+                  <interpretationCode nullFlavor="NA" />
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.55" extension="2226" />
+                  <code code="8302-2" displayName="Body Height (Measured)" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <text>Height<reference value="#ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_ht_2" /></text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20120925171800" />
+                  <value xsi:type="PQ" value="64" unit="[in_us]" />
+                  <interpretationCode nullFlavor="NA" />
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.55" extension="2227" />
+                  <code code="3141-9" displayName="Body Weight (Measured)" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <text>Weight<reference value="#ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_wt_2" /></text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20120925171800" />
+                  <value xsi:type="PQ" value="155" unit="[lb_av]" />
+                  <interpretationCode nullFlavor="NA" />
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry>
+            <organizer classCode="CLUSTER" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.26" />
+              <id root="2.16.840.1.113883.3.441" extension="88ca3f09aba74fec8eb29ef7bea41c2d" />
+              <code code="46680005" displayName="Vital signs" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" />
+              <statusCode code="completed" />
+              <effectiveTime value="20130124123600" />
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.55" extension="2903" />
+                  <code code="8462-4" displayName="BP Diastolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <text>Blood Pressure - Diastolic<reference value="#ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_bpDiastolic_3" /></text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20130124123600" />
+                  <value xsi:type="PQ" value="80" unit="mm[Hg]" />
+                  <interpretationCode nullFlavor="NA" />
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.55" extension="2904" />
+                  <code code="8480-6" displayName="BP Systolic" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <text>Blood Pressure - Systolic<reference value="#ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_bpSystolic_3" /></text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20130124123600" />
+                  <value xsi:type="PQ" value="120" unit="mm[Hg]" />
+                  <interpretationCode nullFlavor="NA" />
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.55" extension="2905" />
+                  <code code="41909-3" displayName="Body Mass Index" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <text>Body Mass Index<reference value="#ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_bmi_3" /></text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20130124123600" />
+                  <value xsi:type="PQ" value="27.807" unit="kg/m²" />
+                  <interpretationCode nullFlavor="NA" />
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.55" extension="2907" />
+                  <code code="8302-2" displayName="Body Height (Measured)" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <text>Height<reference value="#ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_ht_3" /></text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20130124123600" />
+                  <value xsi:type="PQ" value="64" unit="[in_us]" />
+                  <interpretationCode nullFlavor="NA" />
+                </observation>
+              </component>
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.27" />
+                  <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.55" extension="2908" />
+                  <code code="3141-9" displayName="Body Weight (Measured)" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <text>Weight<reference value="#ref_61cabe8df8b945439a2bb0f7d4eb8a78_vitalSigns_wt_3" /></text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20130124123600" />
+                  <value xsi:type="PQ" value="162" unit="[lb_av]" />
+                  <interpretationCode nullFlavor="NA" />
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.2.17" />
+          <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.68" extension="a9f0e4e071b4491f" />
+          <code code="29762-2" displayName="Social history" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Social History</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <table border="1">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Status</th>
+                  <th>Comments</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td ID="ref_3ae74186324c43c98a14da044266ae36_socialHistory_name_1">Tobacco</td>
+                  <td ID="ref_3ae74186324c43c98a14da044266ae36_socialHistory_status_1">Current</td>
+                  <td ID="ref_3ae74186324c43c98a14da044266ae36_socialHistory_comment_1">start 2012</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.78" />
+              <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.68" extension="1251" />
+              <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" />
+              <text>Tobacco<reference value="ref_3ae74186324c43c98a14da044266ae36_socialHistory_name_1" /></text>
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low value="19000101000000" />
+              </effectiveTime>
+              <value xsi:type="CD" code="428041000124106" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Current some day smoker" />
+              <entryRelationship typeCode="REFR">
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.1.56" />
+                  <code code="33999-4" displayName="Status" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <statusCode code="completed" />
+                  <value xsi:type="CD" code="55561003" codeSystem="2.16.840.1.113883.6.96" displayName="active" />
+                </observation>
+              </entryRelationship>
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.2.7.1" />
+          <templateId root="2.16.840.1.113883.10.20.22.2.7" />
+          <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.53" extension="3795a42650034ed3" />
+          <code code="47519-4" displayName="History of procedures" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>History of Procedures</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <table border="1">
+              <thead>
+                <tr>
+                  <th>Date Ordered</th>
+                  <th>Description</th>
+                  <th>Order Status</th>
+                  <th>Result Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td ID="ref_a51f135bbacb485695c1371368dd1205_procedure_dateOrdered_1">9/25/2012 12:00 AM</td>
+                  <td ID="ref_a51f135bbacb485695c1371368dd1205_procedure_name_1">Influenza virus vaccine</td>
+                  <td ID="ref_a51f135bbacb485695c1371368dd1205_procedure_orderStatus_1">Reviewed</td>
+                  <td ID="ref_a51f135bbacb485695c1371368dd1205_procedure_resultStatus_1">
+                  </td>
+                </tr>
+                <tr>
+                  <td ID="ref_a51f135bbacb485695c1371368dd1205_procedure_dateOrdered_2">1/24/2013 12:00 AM</td>
+                  <td ID="ref_a51f135bbacb485695c1371368dd1205_procedure_name_2">Chest X-Ray, PA and Lateral Views</td>
+                  <td ID="ref_a51f135bbacb485695c1371368dd1205_procedure_orderStatus_2">Ordered</td>
+                  <td ID="ref_a51f135bbacb485695c1371368dd1205_procedure_resultStatus_2">
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.13" />
+              <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.53" extension="61235" />
+              <code code="90656" displayName="INFLUENZA VIRUS VACC SPLIT PRSRV FREE 3 YRS/&gt; IM" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT">
+                <originalText>
+                  <reference value="#ref_a51f135bbacb485695c1371368dd1205_procedure_name_1" />
+                </originalText>
+              </code>
+              <text>Influenza virus vaccine<reference value="#ref_a51f135bbacb485695c1371368dd1205_procedure_name_1" /></text>
+              <statusCode code="completed" />
+              <effectiveTime value="20120925000000" />
+              <value xsi:type="CD" nullFlavor="OTH" />
+            </observation>
+          </entry>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.13" />
+              <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.53" extension="61404" />
+              <code code="71020" displayName="RADIOLOGIC EXAM CHEST 2 VIEWS FRONTAL&amp;LATERAL" codeSystem="2.16.840.1.113883.6.12" codeSystemName="CPT">
+                <originalText>
+                  <reference value="#ref_a51f135bbacb485695c1371368dd1205_procedure_name_2" />
+                </originalText>
+              </code>
+              <text>Chest X-Ray, PA and Lateral Views<reference value="#ref_a51f135bbacb485695c1371368dd1205_procedure_name_2" /></text>
+              <statusCode code="completed" />
+              <effectiveTime value="20130124000000" />
+              <value xsi:type="CD" nullFlavor="OTH" />
+            </observation>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.2.3.1" />
+          <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.54" extension="7ac1a73cd64f4b01" />
+          <code code="30954-2" displayName="Relevant diagnostic tests and/or laboratory data" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Results Summary</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <table border="1">
+              <thead>
+                <tr>
+                  <th>Data and Description</th>
+                  <th>Results</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td ID="ref_3edaf45c1b02413db2930f77c2446bea_results_testName_1">1/24/2013 12:35 PM</td>
+                  <td>
+                    <list>
+                      <item ID="ref_3edaf45c1b02413db2930f77c2446bea_results_result_1_1">Hgb Bld-mCnc 13.50 g/dL</item>
+                      <item ID="ref_3edaf45c1b02413db2930f77c2446bea_results_result_1_2">Hct Fr Bld Auto 42.0 %</item>
+                      <item ID="ref_3edaf45c1b02413db2930f77c2446bea_results_result_1_3">WBC # Bld Auto 6.0 x10E3/uL</item>
+                      <item ID="ref_3edaf45c1b02413db2930f77c2446bea_results_result_1_4">Platelet # Bld Auto 265.0 x10E3/uL</item>
+                    </list>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry>
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1" />
+              <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.54" extension="2899" />
+              <code nullFlavor="NA" />
+              <statusCode code="completed" />
+              <effectiveTime value="20130124123521" />
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                  <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.54" extension="2899" />
+                  <code code="718-7" displayName="Hgb Bld-mCnc" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <text>
+                    <reference value="#ref_3edaf45c1b02413db2930f77c2446bea_results_result_1_1" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20130124123521" />
+                  <value xsi:type="PQ" value="13.50" unit="g/dL" />
+                  <interpretationCode nullFlavor="NA" />
+                  <referenceRange>
+                    <observationRange>
+                      <text>13.5 - 18</text>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry>
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1" />
+              <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.54" extension="2900" />
+              <code nullFlavor="NA" />
+              <statusCode code="completed" />
+              <effectiveTime value="20130124123521" />
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                  <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.54" extension="2900" />
+                  <code code="4544-3" displayName="Hct Fr Bld Auto" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <text>
+                    <reference value="#ref_3edaf45c1b02413db2930f77c2446bea_results_result_1_2" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20130124123521" />
+                  <value xsi:type="PQ" value="42.0" unit="%" />
+                  <interpretationCode nullFlavor="NA" />
+                  <referenceRange>
+                    <observationRange>
+                      <text>41 - 53</text>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry>
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1" />
+              <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.54" extension="2901" />
+              <code nullFlavor="NA" />
+              <statusCode code="completed" />
+              <effectiveTime value="20130124123521" />
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                  <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.54" extension="2901" />
+                  <code code="6690-2" displayName="WBC # Bld Auto" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <text>
+                    <reference value="#ref_3edaf45c1b02413db2930f77c2446bea_results_result_1_3" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20130124123521" />
+                  <value xsi:type="PQ" value="6.0" unit="x10E3/uL" />
+                  <interpretationCode nullFlavor="NA" />
+                  <referenceRange>
+                    <observationRange>
+                      <text>4.3 - 10.8</text>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+          <entry>
+            <organizer classCode="BATTERY" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.1" />
+              <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.54" extension="2902" />
+              <code nullFlavor="NA" />
+              <statusCode code="completed" />
+              <effectiveTime value="20130124123521" />
+              <component>
+                <observation classCode="OBS" moodCode="EVN">
+                  <templateId root="2.16.840.1.113883.10.20.22.4.2" />
+                  <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.54" extension="2902" />
+                  <code code="777-3" displayName="Platelet # Bld Auto" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+                  <text>
+                    <reference value="#ref_3edaf45c1b02413db2930f77c2446bea_results_result_1_4" />
+                  </text>
+                  <statusCode code="completed" />
+                  <effectiveTime value="20130124123521" />
+                  <value xsi:type="PQ" value="265.0" unit="x10E3/uL" />
+                  <interpretationCode nullFlavor="NA" />
+                  <referenceRange>
+                    <observationRange>
+                      <text>150 - 400</text>
+                    </observationRange>
+                  </referenceRange>
+                </observation>
+              </component>
+            </organizer>
+          </entry>
+        </section>
+      </component>
+      <component>
+        <section classCode="DOCSECT" moodCode="EVN">
+          <templateId root="2.16.840.1.113883.10.20.22.2.14" />
+          <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.68" extension="53ad7cffbb1e4532" />
+          <code code="47420-5" displayName="Functional status assessment" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" />
+          <title>Functional Status Assessment</title>
+          <text mediaType="text/x-hl7-text+xml">
+            <table border="1">
+              <thead>
+                <tr>
+                  <th>Functional Condition</th>
+                  <th>Type</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td ID="ref_8abb7a98e4d7472d967218fbda67ca1d_functionalStatus__funCondition_1">No Impairment</td>
+                  <td ID="ref_8abb7a98e4d7472d967218fbda67ca1d_functionalStatus__funType_1">Cognitive</td>
+                </tr>
+              </tbody>
+            </table>
+          </text>
+          <entry>
+            <observation classCode="OBS" moodCode="EVN">
+              <templateId root="2.16.840.1.113883.10.20.22.4.4" />
+              <templateId root="2.16.840.1.113883.10.20.22.4.74" />
+              <id root="2.16.840.1.113883.3.441.1.50.300011.51.26562.68" extension="1324" />
+              <code nullFlavor="NA" />
+              <text>No Impairment<reference value="#ref_8abb7a98e4d7472d967218fbda67ca1d_functionalStatus__funCondition_1" /></text>
+              <statusCode code="completed" />
+              <effectiveTime>
+                <low nullFlavor="UNK" />
+              </effectiveTime>
+              <value xsi:type="CD" nullFlavor="OTH" />
+            </observation>
+          </entry>
+        </section>
+      </component>
+    </structuredBody>
+  </component>
+</ClinicalDocument>
