@@ -21,7 +21,7 @@ CDA Header
 	<id root="db734647-fc99-424c-a864-7e3cda82e703"/>
 	<code code="34133-9" codeSystem="2.16.840.1.113883.6.1" displayName="Summarization of episode note"/>
 	<title>Community Health and Hospitals: Health Summary</title>
-	<effectiveTime value="20130912033258"/>
+	<effectiveTime value="20131119014702"/>
 	<confidentialityCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality Code"/>
 	<languageCode code="en-US"/>
 	<setId extension="sTT988" root="2.16.840.1.113883.19.5.99999.19"/>
@@ -45,19 +45,19 @@ CDA Header
 			<!-- MC is "mobile contact" from HL7 AddressUse 2.16.840.1.113883.5.1119 -->
 			<patient>
 				<name use="L">
-					<given qualifier="BR">Jamie</given>
-					<family qualifier="AD">Nguyen</family>
+					<given qualifier="BR">Kristina</given>
+					<family qualifier="AD">Graham</family>
 				</name>
 				<administrativeGenderCode code="F" displayName="Female"
 					codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender"/>
-				<birthTime value="19960331010000"/>
+				<birthTime value="20031102010000"/>
 					<maritalStatusCode code="S" displayName="Never Married" codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatus"/>
-				<religiousAffiliationCode code="1005" displayName="Anglican"
+				<religiousAffiliationCode code="1077" displayName="Protestant"
 					codeSystem="2.16.840.1.113883.5.1076" codeSystemName="ReligiousAffiliation"/>
 				<!-- CDC Race and Ethnicity code set contains the minimum race and ethnicity categories defined by OMB Standards for Race and Ethnicity -->
-				<raceCode code="2131-1" displayName="Other Race" codeSystem="2.16.840.1.113883.6.238"
+				<raceCode code="2106-3" displayName="White" codeSystem="2.16.840.1.113883.6.238"
 					codeSystemName="Race &amp; Ethnicity - CDC"/>
-				<ethnicGroupCode code="2135-2" displayName="Hispanic or Latino"
+				<ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino"
 					codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>				
 				<guardian>
 					<code code="HPOWATT" displayName="healthcare power of attorney" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role code"/>
@@ -113,7 +113,7 @@ CDA Header
 		</patientRole>
 	</recordTarget>
 	<author>
-		<time value="20130912033258"/>
+		<time value="20131119014702"/>
 		<assignedAuthor>
 			<id extension="99999999" root="2.16.840.1.113883.4.6"/>
 			<code code="200000000X" codeSystem="2.16.840.1.113883.6.101"
@@ -242,7 +242,7 @@ CDA Header
 		</assignedEntity>
 	</legalAuthenticator>
 	<authenticator>
-		<time value="20130912033258"/>
+		<time value="20131119014702"/>
 		<signatureCode code="S"/>
 		<assignedEntity>
 			<id extension="999999999" root="2.16.840.1.113883.4.6"/>
@@ -285,12 +285,12 @@ CDA Header
 	<documentationOf>
 		<serviceEvent classCode="PCPR">
 			<effectiveTime>
-				<low value="19960331010000"/>
-				<high value="20101102100000"/>
+				<low value="20100510100000"/>
+				<high value="20101001100000"/>
 			</effectiveTime>
 			<performer typeCode="PRF">
-				<functionCode code="PP" displayName="Primary Performer"
-					codeSystem="2.16.840.1.113883.12.443" codeSystemName="Provider Role">
+				<functionCode code="PCP" displayName="Primary Care Physician"
+					codeSystem="2.16.840.1.113883.5.88" codeSystemName="participationFunction">
 					<originalText>Primary Care Provider</originalText>
 				</functionCode>
 				<assignedEntity>
@@ -366,7 +366,7 @@ Allergies, Adverse Reactions, Alerts
 							<td>UNII</td>
 							<td>291P45F896</td>
 							<td><content ID="Allergy1"/>Eggs</td>
-							<td>05-05-2010 10:00:00</td>
+							<td>05-10-2010 10:00:00</td>
 							<td>Active</td>
 						</tr>
 							<tr>
@@ -378,13 +378,29 @@ Allergies, Adverse Reactions, Alerts
 								<td/>
 							</tr>
 						<tr>
-							<td>Penicillin V</td>
-							<td>NDF-RT</td>
-							<td>N0000011298</td>
-							<td><content ID="Allergy2"/>Penicillin V</td>
-							<td>05-05-2010 10:00:00</td>
+							<td>Fosfomycin</td>
+							<td>RxNorm</td>
+							<td>808917</td>
+							<td><content ID="Allergy2"/>Fosfomycin 33.3 MG/ML Oral Suspension</td>
+							<td>05-10-2010 10:00:00</td>
 							<td>Active</td>
 						</tr>
+						<tr>
+							<td>Tetracyclines</td>
+							<td>RxNorm</td>
+							<td>406524</td>
+							<td><content ID="Allergy3"/>Doxycycline 75 MG Enteric Coated Tablet</td>
+							<td>05-10-2010 10:00:00</td>
+							<td>Active</td>
+						</tr>
+							<tr>
+								<td/>
+								<td>NDF-RT</td>
+								<td>N0000006275</td>
+								<td>Tetracycline</td>
+								<td/>
+								<td/>
+							</tr>
 				</tbody>
 			</table>					</text>
 						<entry typeCode="DRIV">
@@ -396,7 +412,7 @@ Allergies, Adverse Reactions, Alerts
 									displayName="Allergies, adverse reactions, alerts"/>
 								<statusCode code="active"/>
 								<effectiveTime>
-									<low value="20100505100000"/>
+									<low value="20100510100000"/>
 								</effectiveTime>
 								<entryRelationship typeCode="SUBJ" inversionInd="true">
 									<!--Allergy - Intolerance Observation -->
@@ -482,7 +498,7 @@ encoded in RxNorm, RxNorm, NDF-RT and UNII respectively.
 									displayName="Allergies, adverse reactions, alerts"/>
 								<statusCode code="active"/>
 								<effectiveTime>
-									<low value="20100505100000"/>
+									<low value="20100510100000"/>
 								</effectiveTime>
 								<entryRelationship typeCode="SUBJ" inversionInd="true">
 									<!--Allergy - Intolerance Observation -->
@@ -508,7 +524,7 @@ Depending on allergen, appropriate value must be selected from Table 117: Allerg
 									    	<value xsi:type="CD" code="416098002" displayName="Drug allergy (disorder)"
 									    		codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
 								    		<originalText>
-								    			Penicillin V + Penicillin V
+								    			Fosfomycin + Fosfomycin 33.3 MG/ML Oral Suspension
 								    			<reference value="#Allergy1"/>
 								    		</originalText>
 								    	</value>
@@ -520,12 +536,12 @@ This section displays the ACTUAL name of drug/ingredient/food to which person is
 Please note that FOUR (4) different values sets for documenting Allergies: Brand Names, Clinical Drug Names, Medication Drug Class, and Ingredient name,
 encoded in RxNorm, RxNorm, NDF-RT and UNII respectively.
 -->
-			                                		<code code="N0000011298"
-			                                      		displayName="Penicillin V"
-				                                      	codeSystem="2.16.840.1.113883.3.26.1.5"
-				                                        codeSystemName="NDF-RT">
+			                                		<code code="808917"
+			                                      		displayName="Fosfomycin 33.3 MG/ML Oral Suspension"
+				                                      	codeSystem="2.16.840.1.113883.6.88"
+				                                        codeSystemName="RxNorm">
 								    					<originalText>
-								    						Penicillin V + Penicillin V
+								    						Fosfomycin + Fosfomycin 33.3 MG/ML Oral Suspension
 								    						<reference value="#Allergy2"/>
 								    					</originalText>
 <!-- <translation> XML tag, if it exist should be placed HERE. In EMERGE db,
@@ -548,6 +564,92 @@ encoded in RxNorm, RxNorm, NDF-RT and UNII respectively.
 								    				codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
 								    			<text>
 								    				<reference value="#severity2"/>
+								    			</text>
+								    			<statusCode code="completed"/>
+								    			<value xsi:type="CD" nullFlavor="NI" />
+								    		</observation>
+								    	</entryRelationship>
+							        </observation>
+							    </entryRelationship>
+							</act>
+						</entry>
+						<entry typeCode="DRIV">
+							<!-- Allergy Problem Act template -->
+							<act classCode="ACT" moodCode="EVN">
+								<templateId root="2.16.840.1.113883.10.20.22.4.30"/>
+								<id root="36e3e930-7b14-11db-9fe1-0800200c9a66"/>
+								<code xsi:type="CE" code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
+									displayName="Allergies, adverse reactions, alerts"/>
+								<statusCode code="active"/>
+								<effectiveTime>
+									<low value="20100510100000"/>
+								</effectiveTime>
+								<entryRelationship typeCode="SUBJ" inversionInd="true">
+									<!--Allergy - Intolerance Observation -->
+								    <observation classCode="OBS" moodCode="EVN">
+								        <templateId root="2.16.840.1.113883.10.20.22.4.7"/>
+                           				<id root="4adc1020-7b14-11db-9fe1-0800200c9a66"/>
+									    <code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+									    <statusCode code="completed"/>
+									    <effectiveTime>
+									    <low nullFlavor="UNK"/>
+									    </effectiveTime>
+<!-- The following XML tag, <value>, states whether patient is allergic to DRUG, FOOD or SUBSTANCE.
+In EMERGE db, patients have records with allergies to:
+(a) DRUG (in EMERGE db, encoded in RxNorm or NDF-RT)
+(b) FOOD (in EMERGE db 'Eggs', encoded in UNII) and
+CCDA impementation guide distinguishes between "allergy" amd "propensity to allergy". In EMERGE, all patients have "allergy".
+Depending on allergen, appropriate value must be selected from Table 117: Allergy/Adverse Event Type Value Set (See CCDA Implementation Guide, pg 311)
+    (1) If EMERGE patient has allergy to DRUG (RxNorm or NDF-RT), then the code is:
+        <value code="416098002" displayName="Drug allergy (disorder)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT"/>
+(2) If EMERGE patient has allergy to FOOD (e.g. Eggs, UNII), then the code is:
+    <value code="414285001" displayName="Food allergy (disorder)" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT"/>
+-->
+									    	<value xsi:type="CD" code="416098002" displayName="Drug allergy (disorder)"
+									    		codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
+								    		<originalText>
+								    			Tetracyclines + Doxycycline 75 MG Enteric Coated Tablet
+								    			<reference value="#Allergy1"/>
+								    		</originalText>
+								    	</value>
+								    	<participant typeCode="CSM">
+								    		<participantRole classCode="MANU">
+								    			<playingEntity classCode="MMAT">
+<!-- 
+This section displays the ACTUAL name of drug/ingredient/food to which person is allergic to.
+Please note that FOUR (4) different values sets for documenting Allergies: Brand Names, Clinical Drug Names, Medication Drug Class, and Ingredient name,
+encoded in RxNorm, RxNorm, NDF-RT and UNII respectively.
+-->
+			                                		<code code="406524"
+			                                      		displayName="Doxycycline 75 MG Enteric Coated Tablet"
+				                                      	codeSystem="2.16.840.1.113883.6.88"
+				                                        codeSystemName="RxNorm">
+								    					<originalText>
+								    						Tetracyclines + Doxycycline 75 MG Enteric Coated Tablet
+								    						<reference value="#Allergy3"/>
+								    					</originalText>
+<!-- <translation> XML tag, if it exist should be placed HERE. In EMERGE db,
+	 Only alergy to "eggs" will contain <translation> xml code with ICD-9 codes system:
+		<translation code="V15.03" codeSystem="2.16.840.1.113883.6.2"
+			displayName="Allergy to Eggs" codeSystemName="ICD-9-CM"/>
+	NOTE: <translation> code can also be used for other codes, such as LOCAL (e..g local hospital) codes.
+-->	
+															<translation code="N0000006275" codeSystem="2.16.840.1.113883.3.26.1.5"
+																displayName="Tetracycline" codeSystemName="NDF-RT"/>
+													</code>
+								    			</playingEntity>
+								    		</participantRole>
+								    	</participant>
+<!-- In reality, severity should be documented for allergy.
+	 In EMERGE db, severity information for allergy is not documented for any patient. -->
+								    	<entryRelationship typeCode="SUBJ" inversionInd="true">
+								    		<!-- ** Severity observation template ** -->
+								    		<observation classCode="OBS" moodCode="EVN">
+								    			<templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+								    			<code code="SEV" displayName="Severity Observation"
+								    				codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"/>
+								    			<text>
+								    				<reference value="#severity3"/>
 								    			</text>
 								    			<statusCode code="completed"/>
 								    			<value xsi:type="CD" nullFlavor="NI" />
@@ -593,38 +695,30 @@ Encounters section
 							<td>CPT</td>
 							<td>99281</td>
 							<td><content ID="Encounter1"/>Emergency dept visit</td>
-							<td>05-05-2010 10:00:00</td>
+							<td>05-10-2010 10:00:00</td>
 							<td>Performed</td>
 						</tr>
 						<tr>
-							<td>Encounter Outpatient BH</td>
+							<td>Encounter Office &amp; Outpatient Consult</td>
 							<td>CPT</td>
 							<td>99241</td>
 							<td><content ID="Encounter2"/>Office consultation</td>
-							<td>05-06-2010 10:00:00</td>
+							<td>06-04-2010 10:00:00</td>
 							<td>Performed</td>
 						</tr>
 						<tr>
-							<td>Prenatal Visit</td>
-							<td>SNOMED-CT</td>
-							<td>424619006</td>
-							<td><content ID="Encounter3"/>Prenatal visit</td>
-							<td>06-10-2010 10:00:00</td>
+							<td>Encounter Outpatient</td>
+							<td>CPT</td>
+							<td>99213</td>
+							<td><content ID="Encounter3"/>Office/outpatient visit, est</td>
+							<td>07-03-2010 10:00:00</td>
 							<td>Performed</td>
 						</tr>
 							<tr>
 								<td/>
-								<td>ICD-10-CM</td>
-								<td>Z34.9</td>
-								<td>Encounter for supervision of normal pregnancy, unspecified</td>
-								<td/>
-								<td/>
-							</tr>
-							<tr>
-								<td/>
 								<td>ICD-9-CM</td>
-								<td>V22.2</td>
-								<td>Pregnant state, incidental</td>
+								<td>V70.0</td>
+								<td>Routine general medical examination at a health care facility</td>
 								<td/>
 								<td/>
 							</tr>
@@ -633,121 +727,25 @@ Encounters section
 							<td>CPT</td>
 							<td>99241</td>
 							<td><content ID="Encounter4"/>Office consultation</td>
-							<td>07-08-2010 10:00:00</td>
+							<td>07-17-2010 10:00:00</td>
 							<td>Performed</td>
 						</tr>
 						<tr>
-							<td>Encounter Office &amp; Outpatient Consult</td>
+							<td>Encounter Outpatient</td>
 							<td>CPT</td>
-							<td>99241</td>
-							<td><content ID="Encounter5"/>Office consultation</td>
-							<td>08-02-2010 10:00:00</td>
+							<td>99213</td>
+							<td><content ID="Encounter5"/>Office/outpatient visit, est</td>
+							<td>10-01-2010 10:00:00</td>
 							<td>Performed</td>
 						</tr>
-						<tr>
-							<td>Prenatal Visit</td>
-							<td>SNOMED-CT</td>
-							<td>424619006</td>
-							<td><content ID="Encounter6"/>Prenatal visit</td>
-							<td>08-10-2010 10:00:00</td>
-							<td>Performed</td>
-						</tr>
-							<tr>
-								<td/>
-								<td>ICD-10-CM</td>
-								<td>Z34.9</td>
-								<td>Encounter for supervision of normal pregnancy, unspecified</td>
-								<td/>
-								<td/>
-							</tr>
 							<tr>
 								<td/>
 								<td>ICD-9-CM</td>
-								<td>V22.2</td>
-								<td>Pregnant state, incidental</td>
+								<td>V70.0</td>
+								<td>Routine general medical examination at a health care facility</td>
 								<td/>
 								<td/>
 							</tr>
-						<tr>
-							<td>Prenatal Visit</td>
-							<td>SNOMED-CT</td>
-							<td>424619006</td>
-							<td><content ID="Encounter7"/>Prenatal visit</td>
-							<td>09-10-2010 10:00:00</td>
-							<td>Performed</td>
-						</tr>
-							<tr>
-								<td/>
-								<td>ICD-10-CM</td>
-								<td>Z34.9</td>
-								<td>Encounter for supervision of normal pregnancy, unspecified</td>
-								<td/>
-								<td/>
-							</tr>
-							<tr>
-								<td/>
-								<td>ICD-9-CM</td>
-								<td>V22.2</td>
-								<td>Pregnant state, incidental</td>
-								<td/>
-								<td/>
-							</tr>
-						<tr>
-							<td>Prenatal Visit</td>
-							<td>SNOMED-CT</td>
-							<td>424619006</td>
-							<td><content ID="Encounter8"/>Prenatal visit</td>
-							<td>10-10-2010 10:00:00</td>
-							<td>Performed</td>
-						</tr>
-							<tr>
-								<td/>
-								<td>ICD-10-CM</td>
-								<td>Z34.9</td>
-								<td>Encounter for supervision of normal pregnancy, unspecified</td>
-								<td/>
-								<td/>
-							</tr>
-							<tr>
-								<td/>
-								<td>ICD-9-CM</td>
-								<td>V22.2</td>
-								<td>Pregnant state, incidental</td>
-								<td/>
-								<td/>
-							</tr>
-						<tr>
-							<td>Prenatal Visit</td>
-							<td>SNOMED-CT</td>
-							<td>424619006</td>
-							<td><content ID="Encounter9"/>Prenatal visit</td>
-							<td>10-25-2010 10:00:00</td>
-							<td>Performed</td>
-						</tr>
-							<tr>
-								<td/>
-								<td>ICD-10-CM</td>
-								<td>Z34.9</td>
-								<td>Encounter for supervision of normal pregnancy, unspecified</td>
-								<td/>
-								<td/>
-							</tr>
-							<tr>
-								<td/>
-								<td>ICD-9-CM</td>
-								<td>V22.2</td>
-								<td>Pregnant state, incidental</td>
-								<td/>
-								<td/>
-							</tr>
-						<tr>
-							<td>Encounter Acute Inpt</td>
-							<td>CPT</td>
-							<td>99251</td>
-							<td><content ID="Encounter10"/>Initial inpatient consult</td>
-							<td>11-02-2010 10:00:00</td>
-							<td>Performed</td>
-						</tr>
 				</tbody>
 			</table>					</text>
 						<entry typeCode="DRIV">
@@ -764,7 +762,7 @@ Encounters section
 									</originalText>
 								</code>
 								<statusCode code="completed"/>
-								<effectiveTime value="20100505100000"/>
+								<effectiveTime value="20100510100000"/>
 				                    <entryRelationship typeCode="RSON">
 				                        <observation classCode="OBS" moodCode="EVN">
 					                        <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
@@ -775,7 +773,7 @@ Encounters section
 	                            			</text>
 					                        <statusCode code="completed"/>
 					                        <effectiveTime>
-					                            <low value="20100505100000"/>
+					                            <low value="20100510100000"/>
 					                        </effectiveTime>
 					                        <value xsi:type="CD" code="195979001"
 					                        	displayName="Asthma"
@@ -798,16 +796,52 @@ Encounters section
 	                            			</text>
 					                        <statusCode code="completed"/>
 					                        <effectiveTime>
-					                            <low value="20100505100000"/>
+					                            <low value="20100510100000"/>
 					                        </effectiveTime>
-					                        <value xsi:type="CD" code="363746003"
-					                        	displayName="Pharyngitis"
+					                        <value xsi:type="CD" code="370202007"
+					                        	displayName="Asthma Daytime Symptoms Quantified"
 					                        	codeSystem="2.16.840.1.113883.6.96"
 					                        	codeSystemName="SNOMED-CT">
-													<translation code="J02" codeSystem="2.16.840.1.113883.6.90"
-														displayName="Acute pharyngitis" codeSystemName="ICD-10-CM"/>
-													<translation code="462" codeSystem="2.16.840.1.113883.6.2"
-														displayName="Acute pharyngitis" codeSystemName="ICD-9-CM"/>
+					                        </value>
+				                        </observation>
+				                    </entryRelationship>
+				                    <entryRelationship typeCode="RSON">
+				                        <observation classCode="OBS" moodCode="EVN">
+					                        <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+					                        <id root="db734647-fc99-424c-a864-7e3cda82e703" extension="45665"/>
+					                        <code code="404684003" displayName="Finding" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+											<text>
+	                            				<reference value="#Problem3"/> 
+	                            			</text>
+					                        <statusCode code="completed"/>
+					                        <effectiveTime>
+					                            <low value="20100510100000"/>
+					                        </effectiveTime>
+					                        <value xsi:type="CD" code="370205009"
+					                        	displayName="Asthma Nighttime Symptoms Quantified"
+					                        	codeSystem="2.16.840.1.113883.6.96"
+					                        	codeSystemName="SNOMED-CT">
+					                        </value>
+				                        </observation>
+				                    </entryRelationship>
+				                    <entryRelationship typeCode="RSON">
+				                        <observation classCode="OBS" moodCode="EVN">
+					                        <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
+					                        <id root="db734647-fc99-424c-a864-7e3cda82e703" extension="45665"/>
+					                        <code code="404684003" displayName="Finding" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
+											<text>
+	                            				<reference value="#Problem4"/> 
+	                            			</text>
+					                        <statusCode code="completed"/>
+					                        <effectiveTime>
+					                            <low value="20100510100000"/>
+					                        </effectiveTime>
+					                        <value xsi:type="CD" code="427295004"
+					                        	displayName="Asthma Persistent"
+					                        	codeSystem="2.16.840.1.113883.6.96"
+					                        	codeSystemName="SNOMED-CT">
+													<translation code="J45.42" codeSystem="2.16.840.1.113883.6.90"
+														displayName="Moderate persistent asthma with status asthmaticus" codeSystemName="ICD-10-CM"/>
 					                        </value>
 				                        </observation>
 				                    </entryRelationship>
@@ -822,12 +856,12 @@ Encounters section
 									displayName="Office consultation"
 									codeSystemName="CPT">
 									<originalText>
-										Encounter Outpatient BH + Encounter Outpatient BH
+										Encounter Office &amp; Outpatient Consult + Encounter Office &amp; Outpatient Consult
 										<reference value="#Encounter2"/>
 									</originalText>
 								</code>
 								<statusCode code="completed"/>
-								<effectiveTime value="20100506100000"/>
+								<effectiveTime value="20100604100000"/>
 							</encounter>
 						</entry>
 						<entry typeCode="DRIV">
@@ -835,20 +869,18 @@ Encounters section
 								<templateId root="2.16.840.1.113883.10.20.22.4.49"/>
 								<!-- Encounter activity template -->
 								<id root="2a620155-9d11-439e-92b3-5d9815ff4de8"/>
-								<code code="424619006" codeSystem="2.16.840.1.113883.6.96"
-									displayName="Prenatal visit"
-									codeSystemName="SNOMED-CT">
+								<code code="99213" codeSystem="2.16.840.1.113883.6.12"
+									displayName="Office/outpatient visit, est"
+									codeSystemName="CPT">
 									<originalText>
-										Prenatal Visit + Prenatal Visit
+										Encounter Outpatient + Encounter Outpatient
 										<reference value="#Encounter3"/>
 									</originalText>
-										<translation code="Z34.9" codeSystem="2.16.840.1.113883.6.90"
-											displayName="Encounter for supervision of normal pregnancy, unspecified" codeSystemName="ICD-10-CM"/>
-										<translation code="V22.2" codeSystem="2.16.840.1.113883.6.2"
-											displayName="Pregnant state, incidental" codeSystemName="ICD-9-CM"/>
+										<translation code="V70.0" codeSystem="2.16.840.1.113883.6.2"
+											displayName="Routine general medical examination at a health care facility" codeSystemName="ICD-9-CM"/>
 								</code>
 								<statusCode code="completed"/>
-								<effectiveTime value="20100610100000"/>
+								<effectiveTime value="20100703100000"/>
 							</encounter>
 						</entry>
 						<entry typeCode="DRIV">
@@ -865,7 +897,7 @@ Encounters section
 									</originalText>
 								</code>
 								<statusCode code="completed"/>
-								<effectiveTime value="20100708100000"/>
+								<effectiveTime value="20100717100000"/>
 				                    <entryRelationship typeCode="RSON">
 				                        <observation classCode="OBS" moodCode="EVN">
 					                        <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
@@ -876,10 +908,10 @@ Encounters section
 	                            			</text>
 					                        <statusCode code="completed"/>
 					                        <effectiveTime>
-					                            <low value="20100708100000"/>
+					                            <low value="20100717100000"/>
 					                        </effectiveTime>
-					                        <value xsi:type="CD" code="373899003"
-					                        	displayName="Asthma Daytime Symptoms"
+					                        <value xsi:type="CD" code="370202007"
+					                        	displayName="Asthma Daytime Symptoms Quantified"
 					                        	codeSystem="2.16.840.1.113883.6.96"
 					                        	codeSystemName="SNOMED-CT">
 					                        </value>
@@ -895,10 +927,10 @@ Encounters section
 	                            			</text>
 					                        <statusCode code="completed"/>
 					                        <effectiveTime>
-					                            <low value="20100708100000"/>
+					                            <low value="20100717100000"/>
 					                        </effectiveTime>
-					                        <value xsi:type="CD" code="395022009"
-					                        	displayName="Asthma Nighttime Symptoms"
+					                        <value xsi:type="CD" code="370205009"
+					                        	displayName="Asthma Nighttime Symptoms Quantified"
 					                        	codeSystem="2.16.840.1.113883.6.96"
 					                        	codeSystemName="SNOMED-CT">
 					                        </value>
@@ -911,37 +943,18 @@ Encounters section
 								<templateId root="2.16.840.1.113883.10.20.22.4.49"/>
 								<!-- Encounter activity template -->
 								<id root="2a620155-9d11-439e-92b3-5d9815ff4de8"/>
-								<code code="99241" codeSystem="2.16.840.1.113883.6.12"
-									displayName="Office consultation"
+								<code code="99213" codeSystem="2.16.840.1.113883.6.12"
+									displayName="Office/outpatient visit, est"
 									codeSystemName="CPT">
 									<originalText>
-										Encounter Office &amp; Outpatient Consult + Encounter Office &amp; Outpatient Consult
+										Encounter Outpatient + Encounter Outpatient
 										<reference value="#Encounter5"/>
 									</originalText>
+										<translation code="V70.0" codeSystem="2.16.840.1.113883.6.2"
+											displayName="Routine general medical examination at a health care facility" codeSystemName="ICD-9-CM"/>
 								</code>
 								<statusCode code="completed"/>
-								<effectiveTime value="20100802100000"/>
-							</encounter>
-						</entry>
-						<entry typeCode="DRIV">
-							<encounter classCode="ENC" moodCode="EVN">
-								<templateId root="2.16.840.1.113883.10.20.22.4.49"/>
-								<!-- Encounter activity template -->
-								<id root="2a620155-9d11-439e-92b3-5d9815ff4de8"/>
-								<code code="424619006" codeSystem="2.16.840.1.113883.6.96"
-									displayName="Prenatal visit"
-									codeSystemName="SNOMED-CT">
-									<originalText>
-										Prenatal Visit + Prenatal Visit
-										<reference value="#Encounter6"/>
-									</originalText>
-										<translation code="Z34.9" codeSystem="2.16.840.1.113883.6.90"
-											displayName="Encounter for supervision of normal pregnancy, unspecified" codeSystemName="ICD-10-CM"/>
-										<translation code="V22.2" codeSystem="2.16.840.1.113883.6.2"
-											displayName="Pregnant state, incidental" codeSystemName="ICD-9-CM"/>
-								</code>
-								<statusCode code="completed"/>
-								<effectiveTime value="20100810100000"/>
+								<effectiveTime value="20101001100000"/>
 				                    <entryRelationship typeCode="RSON">
 				                        <observation classCode="OBS" moodCode="EVN">
 					                        <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
@@ -952,119 +965,16 @@ Encounters section
 	                            			</text>
 					                        <statusCode code="completed"/>
 					                        <effectiveTime>
-					                            <low value="20100810100000"/>
+					                            <low value="20101001100000"/>
 					                        </effectiveTime>
-					                        <value xsi:type="CD" code="165746003"
-					                        	displayName="D(Rh) Negative"
+					                        <value xsi:type="CD" code="363746003"
+					                        	displayName="Pharyngitis"
 					                        	codeSystem="2.16.840.1.113883.6.96"
 					                        	codeSystemName="SNOMED-CT">
-													<translation code="O36.0120" codeSystem="2.16.840.1.113883.6.90"
-														displayName="Maternal care for anti-D [Rh] antibodies, second trimester, not applicable or unspecified" codeSystemName="ICD-10-CM"/>
-													<translation code="656.10" codeSystem="2.16.840.1.113883.6.2"
-														displayName="Rhesus isoimmunization, unspecified as to episode of care or not applicable" codeSystemName="ICD-9-CM"/>
-					                        </value>
-				                        </observation>
-				                    </entryRelationship>
-							</encounter>
-						</entry>
-						<entry typeCode="DRIV">
-							<encounter classCode="ENC" moodCode="EVN">
-								<templateId root="2.16.840.1.113883.10.20.22.4.49"/>
-								<!-- Encounter activity template -->
-								<id root="2a620155-9d11-439e-92b3-5d9815ff4de8"/>
-								<code code="424619006" codeSystem="2.16.840.1.113883.6.96"
-									displayName="Prenatal visit"
-									codeSystemName="SNOMED-CT">
-									<originalText>
-										Prenatal Visit + Prenatal Visit
-										<reference value="#Encounter7"/>
-									</originalText>
-										<translation code="Z34.9" codeSystem="2.16.840.1.113883.6.90"
-											displayName="Encounter for supervision of normal pregnancy, unspecified" codeSystemName="ICD-10-CM"/>
-										<translation code="V22.2" codeSystem="2.16.840.1.113883.6.2"
-											displayName="Pregnant state, incidental" codeSystemName="ICD-9-CM"/>
-								</code>
-								<statusCode code="completed"/>
-								<effectiveTime value="20100910100000"/>
-							</encounter>
-						</entry>
-						<entry typeCode="DRIV">
-							<encounter classCode="ENC" moodCode="EVN">
-								<templateId root="2.16.840.1.113883.10.20.22.4.49"/>
-								<!-- Encounter activity template -->
-								<id root="2a620155-9d11-439e-92b3-5d9815ff4de8"/>
-								<code code="424619006" codeSystem="2.16.840.1.113883.6.96"
-									displayName="Prenatal visit"
-									codeSystemName="SNOMED-CT">
-									<originalText>
-										Prenatal Visit + Prenatal Visit
-										<reference value="#Encounter8"/>
-									</originalText>
-										<translation code="Z34.9" codeSystem="2.16.840.1.113883.6.90"
-											displayName="Encounter for supervision of normal pregnancy, unspecified" codeSystemName="ICD-10-CM"/>
-										<translation code="V22.2" codeSystem="2.16.840.1.113883.6.2"
-											displayName="Pregnant state, incidental" codeSystemName="ICD-9-CM"/>
-								</code>
-								<statusCode code="completed"/>
-								<effectiveTime value="20101010100000"/>
-							</encounter>
-						</entry>
-						<entry typeCode="DRIV">
-							<encounter classCode="ENC" moodCode="EVN">
-								<templateId root="2.16.840.1.113883.10.20.22.4.49"/>
-								<!-- Encounter activity template -->
-								<id root="2a620155-9d11-439e-92b3-5d9815ff4de8"/>
-								<code code="424619006" codeSystem="2.16.840.1.113883.6.96"
-									displayName="Prenatal visit"
-									codeSystemName="SNOMED-CT">
-									<originalText>
-										Prenatal Visit + Prenatal Visit
-										<reference value="#Encounter9"/>
-									</originalText>
-										<translation code="Z34.9" codeSystem="2.16.840.1.113883.6.90"
-											displayName="Encounter for supervision of normal pregnancy, unspecified" codeSystemName="ICD-10-CM"/>
-										<translation code="V22.2" codeSystem="2.16.840.1.113883.6.2"
-											displayName="Pregnant state, incidental" codeSystemName="ICD-9-CM"/>
-								</code>
-								<statusCode code="completed"/>
-								<effectiveTime value="20101025100000"/>
-							</encounter>
-						</entry>
-						<entry typeCode="DRIV">
-							<encounter classCode="ENC" moodCode="EVN">
-								<templateId root="2.16.840.1.113883.10.20.22.4.49"/>
-								<!-- Encounter activity template -->
-								<id root="2a620155-9d11-439e-92b3-5d9815ff4de8"/>
-								<code code="99251" codeSystem="2.16.840.1.113883.6.12"
-									displayName="Initial inpatient consult"
-									codeSystemName="CPT">
-									<originalText>
-										Encounter Acute Inpt + Encounter Acute Inpt
-										<reference value="#Encounter10"/>
-									</originalText>
-								</code>
-								<statusCode code="completed"/>
-								<effectiveTime value="20101102100000"/>
-				                    <entryRelationship typeCode="RSON">
-				                        <observation classCode="OBS" moodCode="EVN">
-					                        <templateId root="2.16.840.1.113883.10.20.22.4.19"/>
-					                        <id root="db734647-fc99-424c-a864-7e3cda82e703" extension="45665"/>
-					                        <code code="404684003" displayName="Finding" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT"/>
-											<text>
-	                            				<reference value="#Problem1"/> 
-	                            			</text>
-					                        <statusCode code="completed"/>
-					                        <effectiveTime>
-					                            <low value="20101102100000"/>
-					                        </effectiveTime>
-					                        <value xsi:type="CD" code="199305006"
-					                        	displayName="Pregnancy-related diagnosis"
-					                        	codeSystem="2.16.840.1.113883.6.96"
-					                        	codeSystemName="SNOMED-CT">
-													<translation code="O30" codeSystem="2.16.840.1.113883.6.90"
-														displayName="Multiple gestation" codeSystemName="ICD-10-CM"/>
-													<translation code="651.90" codeSystem="2.16.840.1.113883.6.2"
-														displayName="Unspecified multiple gestation, unspecified as to episode of care or not applicable" codeSystemName="ICD-9-CM"/>
+													<translation code="J02" codeSystem="2.16.840.1.113883.6.90"
+														displayName="Acute pharyngitis" codeSystemName="ICD-10-CM"/>
+													<translation code="462" codeSystem="2.16.840.1.113883.6.2"
+														displayName="Acute pharyngitis" codeSystemName="ICD-9-CM"/>
 					                        </value>
 				                        </observation>
 				                    </entryRelationship>
@@ -1154,51 +1064,35 @@ Medications section
 				</thead>
 				<tbody>
 											<tr>
-							<td>3rd generation cephalosporins</td>
+							<td>Leukotriene inhibitors</td>
 							<td>RxNorm</td>
-							<td>309078</td>
-							<td><content ID="Medication1"/>cefpodoxime 200 MG Oral Tablet</td>
-							<td>05-05-2010 10:00:00</td>
+							<td>391880</td>
+							<td><content ID="Medication1"/>montelukast 4 MG Oral Tablet</td>
+							<td>05-10-2010 10:00:00</td>
 							<td>Active</td>
 						</tr>
 						<tr>
-							<td>Antiasthmatic steroids</td>
+							<td>Long acting inhaled beta 2 agonist</td>
 							<td>RxNorm</td>
-							<td>351136</td>
-							<td><content ID="Medication2"/>Albuterol 0.417 MG/ML Inhalant Solution</td>
-							<td>05-05-2010 10:00:00</td>
+							<td>318142</td>
+							<td><content ID="Medication2"/>salmeterol 0.05 MG/ACTUAT Inhalant Powder</td>
+							<td>05-10-2010 10:00:00</td>
 							<td>Active</td>
 						</tr>
-							<tr>
-								<td/>
-								<td>RxNorm</td>
-								<td>828930</td>
-								<td>50 ACTUAT flunisolide 0.25 MG/ACTUAT Metered Dose Inhaler</td>
-								<td/>
-								<td/>
-							</tr>
 						<tr>
 							<td>Short acting beta 2 agonist</td>
 							<td>RxNorm</td>
 							<td>630208</td>
 							<td><content ID="Medication3"/>Albuterol 0.83 MG/ML Inhalant Solution</td>
-							<td>05-05-2010 10:00:00</td>
+							<td>05-10-2010 10:00:00</td>
 							<td>Active</td>
 						</tr>
 						<tr>
-							<td>Anti-D Immune Globulin</td>
+							<td>Aminopenicillins</td>
 							<td>RxNorm</td>
-							<td>731378</td>
-							<td><content ID="Medication4"/>1 ML Rho(D) Immune Globulin 0.05 MG/ML Prefilled Syringe</td>
-							<td>08-30-2010 10:00:00</td>
-							<td>Active</td>
-						</tr>
-						<tr>
-							<td>Anti-D Immune Globulin</td>
-							<td>RxNorm</td>
-							<td>731378</td>
-							<td><content ID="Medication5"/>1 ML Rho(D) Immune Globulin 0.05 MG/ML Prefilled Syringe</td>
-							<td>09-20-2010 10:00:00</td>
+							<td>308192</td>
+							<td><content ID="Medication4"/>Amoxicillin 500 MG Oral Tablet</td>
+							<td>10-01-2010 10:00:00</td>
 							<td>Active</td>
 						</tr>
 				</tbody>
@@ -1228,7 +1122,7 @@ Medications section
 								<text/>
 								<statusCode code="completed"/>
 								<effectiveTime xsi:type="IVL_TS">
-									<low value="20100505100000"/>
+									<low value="20100510100000"/>
 									<high nullFlavor="UNK"/>
 								</effectiveTime>
 								<consumable>
@@ -1236,15 +1130,15 @@ Medications section
 										<!-- Medication Information -->
 										<templateId root="2.16.840.1.113883.10.20.22.4.23"/>
 										<manufacturedMaterial>
-											<code code="309078" codeSystem="2.16.840.1.113883.6.88"
-												displayName="cefpodoxime 200 MG Oral Tablet"
+											<code code="391880" codeSystem="2.16.840.1.113883.6.88"
+												displayName="montelukast 4 MG Oral Tablet"
 												codeSystemName="RxNorm">
 												<originalText>
-													3rd generation cephalosporins + cefpodoxime 200 MG Oral Tablet
+													Leukotriene inhibitors + montelukast 4 MG Oral Tablet
 													<reference value="#Medication1"/>
 												</originalText>
 											</code>
-											<name>3rd generation cephalosporins</name>
+											<name>Leukotriene inhibitors</name>
 										</manufacturedMaterial>
 									</manufacturedProduct>
 								</consumable>
@@ -1258,7 +1152,7 @@ Medications section
 								<text/>
 								<statusCode code="completed"/>
 								<effectiveTime xsi:type="IVL_TS">
-									<low value="20100505100000"/>
+									<low value="20100510100000"/>
 									<high nullFlavor="UNK"/>
 								</effectiveTime>
 								<consumable>
@@ -1266,15 +1160,15 @@ Medications section
 										<!-- Medication Information -->
 										<templateId root="2.16.840.1.113883.10.20.22.4.23"/>
 										<manufacturedMaterial>
-											<code code="351136" codeSystem="2.16.840.1.113883.6.88"
-												displayName="Albuterol 0.417 MG/ML Inhalant Solution"
+											<code code="318142" codeSystem="2.16.840.1.113883.6.88"
+												displayName="salmeterol 0.05 MG/ACTUAT Inhalant Powder"
 												codeSystemName="RxNorm">
 												<originalText>
-													Antiasthmatic steroids + Albuterol 0.417 MG/ML Inhalant Solution
+													Long acting inhaled beta 2 agonist + salmeterol 0.05 MG/ACTUAT Inhalant Powder
 													<reference value="#Medication2"/>
 												</originalText>
 											</code>
-											<name>Antiasthmatic steroids</name>
+											<name>Long acting inhaled beta 2 agonist</name>
 										</manufacturedMaterial>
 									</manufacturedProduct>
 								</consumable>
@@ -1288,7 +1182,7 @@ Medications section
 								<text/>
 								<statusCode code="completed"/>
 								<effectiveTime xsi:type="IVL_TS">
-									<low value="20100505100000"/>
+									<low value="20100510100000"/>
 									<high nullFlavor="UNK"/>
 								</effectiveTime>
 								<consumable>
@@ -1318,7 +1212,7 @@ Medications section
 								<text/>
 								<statusCode code="completed"/>
 								<effectiveTime xsi:type="IVL_TS">
-									<low value="20100830100000"/>
+									<low value="20101001100000"/>
 									<high nullFlavor="UNK"/>
 								</effectiveTime>
 								<consumable>
@@ -1326,45 +1220,15 @@ Medications section
 										<!-- Medication Information -->
 										<templateId root="2.16.840.1.113883.10.20.22.4.23"/>
 										<manufacturedMaterial>
-											<code code="731378" codeSystem="2.16.840.1.113883.6.88"
-												displayName="1 ML Rho(D) Immune Globulin 0.05 MG/ML Prefilled Syringe"
+											<code code="308192" codeSystem="2.16.840.1.113883.6.88"
+												displayName="Amoxicillin 500 MG Oral Tablet"
 												codeSystemName="RxNorm">
 												<originalText>
-													Anti-D Immune Globulin + 1 ML Rho(D) Immune Globulin 0.05 MG/ML Prefilled Syringe
+													Aminopenicillins + Amoxicillin 500 MG Oral Tablet
 													<reference value="#Medication4"/>
 												</originalText>
 											</code>
-											<name>Anti-D Immune Globulin</name>
-										</manufacturedMaterial>
-									</manufacturedProduct>
-								</consumable>
-							</substanceAdministration>
-						</entry>
-						<entry typeCode="DRIV">
-							<substanceAdministration classCode="SBADM" moodCode="EVN">
-								<!-- Medication activity template -->
-								<templateId root="2.16.840.1.113883.10.20.22.4.16"/>
-								<id root="cdbd33f0-6cde-11db-9fe1-0800200c9a66"/>
-								<text/>
-								<statusCode code="completed"/>
-								<effectiveTime xsi:type="IVL_TS">
-									<low value="20100920100000"/>
-									<high nullFlavor="UNK"/>
-								</effectiveTime>
-								<consumable>
-									<manufacturedProduct classCode="MANU">
-										<!-- Medication Information -->
-										<templateId root="2.16.840.1.113883.10.20.22.4.23"/>
-										<manufacturedMaterial>
-											<code code="731378" codeSystem="2.16.840.1.113883.6.88"
-												displayName="1 ML Rho(D) Immune Globulin 0.05 MG/ML Prefilled Syringe"
-												codeSystemName="RxNorm">
-												<originalText>
-													Anti-D Immune Globulin + 1 ML Rho(D) Immune Globulin 0.05 MG/ML Prefilled Syringe
-													<reference value="#Medication5"/>
-												</originalText>
-											</code>
-											<name>Anti-D Immune Globulin</name>
+											<name>Aminopenicillins</name>
 										</manufacturedMaterial>
 									</manufacturedProduct>
 								</consumable>
@@ -1401,19 +1265,11 @@ Problems section
 				</thead>
 				<tbody>
 											<tr>
-							<td>Estimated Date of Conception</td>
-							<td>SNOMED-CT</td>
-							<td>248986005</td>
-							<td><content ID="Problem1"/>Estimated date of conception</td>
-							<td>01-29-2010 10:00:00</td>
-							<td>Active</td>
-						</tr>
-						<tr>
 							<td>Asthma</td>
 							<td>SNOMED-CT</td>
 							<td>195979001</td>
-							<td><content ID="Problem2"/>Asthma unspecified</td>
-							<td>05-05-2010 10:00:00</td>
+							<td><content ID="Problem1"/>Asthma unspecified</td>
+							<td>05-10-2010 10:00:00</td>
 							<td>Active</td>
 						</tr>
 							<tr>
@@ -1433,11 +1289,59 @@ Problems section
 								<td/>
 							</tr>
 						<tr>
+							<td>Asthma Daytime Symptoms Quantified</td>
+							<td>SNOMED-CT</td>
+							<td>370202007</td>
+							<td><content ID="Problem2"/>Asthma causes daytime symptoms 1 to 2 times per month</td>
+							<td>05-10-2010 10:00:00</td>
+							<td>Active</td>
+						</tr>
+						<tr>
+							<td>Asthma Nighttime Symptoms Quantified</td>
+							<td>SNOMED-CT</td>
+							<td>370205009</td>
+							<td><content ID="Problem3"/>Asthma causes night symptoms 1 to 2 times per month</td>
+							<td>05-10-2010 10:00:00</td>
+							<td>Active</td>
+						</tr>
+						<tr>
+							<td>Asthma Persistent</td>
+							<td>SNOMED-CT</td>
+							<td>427295004</td>
+							<td><content ID="Problem4"/>Moderate persistent asthma</td>
+							<td>05-10-2010 10:00:00</td>
+							<td>Active</td>
+						</tr>
+							<tr>
+								<td/>
+								<td>ICD-10-CM</td>
+								<td>J45.42</td>
+								<td>Moderate persistent asthma with status asthmaticus</td>
+								<td/>
+								<td/>
+							</tr>
+						<tr>
+							<td>Asthma Daytime Symptoms Quantified</td>
+							<td>SNOMED-CT</td>
+							<td>370202007</td>
+							<td><content ID="Problem5"/>Asthma causes daytime symptoms 1 to 2 times per month</td>
+							<td>07-17-2010 10:00:00</td>
+							<td>Active</td>
+						</tr>
+						<tr>
+							<td>Asthma Nighttime Symptoms Quantified</td>
+							<td>SNOMED-CT</td>
+							<td>370205009</td>
+							<td><content ID="Problem6"/>Asthma causes night symptoms 1 to 2 times per month</td>
+							<td>07-17-2010 10:00:00</td>
+							<td>Active</td>
+						</tr>
+						<tr>
 							<td>Pharyngitis</td>
 							<td>SNOMED-CT</td>
 							<td>363746003</td>
-							<td><content ID="Problem3"/>Acute pharyngitis</td>
-							<td>05-05-2010 10:00:00</td>
+							<td><content ID="Problem7"/>Acute pharyngitis</td>
+							<td>10-01-2010 10:00:00</td>
 							<td>Active</td>
 						</tr>
 							<tr>
@@ -1456,70 +1360,6 @@ Problems section
 								<td/>
 								<td/>
 							</tr>
-						<tr>
-							<td>Asthma Daytime Symptoms</td>
-							<td>SNOMED-CT</td>
-							<td>373899003</td>
-							<td><content ID="Problem4"/>Asthma daytime symptoms</td>
-							<td>07-08-2010 10:00:00</td>
-							<td>Active</td>
-						</tr>
-						<tr>
-							<td>Asthma Nighttime Symptoms</td>
-							<td>SNOMED-CT</td>
-							<td>395022009</td>
-							<td><content ID="Problem5"/>Asthma night-time symptoms</td>
-							<td>07-08-2010 10:00:00</td>
-							<td>Active</td>
-						</tr>
-						<tr>
-							<td>D(Rh) Negative</td>
-							<td>SNOMED-CT</td>
-							<td>165746003</td>
-							<td><content ID="Problem6"/>RhD negative</td>
-							<td>08-10-2010 10:00:00</td>
-							<td>Active</td>
-						</tr>
-							<tr>
-								<td/>
-								<td>ICD-10-CM</td>
-								<td>O36.0120</td>
-								<td>Maternal care for anti-D [Rh] antibodies, second trimester, not applicable or unspecified</td>
-								<td/>
-								<td/>
-							</tr>
-							<tr>
-								<td/>
-								<td>ICD-9-CM</td>
-								<td>656.10</td>
-								<td>Rhesus isoimmunization, unspecified as to episode of care or not applicable</td>
-								<td/>
-								<td/>
-							</tr>
-						<tr>
-							<td>Pregnancy-related diagnosis</td>
-							<td>SNOMED-CT</td>
-							<td>199305006</td>
-							<td><content ID="Problem7"/>Complications specific to multiple gestation</td>
-							<td>11-02-2010 10:00:00</td>
-							<td>Active</td>
-						</tr>
-							<tr>
-								<td/>
-								<td>ICD-10-CM</td>
-								<td>O30</td>
-								<td>Multiple gestation</td>
-								<td/>
-								<td/>
-							</tr>
-							<tr>
-								<td/>
-								<td>ICD-9-CM</td>
-								<td>651.90</td>
-								<td>Unspecified multiple gestation, unspecified as to episode of care or not applicable</td>
-								<td/>
-								<td/>
-							</tr>
 				</tbody>
 			</table>					</text>
 						<entry typeCode="DRIV">
@@ -1531,7 +1371,7 @@ Problems section
 									codeSystemName="HL7ActClass" displayName="Concern"/>
 								<statusCode code="active"/>
 								<effectiveTime>
-									<low value="20100129100000"/>
+									<low value="20100510100000"/>
 								</effectiveTime>
 								<entryRelationship typeCode="SUBJ">
 									<!-- Problem observation template -->
@@ -1541,11 +1381,15 @@ Problems section
 										<code code="282291009" codeSystem="2.16.840.1.113883.6.96" displayName="Diagnosis"/>
 										<statusCode code="completed"/>
 										<effectiveTime>
-											<low value="20100129100000"/>
+											<low value="20100510100000"/>
 										</effectiveTime>
-										<value xsi:type="CD" code="248986005" codeSystem="2.16.840.1.113883.6.96"
-											displayName="Estimated date of conception"
+										<value xsi:type="CD" code="195979001" codeSystem="2.16.840.1.113883.6.96"
+											displayName="Asthma unspecified"
 											codeSystemName="SNOMED-CT">
+												<translation code="J45" codeSystem="2.16.840.1.113883.6.90"
+													displayName="Asthma" codeSystemName="ICD-10-CM"/>
+												<translation code="493.92" codeSystem="2.16.840.1.113883.6.2"
+													displayName="Asthma, unspecified type, with (acute) exacerbation" codeSystemName="ICD-9-CM"/>
 										</value>
 										<entryRelationship typeCode="REFR">
 											<observation classCode="OBS" moodCode="EVN">
@@ -1571,7 +1415,7 @@ Problems section
 									codeSystemName="HL7ActClass" displayName="Concern"/>
 								<statusCode code="active"/>
 								<effectiveTime>
-									<low value="20100505100000"/>
+									<low value="20100510100000"/>
 								</effectiveTime>
 								<entryRelationship typeCode="SUBJ">
 									<!-- Problem observation template -->
@@ -1581,15 +1425,11 @@ Problems section
 										<code code="282291009" codeSystem="2.16.840.1.113883.6.96" displayName="Diagnosis"/>
 										<statusCode code="completed"/>
 										<effectiveTime>
-											<low value="20100505100000"/>
+											<low value="20100510100000"/>
 										</effectiveTime>
-										<value xsi:type="CD" code="195979001" codeSystem="2.16.840.1.113883.6.96"
-											displayName="Asthma unspecified"
+										<value xsi:type="CD" code="370202007" codeSystem="2.16.840.1.113883.6.96"
+											displayName="Asthma causes daytime symptoms 1 to 2 times per month"
 											codeSystemName="SNOMED-CT">
-												<translation code="J45" codeSystem="2.16.840.1.113883.6.90"
-													displayName="Asthma" codeSystemName="ICD-10-CM"/>
-												<translation code="493.92" codeSystem="2.16.840.1.113883.6.2"
-													displayName="Asthma, unspecified type, with (acute) exacerbation" codeSystemName="ICD-9-CM"/>
 										</value>
 										<entryRelationship typeCode="REFR">
 											<observation classCode="OBS" moodCode="EVN">
@@ -1615,7 +1455,7 @@ Problems section
 									codeSystemName="HL7ActClass" displayName="Concern"/>
 								<statusCode code="active"/>
 								<effectiveTime>
-									<low value="20100505100000"/>
+									<low value="20100510100000"/>
 								</effectiveTime>
 								<entryRelationship typeCode="SUBJ">
 									<!-- Problem observation template -->
@@ -1625,15 +1465,11 @@ Problems section
 										<code code="282291009" codeSystem="2.16.840.1.113883.6.96" displayName="Diagnosis"/>
 										<statusCode code="completed"/>
 										<effectiveTime>
-											<low value="20100505100000"/>
+											<low value="20100510100000"/>
 										</effectiveTime>
-										<value xsi:type="CD" code="363746003" codeSystem="2.16.840.1.113883.6.96"
-											displayName="Acute pharyngitis"
+										<value xsi:type="CD" code="370205009" codeSystem="2.16.840.1.113883.6.96"
+											displayName="Asthma causes night symptoms 1 to 2 times per month"
 											codeSystemName="SNOMED-CT">
-												<translation code="J02" codeSystem="2.16.840.1.113883.6.90"
-													displayName="Acute pharyngitis" codeSystemName="ICD-10-CM"/>
-												<translation code="462" codeSystem="2.16.840.1.113883.6.2"
-													displayName="Acute pharyngitis" codeSystemName="ICD-9-CM"/>
 										</value>
 										<entryRelationship typeCode="REFR">
 											<observation classCode="OBS" moodCode="EVN">
@@ -1659,7 +1495,7 @@ Problems section
 									codeSystemName="HL7ActClass" displayName="Concern"/>
 								<statusCode code="active"/>
 								<effectiveTime>
-									<low value="20100708100000"/>
+									<low value="20100510100000"/>
 								</effectiveTime>
 								<entryRelationship typeCode="SUBJ">
 									<!-- Problem observation template -->
@@ -1669,11 +1505,13 @@ Problems section
 										<code code="282291009" codeSystem="2.16.840.1.113883.6.96" displayName="Diagnosis"/>
 										<statusCode code="completed"/>
 										<effectiveTime>
-											<low value="20100708100000"/>
+											<low value="20100510100000"/>
 										</effectiveTime>
-										<value xsi:type="CD" code="373899003" codeSystem="2.16.840.1.113883.6.96"
-											displayName="Asthma daytime symptoms"
+										<value xsi:type="CD" code="427295004" codeSystem="2.16.840.1.113883.6.96"
+											displayName="Moderate persistent asthma"
 											codeSystemName="SNOMED-CT">
+												<translation code="J45.42" codeSystem="2.16.840.1.113883.6.90"
+													displayName="Moderate persistent asthma with status asthmaticus" codeSystemName="ICD-10-CM"/>
 										</value>
 										<entryRelationship typeCode="REFR">
 											<observation classCode="OBS" moodCode="EVN">
@@ -1699,7 +1537,7 @@ Problems section
 									codeSystemName="HL7ActClass" displayName="Concern"/>
 								<statusCode code="active"/>
 								<effectiveTime>
-									<low value="20100708100000"/>
+									<low value="20100717100000"/>
 								</effectiveTime>
 								<entryRelationship typeCode="SUBJ">
 									<!-- Problem observation template -->
@@ -1709,10 +1547,10 @@ Problems section
 										<code code="282291009" codeSystem="2.16.840.1.113883.6.96" displayName="Diagnosis"/>
 										<statusCode code="completed"/>
 										<effectiveTime>
-											<low value="20100708100000"/>
+											<low value="20100717100000"/>
 										</effectiveTime>
-										<value xsi:type="CD" code="395022009" codeSystem="2.16.840.1.113883.6.96"
-											displayName="Asthma night-time symptoms"
+										<value xsi:type="CD" code="370202007" codeSystem="2.16.840.1.113883.6.96"
+											displayName="Asthma causes daytime symptoms 1 to 2 times per month"
 											codeSystemName="SNOMED-CT">
 										</value>
 										<entryRelationship typeCode="REFR">
@@ -1739,7 +1577,7 @@ Problems section
 									codeSystemName="HL7ActClass" displayName="Concern"/>
 								<statusCode code="active"/>
 								<effectiveTime>
-									<low value="20100810100000"/>
+									<low value="20100717100000"/>
 								</effectiveTime>
 								<entryRelationship typeCode="SUBJ">
 									<!-- Problem observation template -->
@@ -1749,15 +1587,11 @@ Problems section
 										<code code="282291009" codeSystem="2.16.840.1.113883.6.96" displayName="Diagnosis"/>
 										<statusCode code="completed"/>
 										<effectiveTime>
-											<low value="20100810100000"/>
+											<low value="20100717100000"/>
 										</effectiveTime>
-										<value xsi:type="CD" code="165746003" codeSystem="2.16.840.1.113883.6.96"
-											displayName="RhD negative"
+										<value xsi:type="CD" code="370205009" codeSystem="2.16.840.1.113883.6.96"
+											displayName="Asthma causes night symptoms 1 to 2 times per month"
 											codeSystemName="SNOMED-CT">
-												<translation code="O36.0120" codeSystem="2.16.840.1.113883.6.90"
-													displayName="Maternal care for anti-D [Rh] antibodies, second trimester, not applicable or unspecified" codeSystemName="ICD-10-CM"/>
-												<translation code="656.10" codeSystem="2.16.840.1.113883.6.2"
-													displayName="Rhesus isoimmunization, unspecified as to episode of care or not applicable" codeSystemName="ICD-9-CM"/>
 										</value>
 										<entryRelationship typeCode="REFR">
 											<observation classCode="OBS" moodCode="EVN">
@@ -1783,7 +1617,7 @@ Problems section
 									codeSystemName="HL7ActClass" displayName="Concern"/>
 								<statusCode code="active"/>
 								<effectiveTime>
-									<low value="20101102100000"/>
+									<low value="20101001100000"/>
 								</effectiveTime>
 								<entryRelationship typeCode="SUBJ">
 									<!-- Problem observation template -->
@@ -1793,15 +1627,15 @@ Problems section
 										<code code="282291009" codeSystem="2.16.840.1.113883.6.96" displayName="Diagnosis"/>
 										<statusCode code="completed"/>
 										<effectiveTime>
-											<low value="20101102100000"/>
+											<low value="20101001100000"/>
 										</effectiveTime>
-										<value xsi:type="CD" code="199305006" codeSystem="2.16.840.1.113883.6.96"
-											displayName="Complications specific to multiple gestation"
+										<value xsi:type="CD" code="363746003" codeSystem="2.16.840.1.113883.6.96"
+											displayName="Acute pharyngitis"
 											codeSystemName="SNOMED-CT">
-												<translation code="O30" codeSystem="2.16.840.1.113883.6.90"
-													displayName="Multiple gestation" codeSystemName="ICD-10-CM"/>
-												<translation code="651.90" codeSystem="2.16.840.1.113883.6.2"
-													displayName="Unspecified multiple gestation, unspecified as to episode of care or not applicable" codeSystemName="ICD-9-CM"/>
+												<translation code="J02" codeSystem="2.16.840.1.113883.6.90"
+													displayName="Acute pharyngitis" codeSystemName="ICD-10-CM"/>
+												<translation code="462" codeSystem="2.16.840.1.113883.6.2"
+													displayName="Acute pharyngitis" codeSystemName="ICD-9-CM"/>
 										</value>
 										<entryRelationship typeCode="REFR">
 											<observation classCode="OBS" moodCode="EVN">
@@ -1853,22 +1687,62 @@ Procedures section
 							<td>SNOMED-CT</td>
 							<td>401011001</td>
 							<td><content ID="Procedure1"/>Peak expiratory flow rate monitoring using diary</td>
-							<td>07-08-2010 10:00:00</td>
+							<td>05-10-2010 10:00:00</td>
 							<td>Performed</td>
 						</tr>
 						<tr>
-							<td>Delivery Live Births-Procedure</td>
+							<td>Counseling For Nutrition</td>
 							<td>CPT</td>
-							<td>59410</td>
-							<td><content ID="Procedure2"/>Obstetrical care</td>
-							<td>11-02-2010 10:00:00</td>
+							<td>97802</td>
+							<td><content ID="Procedure2"/>Medical nutrition, indiv, in</td>
+							<td>10-01-2010 10:00:00</td>
 							<td>Performed</td>
 						</tr>
 							<tr>
 								<td/>
-								<td>SNOMED-CT</td>
-								<td>169961004</td>
-								<td>Normal birth</td>
+								<td>HCPCS</td>
+								<td>S9470</td>
+								<td>Nutritional counseling, diet</td>
+								<td/>
+								<td/>
+							</tr>
+							<tr>
+								<td/>
+								<td>ICD-10-CM</td>
+								<td>Z00.8</td>
+								<td>Encounter for other general examination</td>
+								<td/>
+								<td/>
+							</tr>
+							<tr>
+								<td/>
+								<td>ICD-9-CM</td>
+								<td>V65.3</td>
+								<td>Dietary surveillance and counseling</td>
+								<td/>
+								<td/>
+							</tr>
+						<tr>
+							<td>Counseling For Physical Activity</td>
+							<td>HCPCS</td>
+							<td>S9451</td>
+							<td><content ID="Procedure3"/>Exercise class</td>
+							<td>10-01-2010 10:00:00</td>
+							<td>Performed</td>
+						</tr>
+							<tr>
+								<td/>
+								<td>ICD-10-CM</td>
+								<td>Z71.3</td>
+								<td>Dietary counseling and surveillance</td>
+								<td/>
+								<td/>
+							</tr>
+							<tr>
+								<td/>
+								<td>ICD-9-CM</td>
+								<td>V65.41</td>
+								<td>Exercise counseling</td>
 								<td/>
 								<td/>
 							</tr>
@@ -1889,28 +1763,55 @@ Procedures section
 									</originalText>
 								</code>
 								<statusCode code="completed"/>
-								<effectiveTime value="20100708100000"/>
+								<effectiveTime value="20100510100000"/>
 									<methodCode nullFlavor="UNK"/>
 					    	</procedure>
 					    </entry>
 						
 						<entry typeCode="DRIV">
-					    	<procedure classCode="PROC" moodCode="EVN">
+					    	<procedure classCode="ACT" moodCode="EVN">
 								<!-- Procedure Activity Procedure Template-->
-								<templateId root="2.16.840.1.113883.10.20.22.4.14"/>
+								<templateId root="2.16.840.1.113883.10.20.22.4.12"/>
 								<id root="e401f340-7be2-11db-9fe1-0800200c9a66"/>
-								<code xsi:type="CE" code="59410" codeSystem="2.16.840.1.113883.6.12"
-									displayName="Obstetrical care"
+								<code xsi:type="CE" code="97802" codeSystem="2.16.840.1.113883.6.12"
+									displayName="Medical nutrition, indiv, in"
 									codeSystemName="CPT">
 									<originalText>
-										Delivery Live Births-Procedure + Obstetrical care
+										Counseling For Nutrition + Medical nutrition, indiv, in
 										<reference value="#Procedure2"/>
 									</originalText>
-										<translation code="169961004" codeSystem="2.16.840.1.113883.6.96"
-											displayName="Normal birth" codeSystemName="SNOMED-CT"/>
+										<translation code="S9470" codeSystem="2.16.840.1.113883.6.13"
+											displayName="Nutritional counseling, diet" codeSystemName="HCPCS"/>
+										<translation code="Z00.8" codeSystem="2.16.840.1.113883.6.90"
+											displayName="Encounter for other general examination" codeSystemName="ICD-10-CM"/>
+										<translation code="V65.3" codeSystem="2.16.840.1.113883.6.2"
+											displayName="Dietary surveillance and counseling" codeSystemName="ICD-9-CM"/>
 								</code>
 								<statusCode code="completed"/>
-								<effectiveTime value="20101102100000"/>
+								<effectiveTime value="20101001100000"/>
+									<methodCode nullFlavor="UNK"/>
+					    	</procedure>
+					    </entry>
+						
+						<entry typeCode="DRIV">
+					    	<procedure classCode="ACT" moodCode="EVN">
+								<!-- Procedure Activity Procedure Template-->
+								<templateId root="2.16.840.1.113883.10.20.22.4.12"/>
+								<id root="e401f340-7be2-11db-9fe1-0800200c9a66"/>
+								<code xsi:type="CE" code="S9451" codeSystem="2.16.840.1.113883.6.13"
+									displayName="Exercise class"
+									codeSystemName="HCPCS">
+									<originalText>
+										Counseling For Physical Activity + Exercise class
+										<reference value="#Procedure3"/>
+									</originalText>
+										<translation code="Z71.3" codeSystem="2.16.840.1.113883.6.90"
+											displayName="Dietary counseling and surveillance" codeSystemName="ICD-10-CM"/>
+										<translation code="V65.41" codeSystem="2.16.840.1.113883.6.2"
+											displayName="Exercise counseling" codeSystemName="ICD-9-CM"/>
+								</code>
+								<statusCode code="completed"/>
+								<effectiveTime value="20101001100000"/>
 									<methodCode nullFlavor="UNK"/>
 					    	</procedure>
 					    </entry>
@@ -1997,7 +1898,7 @@ Note that C-CDA schema explicitly allows one, and only one, <organizer> per <ent
 							<td>positive</td>
 							<td></td>
 							<td>NA</td>
-							<td>05-05-2010 10:00:00</td>
+							<td>10-01-2010 10:00:00</td>
 							<td>Completed</td>
 						</tr>
 							<tr>
@@ -2016,61 +1917,6 @@ Note that C-CDA schema explicitly allows one, and only one, <organizer> per <ent
 								<td>SNOMED-CT</td>
 								<td>122121004</td>
 								<td>Streptococcus pyogenes antigen assay</td>
-								<td/>
-								<td/>
-								<td/>
-								<td/>
-								<td/>
-							</tr>
-						<tr>
-							<td>Pregnancy Test</td>
-							<td>LOINC</td>
-							<td>2119-6</td>
-							<td><content ID="Result2"/>HCG SerPl-sCnc</td>
-							<td>positive</td>
-							<td></td>
-							<td>NA</td>
-							<td>05-05-2010 10:00:00</td>
-							<td>Completed</td>
-						</tr>
-							<tr>
-								<td/>
-								<td>CPT</td>
-								<td>84702</td>
-								<td>Chorionic gonadotropin test</td>
-								<td/>
-								<td/>
-								<td/>
-								<td/>
-								<td/>
-							</tr>
-						<tr>
-							<td>HIV Screening</td>
-							<td>LOINC</td>
-							<td>73906-0</td>
-							<td><content ID="Result3"/>HIV1+2 IgG Bld Ql EIA.rapid</td>
-							<td>non-reactive</td>
-							<td></td>
-							<td>NA</td>
-							<td>06-10-2010 10:00:00</td>
-							<td>Completed</td>
-						</tr>
-							<tr>
-								<td/>
-								<td>CPT</td>
-								<td>87389</td>
-								<td>Hiv-1 ag w/hiv-1 &amp; hiv-2 ab</td>
-								<td/>
-								<td/>
-								<td/>
-								<td/>
-								<td/>
-							</tr>
-							<tr>
-								<td/>
-								<td>SNOMED-CT</td>
-								<td>171121004</td>
-								<td>Human immunodeficiency virus screening</td>
 								<td/>
 								<td/>
 								<td/>
@@ -2102,74 +1948,8 @@ Note that C-CDA schema explicitly allows one, and only one, <organizer> per <ent
 													displayName="Streptococcus pyogenes antigen assay" codeSystemName="SNOMED-CT"/>
 										</code>
 										<statusCode code="completed"/>
-										<effectiveTime value="20100505100000"/>
+										<effectiveTime value="20101001100000"/>
 										<value xsi:type="CD" code="10828004" displayName="positive" codeSystem="2.16.840.1.113883.6.96" codeSystemName=" SNOMED-CT"/>
-										<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
-										<referenceRange>
-											<observationRange>
-												<text>NA</text>
-											</observationRange>
-										</referenceRange>
-									</observation>
-								</component>
-								</organizer>
-							</entry>
-							<entry typeCode="DRIV">
-							<organizer classCode="CLUSTER" moodCode="EVN">
-								<!-- ** Result organizer ** -->
-								<templateId root="2.16.840.1.113883.10.20.22.4.1"/>
-								<id root="7d5a02b0-67a4-11db-bd13-0800200c9a66"/>
-								<code xsi:type="CE" code="275711006" displayName="Serology"
-									codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT"/>
-								<statusCode code="completed"/>
-								<component>
-									<observation classCode="OBS" moodCode="EVN">
-										<!-- ** Result observation ** -->
-										<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
-										<id root="107c2dc0-67a5-11db-bd13-0800200c9a66"/>
-										<code xsi:type="CE" code="2119-6" displayName="HCG SerPl-sCnc"
-											codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
-											<!-- ** Translations from LOINC to other coding systems (standard or local) ** -->
-												<translation code="84702" codeSystem="2.16.840.1.113883.6.12"
-													displayName="Chorionic gonadotropin test" codeSystemName="CPT"/>
-										</code>
-										<statusCode code="completed"/>
-										<effectiveTime value="20100505100000"/>
-										<value xsi:type="CD" code="10828004" displayName="positive" codeSystem="2.16.840.1.113883.6.96" codeSystemName=" SNOMED-CT"/>
-										<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
-										<referenceRange>
-											<observationRange>
-												<text>NA</text>
-											</observationRange>
-										</referenceRange>
-									</observation>
-								</component>
-								</organizer>
-							</entry>
-							<entry typeCode="DRIV">
-								<organizer classCode="CLUSTER" moodCode="EVN">
-									<!-- ** Result organizer ** -->
-									<templateId root="2.16.840.1.113883.10.20.22.4.1"/>
-									<id root="7d5a02b0-67a4-11db-bd13-0800200c9a66"/>
-									<code code="275711006" displayName="Serology"
-										codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT"/>
-									<statusCode code="completed"/>
-								<component>
-									<observation classCode="OBS" moodCode="EVN">
-										<!-- ** Result observation ** -->
-										<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
-										<id root="107c2dc0-67a5-11db-bd13-0800200c9a66"/>
-										<code xsi:type="CE" code="73906-0" displayName="HIV1+2 IgG Bld Ql EIA.rapid"
-											codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC">
-											<!-- ** Translations from LOINC to other coding systems (standard or local) ** -->
-												<translation code="87389" codeSystem="2.16.840.1.113883.6.12"
-													displayName="Hiv-1 ag w/hiv-1 &amp; hiv-2 ab" codeSystemName="CPT"/>
-												<translation code="171121004" codeSystem="2.16.840.1.113883.6.96"
-													displayName="Human immunodeficiency virus screening" codeSystemName="SNOMED-CT"/>
-										</code>
-										<statusCode code="completed"/>
-										<effectiveTime value="20100610100000"/>
-										<value xsi:type="CD" code="131194007" displayName="non-reactive" codeSystem="2.16.840.1.113883.6.96" codeSystemName=" SNOMED-CT"/>
 										<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
 										<referenceRange>
 											<observationRange>
@@ -2191,64 +1971,29 @@ Social History section
 				<section>
 					<templateId root="2.16.840.1.113883.10.20.22.2.17"/>
 					<!-- Social history section template -->
-					<code code="29762-2" codeSystem="2.16.840.1.113883.6.1"
-						codeSystemName="LOINC"
+					<code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC"
 						displayName="Social History"/>
 					<title>Social History</title>
 					<text>
 
-			<table>
-				<thead>
-					<tr>
-						<th>Group Description</th>
-						<th>Code System</th>
-						<th>Code</th>
-						<th>Code Description</th>
-						<th>Date and Time</th>
-						<th>Status</th>
-					</tr>
-				</thead>
-				<tbody>
-											<tr>
-							<td>Tobacco Use</td>
-							<td>SNOMED-CT</td>
-							<td>266919005</td>
-							<td><content ID="SocialHistory1"/>Never smoker (Never Smoked)</td>
-							<td>05-05-2010 10:00:00</td>
-							<td>Active</td>
-						</tr>
-							<tr>
-								<td/>
-								<td>SNOMED-CT</td>
-								<td>449868002</td>
-								<td>Current every day smoker</td>
-								<td/>
-								<td/>
-							</tr>
-				</tbody>
-			</table>					</text>
-						<entry typeCode="DRIV">
-							<observation classCode="OBS" moodCode="EVN">
-									<!-- ** Smoking status observation ** -->
-									<templateId root="2.16.840.1.113883.10.20.22.4.78"/>
-									<id extension="123456789" root="2.16.840.1.113883.19"/>
-									<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4">
-										<originalText>
-											Tobacco Use + Never smoker (Never Smoked)
-											<reference value="#SocialHistory1" />
-										</originalText>
-									</code>
-									<statusCode code="completed"/>
-									<effectiveTime>
-										<low value="20100505100000"/>
-									</effectiveTime>
-								<value xsi:type="CD" code="266919005" codeSystem="2.16.840.1.113883.6.96"
-									displayName="Never smoker (Never Smoked)" codeSystemName="SNOMED-CT">
-										<translation code="449868002" codeSystem="2.16.840.1.113883.6.96"
-											displayName="Current every day smoker" codeSystemName="SNOMED-CT"/>
-								</value>
-							</observation>
-						</entry>
+						<table>
+							<thead>
+								<tr>
+									<th>Group Description</th>
+									<th>Code System</th>
+									<th>Code</th>
+									<th>Code Description</th>
+									<th>Date and Time</th>
+									<th>Status</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>No data</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
 				</section>
 			</component>
 			<!-- 
@@ -2286,9 +2031,9 @@ Vital Signs section
 							<td>LOINC</td>
 							<td>8462-4</td>
 							<td><content ID="VitalSign1"/>BP Diastolic</td>
-							<td>68</td>
+							<td>56</td>
 							<td>mm[Hg]</td>
-							<td>05-05-2010 10:00:00</td>
+							<td>05-10-2010 10:00:00</td>
 							<td>Finding</td>
 						</tr>
 						<tr>
@@ -2296,149 +2041,49 @@ Vital Signs section
 							<td>LOINC</td>
 							<td>8480-6</td>
 							<td><content ID="VitalSign2"/>BP Systolic</td>
-							<td>116</td>
+							<td>96</td>
 							<td>mm[Hg]</td>
-							<td>05-05-2010 10:00:00</td>
+							<td>05-10-2010 10:00:00</td>
+							<td>Finding</td>
+						</tr>
+						<tr>
+							<td>BMI</td>
+							<td>LOINC</td>
+							<td>39156-5</td>
+							<td><content ID="VitalSign3"/>BMI</td>
+							<td>16.7</td>
+							<td>kg/m2</td>
+							<td>06-04-2010 10:00:00</td>
 							<td>Finding</td>
 						</tr>
 						<tr>
 							<td>Diastolic Blood Pressure</td>
 							<td>LOINC</td>
 							<td>8462-4</td>
-							<td><content ID="VitalSign3"/>BP Diastolic</td>
-							<td>70</td>
+							<td><content ID="VitalSign4"/>BP Diastolic</td>
+							<td>58</td>
 							<td>mm[Hg]</td>
-							<td>06-10-2010 10:00:00</td>
+							<td>07-17-2010 10:00:00</td>
 							<td>Finding</td>
 						</tr>
 						<tr>
 							<td>Systolic Blood Pressure</td>
 							<td>LOINC</td>
 							<td>8480-6</td>
-							<td><content ID="VitalSign4"/>BP Systolic</td>
-							<td>112</td>
+							<td><content ID="VitalSign5"/>BP Systolic</td>
+							<td>100</td>
 							<td>mm[Hg]</td>
-							<td>06-10-2010 10:00:00</td>
+							<td>07-17-2010 10:00:00</td>
 							<td>Finding</td>
 						</tr>
 						<tr>
-							<td>Diastolic Blood Pressure</td>
+							<td>BMI</td>
 							<td>LOINC</td>
-							<td>8462-4</td>
-							<td><content ID="VitalSign5"/>BP Diastolic</td>
-							<td>68</td>
-							<td>mm[Hg]</td>
-							<td>07-08-2010 10:00:00</td>
-							<td>Finding</td>
-						</tr>
-						<tr>
-							<td>Systolic Blood Pressure</td>
-							<td>LOINC</td>
-							<td>8480-6</td>
-							<td><content ID="VitalSign6"/>BP Systolic</td>
-							<td>110</td>
-							<td>mm[Hg]</td>
-							<td>07-08-2010 10:00:00</td>
-							<td>Finding</td>
-						</tr>
-						<tr>
-							<td>Diastolic Blood Pressure</td>
-							<td>LOINC</td>
-							<td>8462-4</td>
-							<td><content ID="VitalSign7"/>BP Diastolic</td>
-							<td>68</td>
-							<td>mm[Hg]</td>
-							<td>08-02-2010 10:00:00</td>
-							<td>Finding</td>
-						</tr>
-						<tr>
-							<td>Systolic Blood Pressure</td>
-							<td>LOINC</td>
-							<td>8480-6</td>
-							<td><content ID="VitalSign8"/>BP Systolic</td>
-							<td>114</td>
-							<td>mm[Hg]</td>
-							<td>08-02-2010 10:00:00</td>
-							<td>Finding</td>
-						</tr>
-						<tr>
-							<td>Diastolic Blood Pressure</td>
-							<td>LOINC</td>
-							<td>8462-4</td>
-							<td><content ID="VitalSign9"/>BP Diastolic</td>
-							<td>70</td>
-							<td>mm[Hg]</td>
-							<td>08-10-2010 10:00:00</td>
-							<td>Finding</td>
-						</tr>
-						<tr>
-							<td>Systolic Blood Pressure</td>
-							<td>LOINC</td>
-							<td>8480-6</td>
-							<td><content ID="VitalSign10"/>BP Systolic</td>
-							<td>116</td>
-							<td>mm[Hg]</td>
-							<td>08-10-2010 10:00:00</td>
-							<td>Finding</td>
-						</tr>
-						<tr>
-							<td>Diastolic Blood Pressure</td>
-							<td>LOINC</td>
-							<td>8462-4</td>
-							<td><content ID="VitalSign11"/>BP Diastolic</td>
-							<td>72</td>
-							<td>mm[Hg]</td>
-							<td>09-10-2010 10:00:00</td>
-							<td>Finding</td>
-						</tr>
-						<tr>
-							<td>Systolic Blood Pressure</td>
-							<td>LOINC</td>
-							<td>8480-6</td>
-							<td><content ID="VitalSign12"/>BP Systolic</td>
-							<td>118</td>
-							<td>mm[Hg]</td>
-							<td>09-10-2010 10:00:00</td>
-							<td>Finding</td>
-						</tr>
-						<tr>
-							<td>Diastolic Blood Pressure</td>
-							<td>LOINC</td>
-							<td>8462-4</td>
-							<td><content ID="VitalSign13"/>BP Diastolic</td>
-							<td>70</td>
-							<td>mm[Hg]</td>
-							<td>10-10-2010 10:00:00</td>
-							<td>Finding</td>
-						</tr>
-						<tr>
-							<td>Systolic Blood Pressure</td>
-							<td>LOINC</td>
-							<td>8480-6</td>
-							<td><content ID="VitalSign14"/>BP Systolic</td>
-							<td>114</td>
-							<td>mm[Hg]</td>
-							<td>10-10-2010 10:00:00</td>
-							<td>Finding</td>
-						</tr>
-						<tr>
-							<td>Diastolic Blood Pressure</td>
-							<td>LOINC</td>
-							<td>8462-4</td>
-							<td><content ID="VitalSign15"/>BP Diastolic</td>
-							<td>72</td>
-							<td>mm[Hg]</td>
-							<td>10-25-2010 10:00:00</td>
-							<td>Finding</td>
-						</tr>
-						<tr>
-							<td>Systolic Blood Pressure</td>
-							<td>LOINC</td>
-							<td>8480-6</td>
-							<td><content ID="VitalSign16"/>BP Systolic</td>
-							<td>116</td>
-							<td>mm[Hg]</td>
-							<td>10-25-2010 10:00:00</td>
+							<td>39156-5</td>
+							<td><content ID="VitalSign6"/>BMI</td>
+							<td>17.4</td>
+							<td>kg/m2</td>
+							<td>10-01-2010 10:00:00</td>
 							<td>Finding</td>
 						</tr>
 				</tbody>
@@ -2451,7 +2096,7 @@ Vital Signs section
 									<code xsi:type="CD" code="46680005" codeSystem="2.16.840.1.113883.6.96"
 									codeSystemName="SNOMED-CT" displayName="Vital signs"/>
 									<statusCode code="completed"/>
-									<effectiveTime value="20100505100000"/>
+									<effectiveTime value="20100510100000"/>
 							<component>
 								<observation classCode="OBS" moodCode="EVN">
 									<!-- ** Vital sign observation ** -->
@@ -2464,8 +2109,8 @@ Vital Signs section
 										<reference value="#vit1"/>
 									</text>
 									<statusCode code="completed"/>
-									<effectiveTime value="20100505100000"/>
-									<value xsi:type="PQ" value="68" unit="mm[Hg]"/>
+									<effectiveTime value="20100510100000"/>
+									<value xsi:type="PQ" value="56" unit="mm[Hg]"/>
 								</observation>
 							</component>
 							<component>
@@ -2480,8 +2125,8 @@ Vital Signs section
 										<reference value="#vit2"/>
 									</text>
 									<statusCode code="completed"/>
-									<effectiveTime value="20100505100000"/>
-									<value xsi:type="PQ" value="116" unit="mm[Hg]"/>
+									<effectiveTime value="20100510100000"/>
+									<value xsi:type="PQ" value="96" unit="mm[Hg]"/>
 								</observation>
 							</component>
 								</organizer>
@@ -2494,295 +2139,91 @@ Vital Signs section
 									<code xsi:type="CD" code="46680005" codeSystem="2.16.840.1.113883.6.96"
 									codeSystemName="SNOMED-CT" displayName="Vital signs"/>
 									<statusCode code="completed"/>
-									<effectiveTime value="20100610100000"/>
+									<effectiveTime value="20100604100000"/>
 							<component>
 								<observation classCode="OBS" moodCode="EVN">
 									<!-- ** Vital sign observation ** -->
 									<templateId root="2.16.840.1.113883.10.20.22.4.27"/>
 									<id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-									<code xsi:type="CD" code="8462-4" codeSystem="2.16.840.1.113883.6.1"
-													displayName="BP Diastolic"
+									<code xsi:type="CD" code="39156-5" codeSystem="2.16.840.1.113883.6.1"
+													displayName="BMI"
 													codeSystemName="LOINC"/>
 									<text>
 										<reference value="#vit3"/>
 									</text>
 									<statusCode code="completed"/>
-									<effectiveTime value="20100610100000"/>
-									<value xsi:type="PQ" value="70" unit="mm[Hg]"/>
+									<effectiveTime value="20100604100000"/>
+									<value xsi:type="PQ" value="16.7" unit="kg/m2"/>
 								</observation>
 							</component>
+								</organizer>
+							</entry>
+							<entry typeCode="DRIV">
+								<organizer classCode="CLUSTER" moodCode="EVN">
+									<!-- ** Vital signs organizer ** -->
+									<templateId root="2.16.840.1.113883.10.20.22.4.26"/>
+									<id root="c6f88320-67ad-11db-bd13-0800200c9a66"/>
+									<code xsi:type="CD" code="46680005" codeSystem="2.16.840.1.113883.6.96"
+									codeSystemName="SNOMED-CT" displayName="Vital signs"/>
+									<statusCode code="completed"/>
+									<effectiveTime value="20100717100000"/>
 							<component>
 								<observation classCode="OBS" moodCode="EVN">
 									<!-- ** Vital sign observation ** -->
 									<templateId root="2.16.840.1.113883.10.20.22.4.27"/>
 									<id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-									<code xsi:type="CD" code="8480-6" codeSystem="2.16.840.1.113883.6.1"
-													displayName="BP Systolic"
+									<code xsi:type="CD" code="8462-4" codeSystem="2.16.840.1.113883.6.1"
+													displayName="BP Diastolic"
 													codeSystemName="LOINC"/>
 									<text>
 										<reference value="#vit4"/>
 									</text>
 									<statusCode code="completed"/>
-									<effectiveTime value="20100610100000"/>
-									<value xsi:type="PQ" value="112" unit="mm[Hg]"/>
+									<effectiveTime value="20100717100000"/>
+									<value xsi:type="PQ" value="58" unit="mm[Hg]"/>
 								</observation>
 							</component>
-								</organizer>
-							</entry>
-							<entry typeCode="DRIV">
-								<organizer classCode="CLUSTER" moodCode="EVN">
-									<!-- ** Vital signs organizer ** -->
-									<templateId root="2.16.840.1.113883.10.20.22.4.26"/>
-									<id root="c6f88320-67ad-11db-bd13-0800200c9a66"/>
-									<code xsi:type="CD" code="46680005" codeSystem="2.16.840.1.113883.6.96"
-									codeSystemName="SNOMED-CT" displayName="Vital signs"/>
-									<statusCode code="completed"/>
-									<effectiveTime value="20100708100000"/>
 							<component>
 								<observation classCode="OBS" moodCode="EVN">
 									<!-- ** Vital sign observation ** -->
 									<templateId root="2.16.840.1.113883.10.20.22.4.27"/>
 									<id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-									<code xsi:type="CD" code="8462-4" codeSystem="2.16.840.1.113883.6.1"
-													displayName="BP Diastolic"
+									<code xsi:type="CD" code="8480-6" codeSystem="2.16.840.1.113883.6.1"
+													displayName="BP Systolic"
 													codeSystemName="LOINC"/>
 									<text>
 										<reference value="#vit5"/>
 									</text>
 									<statusCode code="completed"/>
-									<effectiveTime value="20100708100000"/>
-									<value xsi:type="PQ" value="68" unit="mm[Hg]"/>
+									<effectiveTime value="20100717100000"/>
+									<value xsi:type="PQ" value="100" unit="mm[Hg]"/>
 								</observation>
 							</component>
+								</organizer>
+							</entry>
+							<entry typeCode="DRIV">
+								<organizer classCode="CLUSTER" moodCode="EVN">
+									<!-- ** Vital signs organizer ** -->
+									<templateId root="2.16.840.1.113883.10.20.22.4.26"/>
+									<id root="c6f88320-67ad-11db-bd13-0800200c9a66"/>
+									<code xsi:type="CD" code="46680005" codeSystem="2.16.840.1.113883.6.96"
+									codeSystemName="SNOMED-CT" displayName="Vital signs"/>
+									<statusCode code="completed"/>
+									<effectiveTime value="20101001100000"/>
 							<component>
 								<observation classCode="OBS" moodCode="EVN">
 									<!-- ** Vital sign observation ** -->
 									<templateId root="2.16.840.1.113883.10.20.22.4.27"/>
 									<id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-									<code xsi:type="CD" code="8480-6" codeSystem="2.16.840.1.113883.6.1"
-													displayName="BP Systolic"
+									<code xsi:type="CD" code="39156-5" codeSystem="2.16.840.1.113883.6.1"
+													displayName="BMI"
 													codeSystemName="LOINC"/>
 									<text>
 										<reference value="#vit6"/>
 									</text>
 									<statusCode code="completed"/>
-									<effectiveTime value="20100708100000"/>
-									<value xsi:type="PQ" value="110" unit="mm[Hg]"/>
-								</observation>
-							</component>
-								</organizer>
-							</entry>
-							<entry typeCode="DRIV">
-								<organizer classCode="CLUSTER" moodCode="EVN">
-									<!-- ** Vital signs organizer ** -->
-									<templateId root="2.16.840.1.113883.10.20.22.4.26"/>
-									<id root="c6f88320-67ad-11db-bd13-0800200c9a66"/>
-									<code xsi:type="CD" code="46680005" codeSystem="2.16.840.1.113883.6.96"
-									codeSystemName="SNOMED-CT" displayName="Vital signs"/>
-									<statusCode code="completed"/>
-									<effectiveTime value="20100802100000"/>
-							<component>
-								<observation classCode="OBS" moodCode="EVN">
-									<!-- ** Vital sign observation ** -->
-									<templateId root="2.16.840.1.113883.10.20.22.4.27"/>
-									<id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-									<code xsi:type="CD" code="8462-4" codeSystem="2.16.840.1.113883.6.1"
-													displayName="BP Diastolic"
-													codeSystemName="LOINC"/>
-									<text>
-										<reference value="#vit7"/>
-									</text>
-									<statusCode code="completed"/>
-									<effectiveTime value="20100802100000"/>
-									<value xsi:type="PQ" value="68" unit="mm[Hg]"/>
-								</observation>
-							</component>
-							<component>
-								<observation classCode="OBS" moodCode="EVN">
-									<!-- ** Vital sign observation ** -->
-									<templateId root="2.16.840.1.113883.10.20.22.4.27"/>
-									<id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-									<code xsi:type="CD" code="8480-6" codeSystem="2.16.840.1.113883.6.1"
-													displayName="BP Systolic"
-													codeSystemName="LOINC"/>
-									<text>
-										<reference value="#vit8"/>
-									</text>
-									<statusCode code="completed"/>
-									<effectiveTime value="20100802100000"/>
-									<value xsi:type="PQ" value="114" unit="mm[Hg]"/>
-								</observation>
-							</component>
-								</organizer>
-							</entry>
-							<entry typeCode="DRIV">
-								<organizer classCode="CLUSTER" moodCode="EVN">
-									<!-- ** Vital signs organizer ** -->
-									<templateId root="2.16.840.1.113883.10.20.22.4.26"/>
-									<id root="c6f88320-67ad-11db-bd13-0800200c9a66"/>
-									<code xsi:type="CD" code="46680005" codeSystem="2.16.840.1.113883.6.96"
-									codeSystemName="SNOMED-CT" displayName="Vital signs"/>
-									<statusCode code="completed"/>
-									<effectiveTime value="20100810100000"/>
-							<component>
-								<observation classCode="OBS" moodCode="EVN">
-									<!-- ** Vital sign observation ** -->
-									<templateId root="2.16.840.1.113883.10.20.22.4.27"/>
-									<id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-									<code xsi:type="CD" code="8462-4" codeSystem="2.16.840.1.113883.6.1"
-													displayName="BP Diastolic"
-													codeSystemName="LOINC"/>
-									<text>
-										<reference value="#vit9"/>
-									</text>
-									<statusCode code="completed"/>
-									<effectiveTime value="20100810100000"/>
-									<value xsi:type="PQ" value="70" unit="mm[Hg]"/>
-								</observation>
-							</component>
-							<component>
-								<observation classCode="OBS" moodCode="EVN">
-									<!-- ** Vital sign observation ** -->
-									<templateId root="2.16.840.1.113883.10.20.22.4.27"/>
-									<id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-									<code xsi:type="CD" code="8480-6" codeSystem="2.16.840.1.113883.6.1"
-													displayName="BP Systolic"
-													codeSystemName="LOINC"/>
-									<text>
-										<reference value="#vit10"/>
-									</text>
-									<statusCode code="completed"/>
-									<effectiveTime value="20100810100000"/>
-									<value xsi:type="PQ" value="116" unit="mm[Hg]"/>
-								</observation>
-							</component>
-								</organizer>
-							</entry>
-							<entry typeCode="DRIV">
-								<organizer classCode="CLUSTER" moodCode="EVN">
-									<!-- ** Vital signs organizer ** -->
-									<templateId root="2.16.840.1.113883.10.20.22.4.26"/>
-									<id root="c6f88320-67ad-11db-bd13-0800200c9a66"/>
-									<code xsi:type="CD" code="46680005" codeSystem="2.16.840.1.113883.6.96"
-									codeSystemName="SNOMED-CT" displayName="Vital signs"/>
-									<statusCode code="completed"/>
-									<effectiveTime value="20100910100000"/>
-							<component>
-								<observation classCode="OBS" moodCode="EVN">
-									<!-- ** Vital sign observation ** -->
-									<templateId root="2.16.840.1.113883.10.20.22.4.27"/>
-									<id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-									<code xsi:type="CD" code="8462-4" codeSystem="2.16.840.1.113883.6.1"
-													displayName="BP Diastolic"
-													codeSystemName="LOINC"/>
-									<text>
-										<reference value="#vit11"/>
-									</text>
-									<statusCode code="completed"/>
-									<effectiveTime value="20100910100000"/>
-									<value xsi:type="PQ" value="72" unit="mm[Hg]"/>
-								</observation>
-							</component>
-							<component>
-								<observation classCode="OBS" moodCode="EVN">
-									<!-- ** Vital sign observation ** -->
-									<templateId root="2.16.840.1.113883.10.20.22.4.27"/>
-									<id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-									<code xsi:type="CD" code="8480-6" codeSystem="2.16.840.1.113883.6.1"
-													displayName="BP Systolic"
-													codeSystemName="LOINC"/>
-									<text>
-										<reference value="#vit12"/>
-									</text>
-									<statusCode code="completed"/>
-									<effectiveTime value="20100910100000"/>
-									<value xsi:type="PQ" value="118" unit="mm[Hg]"/>
-								</observation>
-							</component>
-								</organizer>
-							</entry>
-							<entry typeCode="DRIV">
-								<organizer classCode="CLUSTER" moodCode="EVN">
-									<!-- ** Vital signs organizer ** -->
-									<templateId root="2.16.840.1.113883.10.20.22.4.26"/>
-									<id root="c6f88320-67ad-11db-bd13-0800200c9a66"/>
-									<code xsi:type="CD" code="46680005" codeSystem="2.16.840.1.113883.6.96"
-									codeSystemName="SNOMED-CT" displayName="Vital signs"/>
-									<statusCode code="completed"/>
-									<effectiveTime value="20101010100000"/>
-							<component>
-								<observation classCode="OBS" moodCode="EVN">
-									<!-- ** Vital sign observation ** -->
-									<templateId root="2.16.840.1.113883.10.20.22.4.27"/>
-									<id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-									<code xsi:type="CD" code="8462-4" codeSystem="2.16.840.1.113883.6.1"
-													displayName="BP Diastolic"
-													codeSystemName="LOINC"/>
-									<text>
-										<reference value="#vit13"/>
-									</text>
-									<statusCode code="completed"/>
-									<effectiveTime value="20101010100000"/>
-									<value xsi:type="PQ" value="70" unit="mm[Hg]"/>
-								</observation>
-							</component>
-							<component>
-								<observation classCode="OBS" moodCode="EVN">
-									<!-- ** Vital sign observation ** -->
-									<templateId root="2.16.840.1.113883.10.20.22.4.27"/>
-									<id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-									<code xsi:type="CD" code="8480-6" codeSystem="2.16.840.1.113883.6.1"
-													displayName="BP Systolic"
-													codeSystemName="LOINC"/>
-									<text>
-										<reference value="#vit14"/>
-									</text>
-									<statusCode code="completed"/>
-									<effectiveTime value="20101010100000"/>
-									<value xsi:type="PQ" value="114" unit="mm[Hg]"/>
-								</observation>
-							</component>
-								</organizer>
-							</entry>
-							<entry typeCode="DRIV">
-								<organizer classCode="CLUSTER" moodCode="EVN">
-									<!-- ** Vital signs organizer ** -->
-									<templateId root="2.16.840.1.113883.10.20.22.4.26"/>
-									<id root="c6f88320-67ad-11db-bd13-0800200c9a66"/>
-									<code xsi:type="CD" code="46680005" codeSystem="2.16.840.1.113883.6.96"
-									codeSystemName="SNOMED-CT" displayName="Vital signs"/>
-									<statusCode code="completed"/>
-									<effectiveTime value="20101025100000"/>
-							<component>
-								<observation classCode="OBS" moodCode="EVN">
-									<!-- ** Vital sign observation ** -->
-									<templateId root="2.16.840.1.113883.10.20.22.4.27"/>
-									<id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-									<code xsi:type="CD" code="8462-4" codeSystem="2.16.840.1.113883.6.1"
-													displayName="BP Diastolic"
-													codeSystemName="LOINC"/>
-									<text>
-										<reference value="#vit15"/>
-									</text>
-									<statusCode code="completed"/>
-									<effectiveTime value="20101025100000"/>
-									<value xsi:type="PQ" value="72" unit="mm[Hg]"/>
-								</observation>
-							</component>
-							<component>
-								<observation classCode="OBS" moodCode="EVN">
-									<!-- ** Vital sign observation ** -->
-									<templateId root="2.16.840.1.113883.10.20.22.4.27"/>
-									<id root="c6f88321-67ad-11db-bd13-0800200c9a66"/>
-									<code xsi:type="CD" code="8480-6" codeSystem="2.16.840.1.113883.6.1"
-													displayName="BP Systolic"
-													codeSystemName="LOINC"/>
-									<text>
-										<reference value="#vit16"/>
-									</text>
-									<statusCode code="completed"/>
-									<effectiveTime value="20101025100000"/>
-									<value xsi:type="PQ" value="116" unit="mm[Hg]"/>
+									<effectiveTime value="20101001100000"/>
+									<value xsi:type="PQ" value="17.4" unit="kg/m2"/>
 								</observation>
 							</component>
 						</organizer>

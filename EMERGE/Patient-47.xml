@@ -21,7 +21,7 @@ CDA Header
 	<id root="db734647-fc99-424c-a864-7e3cda82e703"/>
 	<code code="34133-9" codeSystem="2.16.840.1.113883.6.1" displayName="Summarization of episode note"/>
 	<title>Community Health and Hospitals: Health Summary</title>
-	<effectiveTime value="20130912033224"/>
+	<effectiveTime value="20131119014630"/>
 	<confidentialityCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality Code"/>
 	<languageCode code="en-US"/>
 	<setId extension="sTT988" root="2.16.840.1.113883.19.5.99999.19"/>
@@ -45,14 +45,14 @@ CDA Header
 			<!-- MC is "mobile contact" from HL7 AddressUse 2.16.840.1.113883.5.1119 -->
 			<patient>
 				<name use="L">
-					<given qualifier="BR">Sam</given>
-					<family qualifier="AD">Pearson</family>
+					<given qualifier="BR">Clifford</given>
+					<family qualifier="AD">Patton</family>
 				</name>
 				<administrativeGenderCode code="M" displayName="Male"
 					codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender"/>
 				<birthTime value="19451025010000"/>
 					<maritalStatusCode code="M" displayName="Married" codeSystem="2.16.840.1.113883.5.2" codeSystemName="MaritalStatus"/>
-				<religiousAffiliationCode code="1005" displayName="Anglican"
+				<religiousAffiliationCode code="1077" displayName="Protestant"
 					codeSystem="2.16.840.1.113883.5.1076" codeSystemName="ReligiousAffiliation"/>
 				<!-- CDC Race and Ethnicity code set contains the minimum race and ethnicity categories defined by OMB Standards for Race and Ethnicity -->
 				<raceCode code="2076-8" displayName="Native Hawaiian or Other Pacific Islander" codeSystem="2.16.840.1.113883.6.238"
@@ -113,7 +113,7 @@ CDA Header
 		</patientRole>
 	</recordTarget>
 	<author>
-		<time value="20130912033224"/>
+		<time value="20131119014630"/>
 		<assignedAuthor>
 			<id extension="99999999" root="2.16.840.1.113883.4.6"/>
 			<code code="200000000X" codeSystem="2.16.840.1.113883.6.101"
@@ -242,7 +242,7 @@ CDA Header
 		</assignedEntity>
 	</legalAuthenticator>
 	<authenticator>
-		<time value="20130912033224"/>
+		<time value="20131119014630"/>
 		<signatureCode code="S"/>
 		<assignedEntity>
 			<id extension="999999999" root="2.16.840.1.113883.4.6"/>
@@ -285,12 +285,12 @@ CDA Header
 	<documentationOf>
 		<serviceEvent classCode="PCPR">
 			<effectiveTime>
-				<low value="19451025010000"/>
+				<low value="20090624100000"/>
 				<high value="20111117100000"/>
 			</effectiveTime>
 			<performer typeCode="PRF">
-				<functionCode code="PP" displayName="Primary Performer"
-					codeSystem="2.16.840.1.113883.12.443" codeSystemName="Provider Role">
+				<functionCode code="PCP" displayName="Primary Care Physician"
+					codeSystem="2.16.840.1.113883.5.88" codeSystemName="participationFunction">
 					<originalText>Primary Care Provider</originalText>
 				</functionCode>
 				<assignedEntity>
@@ -386,10 +386,10 @@ Allergies, Adverse Reactions, Alerts
 							<td>Active</td>
 						</tr>
 						<tr>
-							<td>Codeine</td>
+							<td>Penicillin V</td>
 							<td>NDF-RT</td>
-							<td>N0000006691</td>
-							<td><content ID="Allergy3"/>Codeine</td>
+							<td>N0000011298</td>
+							<td><content ID="Allergy3"/>Penicillin V</td>
 							<td>09-25-2009 10:00:00</td>
 							<td>Active</td>
 						</tr>
@@ -600,7 +600,7 @@ Depending on allergen, appropriate value must be selected from Table 117: Allerg
 									    	<value xsi:type="CD" code="416098002" displayName="Drug allergy (disorder)"
 									    		codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT">
 								    		<originalText>
-								    			Codeine + Codeine
+								    			Penicillin V + Penicillin V
 								    			<reference value="#Allergy1"/>
 								    		</originalText>
 								    	</value>
@@ -612,12 +612,12 @@ This section displays the ACTUAL name of drug/ingredient/food to which person is
 Please note that FOUR (4) different values sets for documenting Allergies: Brand Names, Clinical Drug Names, Medication Drug Class, and Ingredient name,
 encoded in RxNorm, RxNorm, NDF-RT and UNII respectively.
 -->
-			                                		<code code="N0000006691"
-			                                      		displayName="Codeine"
+			                                		<code code="N0000011298"
+			                                      		displayName="Penicillin V"
 				                                      	codeSystem="2.16.840.1.113883.3.26.1.5"
 				                                        codeSystemName="NDF-RT">
 								    					<originalText>
-								    						Codeine + Codeine
+								    						Penicillin V + Penicillin V
 								    						<reference value="#Allergy3"/>
 								    					</originalText>
 <!-- <translation> XML tag, if it exist should be placed HERE. In EMERGE db,
@@ -1748,7 +1748,7 @@ Note that C-CDA schema explicitly allows one, and only one, <organizer> per <ent
 							<td>LOINC</td>
 							<td>14646-4</td>
 							<td><content ID="Result1"/>HDLc SerPl-sCnc</td>
-							<td>53</td>
+							<td>48</td>
 							<td>mg/dL</td>
 							<td>&gt;=40 mg/dL</td>
 							<td>09-25-2009 10:00:00</td>
@@ -1781,7 +1781,7 @@ Note that C-CDA schema explicitly allows one, and only one, <organizer> per <ent
 							<td>LOINC</td>
 							<td>2089-1</td>
 							<td><content ID="Result2"/>LDLc SerPl-mCnc</td>
-							<td>114.4</td>
+							<td>83.4</td>
 							<td>mg/dL</td>
 							<td>&lt;130 mg/dL (calc)</td>
 							<td>09-25-2009 10:00:00</td>
@@ -1814,7 +1814,7 @@ Note that C-CDA schema explicitly allows one, and only one, <organizer> per <ent
 							<td>LOINC</td>
 							<td>2093-3</td>
 							<td><content ID="Result3"/>Cholest SerPl-mCnc</td>
-							<td>184</td>
+							<td>147</td>
 							<td>mg/dL</td>
 							<td>125-200 mg/dL</td>
 							<td>09-25-2009 10:00:00</td>
@@ -1847,7 +1847,7 @@ Note that C-CDA schema explicitly allows one, and only one, <organizer> per <ent
 							<td>LOINC</td>
 							<td>12951-0</td>
 							<td><content ID="Result4"/>Trigl SerPl Calc-mCnc</td>
-							<td>83</td>
+							<td>78</td>
 							<td>mg/dL</td>
 							<td>10-39 years: 55-110 mg/dL | 40-59 years: 70-150 mg/dL | &gt;60 years: 80-150 mg/dL | Therapeutic Target: &lt;100 mg/dL </td>
 							<td>09-25-2009 10:00:00</td>
@@ -1901,7 +1901,7 @@ Note that C-CDA schema explicitly allows one, and only one, <organizer> per <ent
 										</code>
 										<statusCode code="completed"/>
 										<effectiveTime value="20090925100000"/>
-										<value xsi:type="PQ" value="53" unit="mg/dL"/>
+										<value xsi:type="PQ" value="48" unit="mg/dL"/>
 										<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
 										<referenceRange>
 											<observationRange>
@@ -1925,7 +1925,7 @@ Note that C-CDA schema explicitly allows one, and only one, <organizer> per <ent
 										</code>
 										<statusCode code="completed"/>
 										<effectiveTime value="20090925100000"/>
-										<value xsi:type="PQ" value="114.4" unit="mg/dL"/>
+										<value xsi:type="PQ" value="83.4" unit="mg/dL"/>
 										<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
 										<referenceRange>
 											<observationRange>
@@ -1949,7 +1949,7 @@ Note that C-CDA schema explicitly allows one, and only one, <organizer> per <ent
 										</code>
 										<statusCode code="completed"/>
 										<effectiveTime value="20090925100000"/>
-										<value xsi:type="PQ" value="184" unit="mg/dL"/>
+										<value xsi:type="PQ" value="147" unit="mg/dL"/>
 										<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
 										<referenceRange>
 											<observationRange>
@@ -1973,7 +1973,7 @@ Note that C-CDA schema explicitly allows one, and only one, <organizer> per <ent
 										</code>
 										<statusCode code="completed"/>
 										<effectiveTime value="20090925100000"/>
-										<value xsi:type="PQ" value="83" unit="mg/dL"/>
+										<value xsi:type="PQ" value="78" unit="mg/dL"/>
 										<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
 										<referenceRange>
 											<observationRange>
