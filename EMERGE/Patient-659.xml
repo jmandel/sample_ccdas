@@ -19,9 +19,9 @@ CDA Header
 		 (DSTU) July 2012CCD v1.0 Templates Root -->
 	<templateId root="2.16.840.1.113883.10.20.22.1.2"/>
 	<id root="db734647-fc99-424c-a864-7e3cda82e703"/>
-	<code code="34133-9" codeSystem="2.16.840.1.113883.6.1" displayName="Summarization of episode note"/>
+	<code code="34133-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Summarization of Episode Note"/>
 	<title>Community Health and Hospitals: Health Summary</title>
-	<effectiveTime value="20131119014711"/>
+	<effectiveTime value="20140416115530"/>
 	<confidentialityCode code="N" displayName="Normal" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality Code"/>
 	<languageCode code="en-US"/>
 	<setId extension="sTT988" root="2.16.840.1.113883.19.5.99999.19"/>
@@ -34,14 +34,14 @@ CDA Header
 			<!-- Fake Social Security Number using the actual SSN OID. -->
 			<addr use="HP">
 				<!-- HP is "primary home" from codeSystem 2.16.840.1.113883.5.1119 -->
-				<streetAddressLine>1357 Amber Drive</streetAddressLine>
-				<city>Beaverton</city>
-				<state>OR</state>
-				<postalCode>97867</postalCode>
+				<streetAddressLine>3443 Neville Street</streetAddressLine>
+				<city>Terre Haute</city>
+				<state>IN</state>
+				<postalCode>47802</postalCode>
 				<country>US</country>
 				<!-- US is "United States" from ISO 3166-1 Country Codes: 1.0.3166.1 -->
 			</addr>
-			<telecom value="tel:(816)276-6909" use="MC"/>
+			<telecom value="tel:(812)607-0374" use="MC"/>
 			<!-- MC is "mobile contact" from HL7 AddressUse 2.16.840.1.113883.5.1119 -->
 			<patient>
 				<name use="L">
@@ -60,36 +60,38 @@ CDA Header
 				<ethnicGroupCode code="2186-5" displayName="Not Hispanic or Latino"
 					codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC"/>				
 				<guardian>
-					<code code="HPOWATT" displayName="healthcare power of attorney" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role code"/>
+					<code code="FRND" displayName="friend" codeSystem="2.16.840.1.113883.5.111" codeSystemName="HL7 Role code"/>
 					<addr use="HP">
 						<!-- HP is "primary home" from codeSystem 2.16.840.1.113883.5.1119 -->
-						<streetAddressLine>125 Dalmatian Road</streetAddressLine>
-						<city>Agram</city>
-						<state>VA</state>
-						<postalCode>22201</postalCode>
+						<streetAddressLine>1331 Armbrester Drive</streetAddressLine>
+						<city>Irvine</city>
+						<state>CA</state>
+						<postalCode>92664</postalCode>
 						<country>US</country>
 						<!-- US is "United States" from ISO 3166-1 Country Codes: 1.0.3166.1 -->
 					</addr>
-					<telecom value="tel:(781)555-1212" use="HP"/>
+					<telecom value="tel:(310)462-2234" use="HP"/>
+					<telecom value="email:LydiaESkinner@einrot.com" use="WP"/>
 					<guardianPerson>
 						<name>
-							<given>Daniel</given>
-							<family>Spalato</family>
+							<prefix>Mrs.</prefix>
+							<given>Lydia</given>
+							<family>Skinner</family>
 						</name>
 					</guardianPerson>
 				</guardian>
 				<birthplace>
 					<place>
 						<addr>
-							<city>Washington</city>	
-							<state>DC</state>
-							<postalCode>20009</postalCode>
-							<country>USA</country>
+							<city>Jackson</city>	
+							<state>MS</state>
+							<postalCode>39201</postalCode>
+							<country>US</country>
 						</addr>
 					</place>
 				</birthplace>
 				<languageCommunication>
-					<languageCode code="en-US"/>
+					<languageCode code="spa"/>
 					<modeCode
 					   code="ESP"                   
 					   displayName="Expressed spoken"
@@ -113,7 +115,7 @@ CDA Header
 		</patientRole>
 	</recordTarget>
 	<author>
-		<time value="20131119014711"/>
+		<time value="20140416115530"/>
 		<assignedAuthor>
 			<id extension="99999999" root="2.16.840.1.113883.4.6"/>
 			<code code="200000000X" codeSystem="2.16.840.1.113883.6.101"
@@ -242,7 +244,7 @@ CDA Header
 		</assignedEntity>
 	</legalAuthenticator>
 	<authenticator>
-		<time value="20131119014711"/>
+		<time value="20140416115530"/>
 		<signatureCode code="S"/>
 		<assignedEntity>
 			<id extension="999999999" root="2.16.840.1.113883.4.6"/>
@@ -356,6 +358,8 @@ Allergies, Adverse Reactions, Alerts
 						<th>Code System</th>
 						<th>Code</th>
 						<th>Code Description</th>
+						<th>Severity</th>
+						<th>Susceptibility</th>
 						<th>Date and Time</th>
 						<th>Status</th>
 					</tr>
@@ -366,6 +370,8 @@ Allergies, Adverse Reactions, Alerts
 							<td>RxNorm</td>
 							<td>905148</td>
 							<td><content ID="Allergy1"/>Amikacin Sulfate 50 MG/ML Injectable Solution</td>
+							<td><content ID="Severity1"/>Fatal</td>
+							<td>Very susceptible</td>
 							<td>04-01-2010 10:00:00</td>
 							<td>Active</td>
 						</tr>
@@ -428,7 +434,7 @@ encoded in RxNorm, RxNorm, NDF-RT and UNII respectively.
 								    					</originalText>
 <!-- <translation> XML tag, if it exist should be placed HERE. In EMERGE db,
 	 Only alergy to "eggs" will contain <translation> xml code with ICD-9 codes system:
-		<translation code="V15.03" codeSystem="2.16.840.1.113883.6.2"
+		<translation code="V15.03" codeSystem="2.16.840.1.113883.6.103"
 			displayName="Allergy to Eggs" codeSystemName="ICD-9-CM"/>
 	NOTE: <translation> code can also be used for other codes, such as LOCAL (e..g local hospital) codes.
 -->	
@@ -436,8 +442,6 @@ encoded in RxNorm, RxNorm, NDF-RT and UNII respectively.
 								    			</playingEntity>
 								    		</participantRole>
 								    	</participant>
-<!-- In reality, severity should be documented for allergy.
-	 In EMERGE db, severity information for allergy is not documented for any patient. -->
 								    	<entryRelationship typeCode="SUBJ" inversionInd="true">
 								    		<!-- ** Severity observation template ** -->
 								    		<observation classCode="OBS" moodCode="EVN">
@@ -448,7 +452,8 @@ encoded in RxNorm, RxNorm, NDF-RT and UNII respectively.
 								    				<reference value="#severity1"/>
 								    			</text>
 								    			<statusCode code="completed"/>
-								    			<value xsi:type="CD" nullFlavor="NI" />
+								    			<value xsi:type="CD" code="399166001" displayName="Fatal" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED-CT"/>
+                        						<interpretationCode code="VS" displayName="Very susceptible" codeSystem="2.16.840.1.113883.1.11.78" codeSystemName="Observation Interpretation"/>
 								    		</observation>
 								    	</entryRelationship>
 							        </observation>
@@ -548,7 +553,7 @@ Encounters section
 										Encounter Outpatient + Encounter Outpatient
 										<reference value="#Encounter1"/>
 									</originalText>
-										<translation code="V70.0" codeSystem="2.16.840.1.113883.6.2"
+										<translation code="V70.0" codeSystem="2.16.840.1.113883.6.103"
 											displayName="Routine general medical examination at a health care facility" codeSystemName="ICD-9-CM"/>
 								</code>
 								<statusCode code="completed"/>
@@ -571,7 +576,7 @@ Encounters section
 					                        	codeSystemName="SNOMED-CT">
 													<translation code="I50.9" codeSystem="2.16.840.1.113883.6.90"
 														displayName="Heart failure, unspecified" codeSystemName="ICD-10-CM"/>
-													<translation code="428.9" codeSystem="2.16.840.1.113883.6.2"
+													<translation code="428.9" codeSystem="2.16.840.1.113883.6.103"
 														displayName="Heart failure, unspecified" codeSystemName="ICD-9-CM"/>
 					                        </value>
 				                        </observation>
@@ -594,7 +599,7 @@ Encounters section
 					                        	codeSystemName="SNOMED-CT">
 													<translation code="I10" codeSystem="2.16.840.1.113883.6.90"
 														displayName="Essential (primary) hypertension" codeSystemName="ICD-10-CM"/>
-													<translation code="401.9" codeSystem="2.16.840.1.113883.6.2"
+													<translation code="401.9" codeSystem="2.16.840.1.113883.6.103"
 														displayName="Unspecified essential hypertension" codeSystemName="ICD-9-CM"/>
 					                        </value>
 				                        </observation>
@@ -617,7 +622,7 @@ Encounters section
 					                        	codeSystemName="SNOMED-CT">
 													<translation code="N17.9" codeSystem="2.16.840.1.113883.6.90"
 														displayName="Acute kidney failure, unspecified" codeSystemName="ICD-10-CM"/>
-													<translation code="586" codeSystem="2.16.840.1.113883.6.2"
+													<translation code="586" codeSystem="2.16.840.1.113883.6.103"
 														displayName="Renal failure, unspecified" codeSystemName="ICD-9-CM"/>
 					                        </value>
 				                        </observation>
@@ -670,7 +675,7 @@ Encounters section
 										Encounter Outpatient + Encounter Outpatient
 										<reference value="#Encounter4"/>
 									</originalText>
-										<translation code="V70.0" codeSystem="2.16.840.1.113883.6.2"
+										<translation code="V70.0" codeSystem="2.16.840.1.113883.6.103"
 											displayName="Routine general medical examination at a health care facility" codeSystemName="ICD-9-CM"/>
 								</code>
 								<statusCode code="completed"/>
@@ -985,7 +990,7 @@ Problems section
 											codeSystemName="SNOMED-CT">
 												<translation code="I50.9" codeSystem="2.16.840.1.113883.6.90"
 													displayName="Heart failure, unspecified" codeSystemName="ICD-10-CM"/>
-												<translation code="428.9" codeSystem="2.16.840.1.113883.6.2"
+												<translation code="428.9" codeSystem="2.16.840.1.113883.6.103"
 													displayName="Heart failure, unspecified" codeSystemName="ICD-9-CM"/>
 										</value>
 										<entryRelationship typeCode="REFR">
@@ -1029,7 +1034,7 @@ Problems section
 											codeSystemName="SNOMED-CT">
 												<translation code="I10" codeSystem="2.16.840.1.113883.6.90"
 													displayName="Essential (primary) hypertension" codeSystemName="ICD-10-CM"/>
-												<translation code="401.9" codeSystem="2.16.840.1.113883.6.2"
+												<translation code="401.9" codeSystem="2.16.840.1.113883.6.103"
 													displayName="Unspecified essential hypertension" codeSystemName="ICD-9-CM"/>
 										</value>
 										<entryRelationship typeCode="REFR">
@@ -1073,7 +1078,7 @@ Problems section
 											codeSystemName="SNOMED-CT">
 												<translation code="N17.9" codeSystem="2.16.840.1.113883.6.90"
 													displayName="Acute kidney failure, unspecified" codeSystemName="ICD-10-CM"/>
-												<translation code="586" codeSystem="2.16.840.1.113883.6.2"
+												<translation code="586" codeSystem="2.16.840.1.113883.6.103"
 													displayName="Renal failure, unspecified" codeSystemName="ICD-9-CM"/>
 										</value>
 										<entryRelationship typeCode="REFR">
@@ -1206,7 +1211,7 @@ Procedures section
 						
 						<entry typeCode="DRIV">
 					    	<procedure classCode="ACT" moodCode="EVN">
-								<!-- Procedure Activity Procedure Template-->
+								<!-- Procedure Activity Act Template -->
 								<templateId root="2.16.840.1.113883.10.20.22.4.12"/>
 								<id root="e401f340-7be2-11db-9fe1-0800200c9a66"/>
 								<code xsi:type="CE" code="97802" codeSystem="2.16.840.1.113883.6.12"
@@ -1220,7 +1225,7 @@ Procedures section
 											displayName="Nutritional counseling, diet" codeSystemName="HCPCS"/>
 										<translation code="Z00.8" codeSystem="2.16.840.1.113883.6.90"
 											displayName="Encounter for other general examination" codeSystemName="ICD-10-CM"/>
-										<translation code="V65.3" codeSystem="2.16.840.1.113883.6.2"
+										<translation code="V65.3" codeSystem="2.16.840.1.113883.6.103"
 											displayName="Dietary surveillance and counseling" codeSystemName="ICD-9-CM"/>
 								</code>
 								<statusCode code="completed"/>
@@ -1231,7 +1236,7 @@ Procedures section
 						
 						<entry typeCode="DRIV">
 					    	<procedure classCode="ACT" moodCode="EVN">
-								<!-- Procedure Activity Procedure Template-->
+								<!-- Procedure Activity Act Template -->
 								<templateId root="2.16.840.1.113883.10.20.22.4.12"/>
 								<id root="e401f340-7be2-11db-9fe1-0800200c9a66"/>
 								<code xsi:type="CE" code="S9451" codeSystem="2.16.840.1.113883.6.13"
@@ -1243,7 +1248,7 @@ Procedures section
 									</originalText>
 										<translation code="Z71.3" codeSystem="2.16.840.1.113883.6.90"
 											displayName="Dietary counseling and surveillance" codeSystemName="ICD-10-CM"/>
-										<translation code="V65.41" codeSystem="2.16.840.1.113883.6.2"
+										<translation code="V65.41" codeSystem="2.16.840.1.113883.6.103"
 											displayName="Exercise counseling" codeSystemName="ICD-9-CM"/>
 								</code>
 								<statusCode code="completed"/>
@@ -1254,7 +1259,7 @@ Procedures section
 						
 						<entry typeCode="DRIV">
 					    	<procedure classCode="OBS" moodCode="EVN">
-								<!-- Procedure Activity Procedure Template-->
+								<!-- Procedure Activity Observation Template -->
 								<templateId root="2.16.840.1.113883.10.20.22.4.13"/>
 								<id root="e401f340-7be2-11db-9fe1-0800200c9a66"/>
 								<code xsi:type="CE" code="76499" codeSystem="2.16.840.1.113883.6.12"
@@ -1275,7 +1280,7 @@ Procedures section
 						
 						<entry typeCode="DRIV">
 					    	<procedure classCode="OBS" moodCode="EVN">
-								<!-- Procedure Activity Procedure Template-->
+								<!-- Procedure Activity Observation Template -->
 								<templateId root="2.16.840.1.113883.10.20.22.4.13"/>
 								<id root="e401f340-7be2-11db-9fe1-0800200c9a66"/>
 								<code xsi:type="CE" code="70822001" codeSystem="2.16.840.1.113883.6.96"
@@ -1579,7 +1584,7 @@ Vital Signs section
 													displayName="BMI"
 													codeSystemName="LOINC"/>
 									<text>
-										<reference value="#vit1"/>
+										<reference value="#VitalSign1"/>
 									</text>
 									<statusCode code="completed"/>
 									<effectiveTime value="20100401100000"/>
@@ -1595,7 +1600,7 @@ Vital Signs section
 													displayName="BP Diastolic"
 													codeSystemName="LOINC"/>
 									<text>
-										<reference value="#vit2"/>
+										<reference value="#VitalSign2"/>
 									</text>
 									<statusCode code="completed"/>
 									<effectiveTime value="20100401100000"/>
@@ -1611,7 +1616,7 @@ Vital Signs section
 													displayName="BP Systolic"
 													codeSystemName="LOINC"/>
 									<text>
-										<reference value="#vit3"/>
+										<reference value="#VitalSign3"/>
 									</text>
 									<statusCode code="completed"/>
 									<effectiveTime value="20100401100000"/>
@@ -1638,7 +1643,7 @@ Vital Signs section
 													displayName="BMI"
 													codeSystemName="LOINC"/>
 									<text>
-										<reference value="#vit4"/>
+										<reference value="#VitalSign4"/>
 									</text>
 									<statusCode code="completed"/>
 									<effectiveTime value="20101015100000"/>
@@ -1654,7 +1659,7 @@ Vital Signs section
 													displayName="BP Diastolic"
 													codeSystemName="LOINC"/>
 									<text>
-										<reference value="#vit5"/>
+										<reference value="#VitalSign5"/>
 									</text>
 									<statusCode code="completed"/>
 									<effectiveTime value="20101015100000"/>
@@ -1670,7 +1675,7 @@ Vital Signs section
 													displayName="BP Systolic"
 													codeSystemName="LOINC"/>
 									<text>
-										<reference value="#vit6"/>
+										<reference value="#VitalSign6"/>
 									</text>
 									<statusCode code="completed"/>
 									<effectiveTime value="20101015100000"/>
