@@ -1,0 +1,956 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="http://r.kareo.com/resources/ehr/ccda/stylesheet/ccda-html.xsl"?>
+
+<ClinicalDocument xmlns="urn:hl7-org:v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 CDA.xsd">
+<realmCode code="US"/>
+<typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3"/>
+<templateId root="2.16.840.1.113883.10.20.22.1.2"/>
+<templateId root="2.16.840.1.113883.10.20.22.1.1"/>
+<id assigningAuthorityName="KAREO EHR" extension="2014_ClinicalSummary" root="2.16.840.1.113883.19"/>
+<code code="34133-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Summarization of Episode Note"/>
+<title>dododoc: Health Summary</title>
+<effectiveTime value="20140531154732-0700"/>
+<confidentialityCode codeSystem="2.16.840.1.113883.5.25" codeSystemName="ConfidentialityCode"/>
+<languageCode code="en-US"/>
+<recordTarget>
+<patientRole>
+<id extension="28366080" root="2.16.840.1.113883.19"/>
+<addr use="HP">
+<streetAddressLine>26 N. Martin Street</streetAddressLine>
+<city>Los Angeles</city>
+<state>CA</state>
+<postalCode>90005</postalCode>
+<country>United States of America</country>
+</addr>
+<telecom use="HP" value="tel:3108391111"/>
+<patient>
+<name use="L">
+<family>DEMO</family>
+<given>MILLER</given>
+</name>
+<administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="HL7 AdministrativeGender" displayName="Male"/>
+<birthTime value="19471010"/>
+<maritalStatusCode nullFlavor="UNK"/>
+<raceCode code="2106-3" codeSystem="2.16.840.1.113883.6.238" codeSystemName="Race &amp; Ethnicity - CDC" displayName="White"/>
+<ethnicGroupCode nullFlavor="UNK"/>
+<languageCommunication>
+<languageCode nullFlavor="UNK"/>
+</languageCommunication>
+</patient>
+<providerOrganization>
+<id root="2.16.840.1.113883.19"/>
+<name>dododoc</name>
+<telecom nullFlavor="UNK" use="WP"/>
+<addr use="WP">
+<streetAddressLine nullFlavor="NI"/>
+<city nullFlavor="NI"/>
+<state nullFlavor="NI"/>
+<postalCode nullFlavor="NI"/>
+<country nullFlavor="NI"/>
+</addr>
+</providerOrganization>
+</patientRole>
+</recordTarget>
+<author>
+<time value="20140531154732-0700"/>
+<assignedAuthor>
+<id nullFlavor="UNK"/>
+<addr use="WP">
+<streetAddressLine nullFlavor="NI"/>
+<city nullFlavor="NI"/>
+<state nullFlavor="NI"/>
+<postalCode nullFlavor="NI"/>
+<country nullFlavor="NI"/>
+</addr>
+<telecom nullFlavor="UNK" use="WP"/>
+<assignedPerson>
+<name>
+<given nullFlavor="UNK"/>
+<family nullFlavor="UNK"/>
+</name>
+</assignedPerson>
+</assignedAuthor>
+</author>
+<dataEnterer>
+<assignedEntity>
+<id nullFlavor="UNK"/>
+<addr use="WP">
+<streetAddressLine nullFlavor="NI"/>
+<city nullFlavor="NI"/>
+<state nullFlavor="NI"/>
+<postalCode nullFlavor="NI"/>
+<country nullFlavor="NI"/>
+</addr>
+<telecom nullFlavor="UNK" use="WP"/>
+<assignedPerson>
+<name>
+<given nullFlavor="UNK"/>
+<family nullFlavor="UNK"/>
+</name>
+</assignedPerson>
+</assignedEntity>
+</dataEnterer>
+<informant>
+<assignedEntity>
+<id nullFlavor="UNK"/>
+<addr use="WP">
+<streetAddressLine nullFlavor="NI"/>
+<city nullFlavor="NI"/>
+<state nullFlavor="NI"/>
+<postalCode nullFlavor="NI"/>
+<country nullFlavor="NI"/>
+</addr>
+<telecom nullFlavor="UNK" use="WP"/>
+<assignedPerson>
+<name>
+<given nullFlavor="UNK"/>
+<family nullFlavor="UNK"/>
+</name>
+</assignedPerson>
+</assignedEntity>
+</informant>
+<custodian>
+<assignedCustodian>
+<representedCustodianOrganization>
+<id nullFlavor="UNK"/>
+<name>dododoc</name>
+<telecom nullFlavor="UNK" use="WP"/>
+<addr use="WP">
+<streetAddressLine nullFlavor="NI"/>
+<city nullFlavor="NI"/>
+<state nullFlavor="NI"/>
+<postalCode nullFlavor="NI"/>
+<country nullFlavor="NI"/>
+</addr>
+</representedCustodianOrganization>
+</assignedCustodian>
+</custodian>
+<informationRecipient>
+<intendedRecipient>
+<informationRecipient>
+<name>
+<given nullFlavor="UNK"/>
+<family nullFlavor="UNK"/>
+</name>
+</informationRecipient>
+<receivedOrganization>
+<name>dododoc</name>
+</receivedOrganization>
+</intendedRecipient>
+</informationRecipient>
+<legalAuthenticator>
+<time value="20140531154732-0700"/>
+<signatureCode code="S"/>
+<assignedEntity>
+<id nullFlavor="UNK"/>
+<addr use="WP">
+<streetAddressLine nullFlavor="NI"/>
+<city nullFlavor="NI"/>
+<state nullFlavor="NI"/>
+<postalCode nullFlavor="NI"/>
+<country nullFlavor="NI"/>
+</addr>
+<telecom nullFlavor="UNK" use="WP"/>
+<assignedPerson>
+<name>
+<given nullFlavor="UNK"/>
+<family nullFlavor="UNK"/>
+</name>
+</assignedPerson>
+</assignedEntity>
+</legalAuthenticator>
+<authenticator>
+<time value="20140531154732-0700"/>
+<signatureCode code="S"/>
+<assignedEntity>
+<id nullFlavor="UNK"/>
+<addr use="WP">
+<streetAddressLine nullFlavor="NI"/>
+<city nullFlavor="NI"/>
+<state nullFlavor="NI"/>
+<postalCode nullFlavor="NI"/>
+<country nullFlavor="NI"/>
+</addr>
+<telecom nullFlavor="UNK" use="WP"/>
+<assignedPerson>
+<name>
+<given nullFlavor="UNK"/>
+<family nullFlavor="UNK"/>
+</name>
+</assignedPerson>
+</assignedEntity>
+</authenticator>
+<documentationOf>
+<serviceEvent classCode="PCPR">
+<effectiveTime>
+<low nullFlavor="NI"/>
+<high nullFlavor="NI"/>
+</effectiveTime>
+<performer typeCode="PRF">
+<templateId root="2.16.840.1.113883.10.20.6.2.1"/>
+<assignedEntity>
+<id nullFlavor="UNK"/>
+<code code="NI" codeSystem="2.16.840.1.113883.6.101" codeSystemName="NUCC"/>
+<addr use="WP">
+<streetAddressLine nullFlavor="NI"/>
+<city nullFlavor="NI"/>
+<state nullFlavor="NI"/>
+<postalCode nullFlavor="NI"/>
+<country nullFlavor="NI"/>
+</addr>
+<telecom nullFlavor="UNK" use="WP"/>
+<assignedPerson>
+<name>
+<given nullFlavor="UNK"/>
+<family nullFlavor="UNK"/>
+</name>
+</assignedPerson>
+</assignedEntity>
+</performer>
+</serviceEvent>
+</documentationOf>
+<component>
+<structuredBody>
+<component>
+<section>
+<templateId root="2.16.840.1.113883.10.20.22.2.5.1"/>
+<templateId root="2.16.840.1.113883.10.20.22.2.5"/>
+<code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem List"/>
+<title>PROBLEMS</title>
+<text>
+<table border="1" width="100%">
+<thead>
+<tr>
+<th>Problem</th>
+<th>Effective Dates</th>
+<th>Problem Status</th>
+</tr>
+</thead>
+<tbody>
+<tr ID="PROBSUMMARY_1">
+<td ID="PROBKIND_1">Hypothyroidism, [40930008]</td>
+<td>08/05/2012</td>
+<td ID="PROBSTATUS_1">ACTIVE</td>
+</tr>
+<tr ID="PROBSUMMARY_2">
+<td ID="PROBKIND_2">Acute bronchitis, [10509002]</td>
+<td>10/02/2012</td>
+<td ID="PROBSTATUS_2">ACTIVE</td>
+</tr>
+</tbody>
+</table>
+</text>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="EVN">
+<templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+<id root="cf30d4ea-27c4-4041-a02e-5b5be726406e"/>
+<code code="CONC" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass" displayName="Concern"/>
+<statusCode code="active"/>
+<effectiveTime>
+<low value="20120805"/>
+<high nullFlavor="UNK"/>
+</effectiveTime>
+<entryRelationship typeCode="SUBJ">
+<observation classCode="OBS" moodCode="EVN">
+<templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+<id root="e4c67d71-caf8-4f31-97a1-2653e32dbd76"/>
+<code code="55607006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Problem"/>
+<text>
+<reference value="#PROBSUMMARY_1"/>
+</text>
+<statusCode code="completed"/>
+<effectiveTime>
+<low value="20120805"/>
+<high nullFlavor="UNK"/>
+</effectiveTime>
+<value code="40930008" codeSystem="2.16.840.1.113883.6.96" displayName="Hypothyroidism" xsi:type="CD"/>
+<entryRelationship typeCode="REFR">
+<observation classCode="OBS" moodCode="EVN">
+<templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+<code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+<text>
+<reference value="#PROBSTATUS_1"/>
+</text>
+<statusCode code="completed"/>
+<value code="55561003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="ACTIVE" xsi:type="CD"/>
+</observation>
+</entryRelationship>
+</observation>
+</entryRelationship>
+</act>
+</entry>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="EVN">
+<templateId root="2.16.840.1.113883.10.20.22.4.3"/>
+<id root="46ad8d4b-5089-435a-bc4f-b843230321e9"/>
+<code code="CONC" codeSystem="2.16.840.1.113883.5.6" codeSystemName="HL7ActClass" displayName="Concern"/>
+<statusCode code="active"/>
+<effectiveTime>
+<low value="20121002"/>
+<high nullFlavor="UNK"/>
+</effectiveTime>
+<entryRelationship typeCode="SUBJ">
+<observation classCode="OBS" moodCode="EVN">
+<templateId root="2.16.840.1.113883.10.20.22.4.4"/>
+<id root="9540fc68-36de-4900-bd8a-af9975c4b063"/>
+<code code="55607006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Problem"/>
+<text>
+<reference value="#PROBSUMMARY_2"/>
+</text>
+<statusCode code="completed"/>
+<effectiveTime>
+<low value="20121002"/>
+<high nullFlavor="UNK"/>
+</effectiveTime>
+<value code="10509002" codeSystem="2.16.840.1.113883.6.96" displayName="Acute bronchitis" xsi:type="CD"/>
+<entryRelationship typeCode="REFR">
+<observation classCode="OBS" moodCode="EVN">
+<templateId root="2.16.840.1.113883.10.20.22.4.6"/>
+<code code="33999-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Status"/>
+<text>
+<reference value="#PROBSTATUS_2"/>
+</text>
+<statusCode code="completed"/>
+<value code="55561003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="ACTIVE" xsi:type="CD"/>
+</observation>
+</entryRelationship>
+</observation>
+</entryRelationship>
+</act>
+</entry>
+</section>
+</component>
+<component>
+<section>
+<templateId root="2.16.840.1.113883.10.20.22.2.17"/>
+<code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social history"/>
+<title>SOCIAL HISTORY</title>
+<text>
+<content ID="socialhist_1">No Information About Social History</content>
+</text>
+<entry>
+<observation classCode="OBS" moodCode="EVN" nullFlavor="NI">
+<templateId root="2.16.840.1.113883.10.20.22.4.78"/>
+<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+<statusCode code="completed"/>
+<effectiveTime>
+<low nullFlavor="NI"/>
+<high nullFlavor="NI"/>
+</effectiveTime>
+<value code="266927001" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Unknown if ever smoked" xsi:type="CD"/>
+</observation>
+</entry>
+</section>
+</component>
+<component>
+<section>
+<templateId root="2.16.840.1.113883.10.20.22.2.45"/>
+<code code="69730-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Instructions"/>
+<title>INSTRUCTIONS</title>
+<text>
+<content ID="instructions_1">No Information About Instructions</content>
+</text>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="INT">
+<templateId root="2.16.840.1.113883.10.20.22.4.20"/>
+<code code="311401005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Patient Education"/>
+<text nullFlavor="NI"/>
+<statusCode code="completed"/>
+</act>
+</entry>
+</section>
+</component>
+<component>
+<section>
+<templateId root="2.16.840.1.113883.10.20.22.2.6.1"/>
+<templateId root="2.16.840.1.113883.10.20.22.2.6"/>
+<code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
+<title>ADVERSE REACTIONS, ALERTS, ALLERGIES</title>
+<text>
+<table border="1" width="100%">
+<thead>
+<tr>
+<th>Type</th>
+<th>Substance</th>
+<th>Reaction</th>
+<th>Severity</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr ID="ALGSUMMARY_1">
+<td ID="ALGTYPE_1">No information about allergies</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</text>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="EVN" nullFlavor="NI">
+<templateId root="2.16.840.1.113883.10.20.22.4.30"/>
+<id root="8b87a215-7560-4557-ba3a-7229f6f1538d"/>
+<code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"/>
+<statusCode code="active"/>
+<effectiveTime>
+<low nullFlavor="NI"/>
+<high nullFlavor="NI"/>
+</effectiveTime>
+<entryRelationship typeCode="SUBJ">
+<observation classCode="OBS" moodCode="EVN" nullFlavor="NI">
+<templateId root="2.16.840.1.113883.10.20.22.4.7"/>
+<id root="5114fd32-a851-4ebc-9f36-1beb0211ebc4"/>
+<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"/>
+<statusCode code="completed"/>
+<effectiveTime>
+<low nullFlavor="NI"/>
+</effectiveTime>
+<value code="419511003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED CT" displayName="Propensity to adverse reactions to drug (disorder)" xsi:type="CD">
+<originalText>
+<reference value="#ALGTYPE_1"/>
+</originalText>
+</value>
+<participant typeCode="CSM">
+<participantRole classCode="MANU">
+<playingEntity classCode="MMAT">
+<code nullFlavor="NI">
+<originalText>
+<reference value="#ALGTYPE_1"/>
+</originalText>
+</code>
+</playingEntity>
+</participantRole>
+</participant>
+<entryRelationship inversionInd="true" typeCode="MFST">
+<observation classCode="OBS" moodCode="EVN" nullFlavor="NI">
+<templateId root="2.16.840.1.113883.10.20.22.4.9"/>
+<id root="dcc01eac-017a-4918-801f-3bf726f661dd"/>
+<code codeSystem="2.16.840.1.113883.5.4" nullFlavor="NI"/>
+<text>
+<reference value="#ALGTYPE_1"/>
+</text>
+<statusCode code="completed"/>
+<effectiveTime>
+<low nullFlavor="NI"/>
+</effectiveTime>
+<value code="183964008" codeSystem="2.16.840.1.113883.6.96" displayName="Treatment not indicated" xsi:type="CD"/>
+</observation>
+</entryRelationship>
+<entryRelationship inversionInd="true" typeCode="SUBJ">
+<observation classCode="OBS" moodCode="EVN">
+<templateId root="2.16.840.1.113883.10.20.22.4.8"/>
+<id root="14f214e4-b81e-41b6-9d65-18f0e8772d5e"/>
+<code code="SEV" codeSystem="2.16.840.1.113883.5.4" codeSystemName="HL7ActCode" displayName="Severity Observation" xsi:type="CE"/>
+<text>
+<reference value="#ALGTYPE_1"/>
+</text>
+<statusCode code="completed"/>
+<value code="24484000" codeSystem="2.16.840.1.113883.6.96" displayName="Severe" xsi:type="CD"/>
+</observation>
+</entryRelationship>
+</observation>
+</entryRelationship>
+</act>
+</entry>
+</section>
+</component>
+<component>
+<section>
+<templateId root="2.16.840.1.113883.10.20.22.2.22.1"/>
+<templateId root="2.16.840.1.113883.10.20.22.2.22"/>
+<code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Encounters"/>
+<title>ENCOUNTERS</title>
+<text>
+<table border="1" width="100%">
+<thead>
+<tr>
+<th>Encounter Diagnosis</th>
+<th>Performer</th>
+<th>Date</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td ID="Encounter1">No information about encounters</td>
+</tr>
+</tbody>
+</table>
+</text>
+<entry typeCode="DRIV">
+<encounter classCode="ENC" moodCode="EVN" nullFlavor="NI">
+<templateId root="2.16.840.1.113883.10.20.22.4.49"/>
+<id root="2c8e0243-7e24-49db-8d1e-0ecfc2ba6792"/>
+<code nullFlavor="NI"/>
+<effectiveTime nullFlavor="NI"/>
+</encounter>
+</entry>
+</section>
+</component>
+<component>
+<section>
+<templateId root="2.16.840.1.113883.10.20.22.2.10"/>
+<code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"/>
+<title>PLAN OF CARE</title>
+<text>
+<table>
+<thead>
+<tr>
+<th>Plan of care</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td ID="care_plan1"> No Information About Plan of Care </td>
+</tr>
+</tbody>
+</table>
+</text>
+</section>
+</component>
+<component>
+<section>
+<templateId root="1.3.6.1.4.1.19376.1.5.3.1.1.13.2.1"/>
+<code code="10154-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="CHIEF COMPLAINT"/>
+<title>CHIEF COMPLAINT</title>
+<text>
+<table border="1" width="100%">
+<thead>
+<tr>
+<th>Reason for Visit/Chief Complaint</th>
+</tr>
+</thead>
+<tbody>
+<tr> <td>No information available on Chief Complaint</td> </tr>
+</tbody>
+</table>
+</text>
+</section>
+</component>
+<component>
+<section>
+<templateId root="2.16.840.1.113883.10.20.22.2.14"/>
+<code code="47420-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Functional status assessment"/>
+<title>FUNCTIONAL STATUS</title>
+<text>
+<table border="1" width="100%">
+<thead>
+<tr>
+<th>Cognitive/Functional Findings</th>
+</tr>
+</thead>
+<tbody>
+<tr> <td>No information available</td> </tr>
+</tbody>
+</table>
+</text>
+</section>
+</component>
+<component>
+<section>
+<templateId root="2.16.840.1.113883.10.20.22.2.7.1"/>
+<templateId root="2.16.840.1.113883.10.20.22.2.7"/>
+<code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Procedures"/>
+<title>PROCEDURES</title>
+<text>
+<content ID="procedures_1">No Information About Procedures</content>
+</text>
+<entry typeCode="DRIV">
+<act classCode="ACT" moodCode="EVN">
+<templateId root="2.16.840.1.113883.10.20.22.4.12"/>
+<id extension="20130607114600-ProcedureActivity" root="2.16.840.1.113883.3.3208.101.10"/>
+<code nullFlavor="NI" xsi:type="CE">
+<originalText>
+<reference value="#procedures_1"/>
+</originalText>
+</code>
+<statusCode code="completed"/>
+<effectiveTime nullFlavor="NI"/>
+<priorityCode nullFlavor="UNK"/>
+<performer>
+<assignedEntity>
+<id extension="20130607154800-UnknownPersonnel" root="2.16.840.1.113883.3.3208.101.3"/>
+<addr nullFlavor="NI"/>
+<telecom nullFlavor="NI"/>
+<representedOrganization nullFlavor="NI">
+<id extension="20130607155400-UnknownOrg" root="2.16.840.1.113883.3.3208.101.5"/>
+<telecom nullFlavor="NI"/>
+<addr nullFlavor="NI"/>
+</representedOrganization>
+</assignedEntity>
+</performer>
+</act>
+</entry>
+</section>
+</component>
+<component>
+<section>
+<templateId root="2.16.840.1.113883.10.20.22.2.4.1"/>
+<templateId root="2.16.840.1.113883.10.20.22.2.4"/>
+<code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital Signs"/>
+<title>VITAL SIGNS</title>
+<text>
+<table border="1" width="100%">
+<thead>
+<tr>
+<th align="right">Date / Time:</th>
+<th ID="date_1">05/15/2014</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th align="left">Height</th>
+<td>
+<content ID="date_1_height">71.0 [in_us]</content>
+</td>
+</tr>
+<tr>
+<th align="left">Weight</th>
+<td>
+<content ID="date_1_weight">160.0 [lb_av]</content>
+</td>
+</tr>
+<tr>
+<th align="left">BMI</th>
+<td>
+<content ID="date_1_bmi">22.32 kg/m2</content>
+</td>
+</tr>
+<tr>
+<th align="left">Blood Pressure</th>
+<td>
+<content ID="date_1_bp">120.0/0.0 mm[Hg]</content>
+</td>
+</tr>
+</tbody>
+</table>
+</text>
+<entry typeCode="DRIV">
+<organizer classCode="CLUSTER" moodCode="EVN">
+<templateId root="2.16.840.1.113883.10.20.22.4.26"/>
+<id root="c7a73d60-1a50-458a-8bae-29058b363730"/>
+<code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMEDCT" displayName="Vital signs"/>
+<statusCode code="completed"/>
+<effectiveTime value="20140515"/>
+<component>
+<observation classCode="OBS" moodCode="EVN">
+<templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+<id root="c9152fe6-b5c1-45a4-ade8-acade1932980"/>
+<code code="8302-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Height"/>
+<text>
+<reference value="#date_1_height"/>
+</text>
+<statusCode code="completed"/>
+<effectiveTime value="20140515"/>
+<value unit="[in_us]" value="71.0" xsi:type="PQ"/>
+<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+</observation>
+</component>
+<component>
+<observation classCode="OBS" moodCode="EVN">
+<templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+<id root="76a84b28-0949-44af-9870-e4a22907a945"/>
+<code code="3141-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Patient Body Weight - Measured"/>
+<text>
+<reference value="#date_1_weight"/>
+</text>
+<statusCode code="completed"/>
+<effectiveTime value="20140515"/>
+<value unit="[lb_av]" value="160.0" xsi:type="PQ"/>
+<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+</observation>
+</component>
+<component>
+<observation classCode="OBS" moodCode="EVN">
+<templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+<id root="98d05d45-7041-421a-8d14-0014682dee19"/>
+<code code="39156-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="BMI (Body Mass Index)"/>
+<text>
+<reference value="#date_1_bmi"/>
+</text>
+<statusCode code="completed"/>
+<effectiveTime value="20140515"/>
+<value unit="kg/m2" value="22.32" xsi:type="PQ"/>
+<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+</observation>
+</component>
+<component>
+<observation classCode="OBS" moodCode="EVN">
+<templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+<id root="b6ca5c94-ec5f-4a04-8d5a-e3546ef7eea9"/>
+<code code="8480-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="BP Systolic"/>
+<text>
+<reference value="#date_1_bp"/>
+</text>
+<statusCode code="completed"/>
+<effectiveTime value="20140515"/>
+<value unit="mm[Hg]" value="120.0" xsi:type="PQ"/>
+<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+</observation>
+</component>
+<component>
+<observation classCode="OBS" moodCode="EVN">
+<templateId root="2.16.840.1.113883.10.20.22.4.27"/>
+<id root="d8f42588-f562-429f-a52d-a10d9275c61f"/>
+<code code="8462-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="BP Diastolic"/>
+<text>
+<reference value="#date_1_bp"/>
+</text>
+<statusCode code="completed"/>
+<effectiveTime value="20140515"/>
+<value unit="mm[Hg]" value="0.0" xsi:type="PQ"/>
+<interpretationCode code="N" codeSystem="2.16.840.1.113883.5.83"/>
+</observation>
+</component>
+</organizer>
+</entry>
+</section>
+</component>
+<component>
+<section>
+<templateId root="2.16.840.1.113883.10.20.22.2.1.1"/>
+<templateId root="2.16.840.1.113883.10.20.22.2.1"/>
+<code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medication use"/>
+<title>MEDICATIONS</title>
+<text>
+<table border="1" width="100%">
+<thead>
+<tr>
+<th>Medication</th>
+<th>Start Date</th>
+<th>Instructions</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<content ID="Med_1">acetaminophen-aspirin buffered 250 mg-250 mg oral tablet, [RxNorm: 432638]</content>
+</td>
+<td>05/31/2014</td>
+<td/>
+<td>Active</td>
+</tr>
+<tr>
+<td>
+<content ID="Med_2">Lipitor 10 mg oral tablet, [RxNorm: 617312]</content>
+</td>
+<td>05/15/2014</td>
+<td>1 g orally once a day with meals x1 day</td>
+<td>Discontinued</td>
+</tr>
+</tbody>
+</table>
+</text>
+<entry typeCode="DRIV">
+<substanceAdministration classCode="SBADM" moodCode="EVN">
+<templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+<id root="b5bc46bc-f1f1-4022-8ac3-8cda40972258"/>
+<text>
+<reference value="#Med_1"/>
+</text>
+<statusCode code="completed"/>
+<effectiveTime xsi:type="IVL_TS">
+<low value="20140531"/>
+<high nullFlavor="NI"/>
+</effectiveTime>
+<effectiveTime institutionSpecified="false" operator="A" xsi:type="PIVL_TS"/>
+<doseQuantity nullFlavor="NI"/>
+<consumable>
+<manufacturedProduct classCode="MANU">
+<templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+<id root="9680896d-5382-459d-9fa2-3ba806710c80"/>
+<manufacturedMaterial>
+<code code="432638" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="acetaminophen-aspirin buffered 250 mg-250 mg oral tablet">
+<originalText>
+<reference value="#MEDNAME_1"/>
+</originalText>
+<translation code="432638" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="acetaminophen-aspirin buffered 250 mg-250 mg oral tablet"/>
+</code>
+<name>acetaminophen-aspirin buffered 250 mg-250 mg oral tablet</name>
+</manufacturedMaterial>
+</manufacturedProduct>
+</consumable>
+</substanceAdministration>
+</entry>
+<entry typeCode="DRIV">
+<substanceAdministration classCode="SBADM" moodCode="EVN">
+<templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+<id root="3d1ea1e4-bb78-4735-b069-a92987f29f7c"/>
+<text>
+<reference value="#Med_2"/>1 g orally once a day with meals x1 day</text>
+<statusCode code="completed"/>
+<effectiveTime xsi:type="IVL_TS">
+<low value="20140515"/>
+<high value="20140515"/>
+</effectiveTime>
+<effectiveTime institutionSpecified="false" operator="A" xsi:type="PIVL_TS"/>
+<doseQuantity nullFlavor="NI"/>
+<consumable>
+<manufacturedProduct classCode="MANU">
+<templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+<id root="980a7969-247e-4aa9-9cd3-ee51a8f2d6d6"/>
+<manufacturedMaterial>
+<code code="617312" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Lipitor 10 mg oral tablet">
+<originalText>
+<reference value="#MEDNAME_2"/>
+</originalText>
+<translation code="617312" codeSystem="2.16.840.1.113883.6.88" codeSystemName="RxNorm" displayName="Lipitor 10 mg oral tablet"/>
+</code>
+<name>Lipitor 10 mg oral tablet</name>
+</manufacturedMaterial>
+</manufacturedProduct>
+</consumable>
+</substanceAdministration>
+</entry>
+</section>
+</component>
+<component>
+<section>
+<templateId root="2.16.840.1.113883.10.20.22.2.38"/>
+<code code="29549-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="MEDICATIONS ADMINISTERED"/>
+<title>MEDICATIONS ADMINISTERED DURING VISIT</title>
+<text>
+<table border="1" width="100%">
+<thead>
+<tr>
+<th>Medication</th>
+<th>Administration Date</th>
+<th>Instructions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<content ID="Med_Admin_1">No medications information available</content>
+</td>
+<td/>
+<td/>
+</tr>
+</tbody>
+</table>
+</text>
+<entry typeCode="DRIV">
+<substanceAdministration classCode="SBADM" moodCode="EVN" nullFlavor="NI">
+<templateId root="2.16.840.1.113883.10.20.22.4.16"/>
+<id root="83db5289-efa0-45d6-a4b8-b73286616945"/>
+<text>
+<reference value="#Med_Admin_1"/>
+</text>
+<statusCode code="completed"/>
+<effectiveTime xsi:type="IVL_TS">
+<low nullFlavor="NI"/>
+<high nullFlavor="NI"/>
+</effectiveTime>
+<effectiveTime nullFlavor="NI" operator="A" xsi:type="PIVL_TS"/>
+<doseQuantity nullFlavor="NI"/>
+<consumable>
+<manufacturedProduct classCode="MANU">
+<templateId root="2.16.840.1.113883.10.20.22.4.23"/>
+<id root="43af0af7-ba33-41a3-9383-63fcfe1afa1c"/>
+<manufacturedMaterial>
+<code nullFlavor="NI">
+<originalText>
+<reference value="#Med1"/>
+</originalText>
+</code>
+<name/>
+</manufacturedMaterial>
+</manufacturedProduct>
+</consumable>
+</substanceAdministration>
+</entry>
+</section>
+</component>
+<component>
+<section>
+<templateId root="2.16.840.1.113883.10.20.22.2.3.1"/>
+<code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Relevant diagnostic tests and/or laboratory data"/>
+<title>RESULTS</title>
+<text>
+<content ID="results_1">No Information About Results</content>
+</text>
+<entry typeCode="DRIV">
+<organizer classCode="CLUSTER" moodCode="EVN">
+<templateId root="2.16.840.1.113883.10.20.22.4.1"/>
+<id extension="20130607113300-ResultOrganizer" root="2.16.840.1.113883.3.3208.101.10"/>
+<code nullFlavor="NI" xsi:type="CE"/>
+<statusCode code="completed"/>
+<effectiveTime nullFlavor="NI"/>
+<component>
+<observation classCode="OBS" moodCode="EVN" nullFlavor="NI">
+<templateId root="2.16.840.1.113883.10.20.22.4.2"/>
+<id nullFlavor="NI"/>
+<code code="26436-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Laboratory Studies"/>
+<text>
+<reference value="#results_1"/>
+</text>
+<statusCode code="completed"/>
+<effectiveTime nullFlavor="NI"/>
+<value nullFlavor="NI" xsi:type="CD"/>
+<interpretationCode nullFlavor="NI"/>
+</observation>
+</component>
+</organizer>
+</entry>
+</section>
+</component>
+<component>
+<section>
+<templateId root="2.16.840.1.113883.10.20.22.2.2.1"/>
+<templateId root="2.16.840.1.113883.10.20.22.2.2"/>
+<code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of immunizations"/>
+<title>IMMUNIZATIONS</title>
+<text>
+<table border="1" width="100%">
+<thead>
+<tr>
+<th>Vaccine Name</th>
+<th>Date</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>
+<content ID="immun_1">Pneumococcal (PCV, PPSV), [CVX: 33]</content>
+</td>
+<td>05/15/2014</td>
+<td>Completed</td>
+</tr>
+</tbody>
+</table>
+</text>
+<entry typeCode="DRIV">
+<substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="true">
+<templateId root="2.16.840.1.113883.10.20.22.4.52"/>
+<id root="fada6f25-cacb-407c-a8a3-342d2b2a7a19"/>
+<text>
+<reference value="#immun_1"/>
+</text>
+<statusCode code="completed"/>
+<effectiveTime value="20140515" xsi:type="IVL_TS"/>
+<doseQuantity unit="mL" value="2.0"/>
+<consumable>
+<manufacturedProduct classCode="MANU">
+<templateId root="2.16.840.1.113883.10.20.22.4.54"/>
+<manufacturedMaterial>
+<code code="33" codeSystem="2.16.840.1.113883.12.292" codeSystemName="CVX" displayName="Pneumococcal (PCV, PPSV)">
+<originalText>
+<reference value="#immun_1"/>
+</originalText>
+</code>
+<lotNumberText>3422</lotNumberText>
+</manufacturedMaterial>
+<manufacturerOrganization>
+<name>Merck And Co., Inc.</name>
+</manufacturerOrganization>
+</manufacturedProduct>
+</consumable>
+</substanceAdministration>
+</entry>
+</section>
+</component>
+</structuredBody>
+</component>
+</ClinicalDocument>
