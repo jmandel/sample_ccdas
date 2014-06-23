@@ -1,0 +1,1527 @@
+<ClinicalDocument classCode="DOCCLIN" moodCode="EVN" xmlns="urn:hl7-org:v3" xmlns:sdtc="urn:hl7-org:sdtc" xmlns:voc="urn:hl7-org:v3/voc" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:hl7-org:v3 CDASchemas\cda\Schemas\CDA.xsd">
+	<realmCode code="US" />
+	<typeId extension="POCD_HD000040" root="2.16.840.1.113883.1.3" />
+	<templateId root="2.16.840.1.113883.10.20.22.1.1" />
+	<templateId root="2.16.840.1.113883.10.20.22.1.2" />
+	<id extension="E382F7D2-940F-11E3-92B1-1CC4B7D83400" root="1.3.6.1.4.1.16517" />
+	<code code="34133-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Summarization of Episode Note" />
+	<title>BPG AT 850 BOYLSTON - INTERNAL MEDICINE  Summarization of Episode Note</title>
+	<effectiveTime value="20140212130251-0500" />
+	<confidentialityCode code="N" codeSystem="2.16.840.1.113883.5.25" codeSystemName="Confidentiality" displayName="Normal" />
+	<languageCode code="en-US" />
+	<recordTarget contextControlCode="OP" typeCode="RCT">
+		<patientRole classCode="PAT">
+			<id extension="107624082" root="1.3.6.1.4.1.16517.1" />
+			<id extension="50068642" root="1.3.6.1.4.1.16517.2.2" />
+			<addr>
+				<country>US</country>
+				<state>MA</state>
+				<city>BOSTON</city>
+				<postalCode>02109</postalCode>
+				<streetAddressLine>2324 MAIN STREET</streetAddressLine>
+			</addr>
+			<telecom use="HP" value="tel:(508)555-1212" />
+			<patient classCode="PSN" determinerCode="INSTANCE">
+				<name>
+					<family>BWHCKDRISKTEST</family>
+					<given>TWOTEST</given>
+				</name>
+				<administrativeGenderCode code="M" codeSystem="2.16.840.1.113883.5.1" codeSystemName="AdministrativeGender" displayName="Male" />
+				<birthTime value="19540202" />
+				<raceCode code="2106-3" codeSystem="2.16.840.1.113883.6.238" displayName="White"></raceCode>
+				<ethnicGroupCode code="2186-5" codeSystem="2.16.840.1.113883.6.238" displayName="Not Hispanic or Latino"></ethnicGroupCode>
+				<languageCommunication>
+					<languageCode nullFlavor="UNK"></languageCode>
+				</languageCommunication>
+			</patient>
+		</patientRole>
+	</recordTarget>
+	<author typeCode="AUT" contextControlCode="OP">
+		<time value="20140212130251-0500"></time>
+		<assignedAuthor classCode="ASSIGNED">
+			<id nullFlavor="UNK"></id>
+			<addr>
+				<state>MA</state>
+				<city>Boston</city>
+				<postalCode>02199-8001</postalCode>
+				<streetAddressLine>Prudential Tower</streetAddressLine>
+				<streetAddressLine>800 Boylston Street, Suite 1150</streetAddressLine>
+			</addr>
+			<telecom value="tel:(617)278-1000" use="WP"></telecom>
+			<assignedAuthoringDevice>
+				<manufacturerModelName>Partners HealthCare CDA Factory</manufacturerModelName>
+				<softwareName>Partners HealthCare CDA Documents Generator</softwareName>
+			</assignedAuthoringDevice>
+		</assignedAuthor>
+	</author>
+	<custodian typeCode="CST">
+		<assignedCustodian classCode="ASSIGNED">
+			<representedCustodianOrganization classCode="ORG" determinerCode="INSTANCE">
+				<id root="1.3.6.1.4.1.16517" extension="PHS"></id>
+				<name>Partners HealthCare</name>
+				<telecom value="tel:(617)278-1000" use="WP"></telecom>
+				<addr>
+					<state>MA</state>
+					<city>Boston</city>
+					<postalCode>02199-8001</postalCode>
+					<streetAddressLine>Prudential Tower</streetAddressLine>
+					<streetAddressLine>800 Boylston Street, Suite 1150</streetAddressLine>
+				</addr>
+			</representedCustodianOrganization>
+		</assignedCustodian>
+	</custodian>
+	<documentationOf typeCode="DOC">
+		<serviceEvent classCode="PCPR" moodCode="EVN">
+			<effectiveTime>
+				<low nullFlavor="UNK"></low>
+				<high value="20140212130251"></high>
+			</effectiveTime>
+			<performer typeCode="PRF">
+				<assignedEntity>
+					<id nullFlavor="UNK"></id>
+					<addr nullFlavor="UNK"></addr>
+					<telecom nullFlavor="UNK"></telecom>
+					<assignedPerson>
+						<name nullFlavor="UNK"></name>
+					</assignedPerson>
+				</assignedEntity>
+			</performer>
+		</serviceEvent>
+	</documentationOf>
+	<componentOf>
+		<encompassingEncounter>
+			<id root="1.3.6.1.4.1.16517" extension="20130307_100^INTERNAL MEDICINE"></id>
+			<effectiveTime value="20130307"></effectiveTime>
+			<responsibleParty>
+				<assignedEntity>
+					<id nullFlavor="UNK"></id>
+					<addr>
+						<state>MA</state>
+						<city> CHESTNUT HILL</city>
+						<postalCode>02467</postalCode>
+						<streetAddressLine>850 BOYLSTON ST SUITE 530</streetAddressLine>
+					</addr>
+					<telecom value="tel:(617)732-9900" use="WP"></telecom>
+					<assignedPerson>
+						<name>
+							<family>Doe</family>
+							<given>John</given>
+							<given>M.</given>
+							<suffix>M.D.</suffix>
+						</name>
+					</assignedPerson>
+				</assignedEntity>
+			</responsibleParty>
+			<location>
+				<healthCareFacility>
+					<id root="1.3.6.1.4.1.16517" extension="100^INTERNAL MEDICINE"></id>
+					<location>
+						<name>BPG AT 850 BOYLSTON - INTERNAL MEDICINE </name>
+						<addr>
+							<state>MA</state>
+							<city> CHESTNUT HILL</city>
+							<postalCode>02467</postalCode>
+							<streetAddressLine>850 BOYLSTON ST SUITE 530</streetAddressLine>
+						</addr>
+					</location>
+				</healthCareFacility>
+			</location>
+		</encompassingEncounter>
+	</componentOf>
+	<component>
+		<structuredBody>
+			<component>
+				<section classCode="DOCSECT" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.2.5.1"></templateId>
+					<code code="11450-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Problem List"></code>
+					<title>Problems</title>
+					<text>
+						<table width="100%" border="1">
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>Problems</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>02/12/2014 13:02</td>
+									<td ID="Problem-1">No problem data is applicable</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry typeCode="DRIV">
+						<act classCode="ACT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.3"></templateId>
+							<id nullFlavor="NI"></id>
+							<code code="CONC" codeSystem="2.16.840.1.113883.5.6"></code>
+							<statusCode code="active"></statusCode>
+							<effectiveTime>
+								<low value="20140212130251"></low>
+							</effectiveTime>
+							<entryRelationship typeCode="SUBJ" inversionInd="false">
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.4"></templateId>
+									<id nullFlavor="NI"></id>
+									<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"></code>
+									<text mediaType="text/plain">
+										<reference value="#Problem-1"></reference>
+									</text>
+									<statusCode code="completed"></statusCode>
+									<effectiveTime>
+										<low value="20140212130251"></low>
+									</effectiveTime>
+									<value xsi:type="CD" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" nullFlavor="UNK"></value>
+								</observation>
+							</entryRelationship>
+						</act>
+					</entry>
+				</section>
+			</component>
+			<component>
+				<section classCode="DOCSECT" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.2.1.1"></templateId>
+					<code code="10160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of medication use"></code>
+					<title>Medications</title>
+					<text>
+						<table width="100%" border="1">
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>Medications</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>02/12/2014 13:02</td>
+									<td ID="Medication-1">No medication data is applicable</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry typeCode="DRIV" contextConductionInd="true">
+						<substanceAdministration classCode="SBADM" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.16"></templateId>
+							<id nullFlavor="NI"></id>
+							<text>
+								<reference value="#Medication-1"></reference>
+							</text>
+							<statusCode code="completed"></statusCode>
+							<effectiveTime xsi:type="IVL_TS" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+								<low value="20140212130251"></low>
+								<high nullFlavor="UNK"></high>
+							</effectiveTime>
+							<consumable typeCode="CSM">
+								<manufacturedProduct classCode="MANU">
+									<templateId root="2.16.840.1.113883.10.20.22.4.23"></templateId>
+									<manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+										<code nullFlavor="UNK">
+											<originalText>No medication data is applicable</originalText>
+										</code>
+									</manufacturedMaterial>
+								</manufacturedProduct>
+							</consumable>
+						</substanceAdministration>
+					</entry>
+				</section>
+			</component>
+			<component>
+				<section classCode="DOCSECT" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.2.7.1"></templateId>
+					<code code="47519-4" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of procedures"></code>
+					<title>Procedures</title>
+					<text>
+						<table width="100%" border="1">
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>Procedures</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>02/12/2014 13:02</td>
+									<td ID="Procedure-1">No procedure data is applicable</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry typeCode="DRIV" contextConductionInd="true">
+						<procedure classCode="PROC" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.14"></templateId>
+							<id nullFlavor="NI"></id>
+							<code xsi:type="CE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" nullFlavor="UNK">
+								<originalText>
+									<reference value="#Procedure-1"></reference>
+								</originalText>
+							</code>
+							<statusCode code="completed"></statusCode>
+							<effectiveTime value="20140212130251"></effectiveTime>
+						</procedure>
+					</entry>
+				</section>
+			</component>
+			<component>
+				<section classCode="DOCSECT" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.2.6.1"></templateId>
+					<code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alert "></code>
+					<title>Allergies</title>
+					<text>
+						<table width="100%" border="1">
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>Allergies</th>
+									<th>Status</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>02/12/2014 13:02</td>
+									<td ID="Allergy-1">No allergy data is applicable</td>
+									<td>active</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry typeCode="DRIV">
+						<act classCode="ACT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.30"></templateId>
+							<id root="1.3.6.1.4.1.16517" extension="1"></id>
+							<code code="48765-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Allergies, adverse reactions, alerts"></code>
+							<statusCode code="active"></statusCode>
+							<effectiveTime>
+								<low value="20140212130251"></low>
+							</effectiveTime>
+							<entryRelationship typeCode="SUBJ">
+								<observation nullFlavor="NASK" classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.7"></templateId>
+									<id root="1.3.6.1.4.1.16517" extension="1"></id>
+									<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4" codeSystemName="ActCode"></code>
+									<statusCode code="completed"></statusCode>
+									<effectiveTime>
+										<low value="20140212130251"></low>
+									</effectiveTime>
+									<value xsi:type="CD" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" code="419199007" codeSystem="2.16.840.1.113883.6.96">
+										<originalText>
+											<reference value="#Allergy-1"></reference>
+										</originalText>
+									</value>
+									<entryRelationship typeCode="SUBJ" inversionInd="true">
+										<observation classCode="OBS" moodCode="EVN">
+											<templateId root="2.16.840.1.113883.10.20.22.4.28"></templateId>
+											<code code="33999-4" codeSystem="2.16.840.1.113883.6.1"></code>
+											<statusCode code="completed"></statusCode>
+											<value xsi:type="CE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" code="55561003" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED" displayName="active"></value>
+										</observation>
+									</entryRelationship>
+								</observation>
+							</entryRelationship>
+						</act>
+					</entry>
+				</section>
+			</component>
+			<component>
+				<section classCode="DOCSECT" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.2.2.1"></templateId>
+					<code code="11369-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of immunizations"></code>
+					<title>Immunizations</title>
+					<text>
+						<table width="100%" border="1">
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>Immunizations</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>02/12/2014 13:02</td>
+									<td ID="Immunization-1">No immunization data is applicable</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry typeCode="DRIV" contextConductionInd="true">
+						<substanceAdministration classCode="SBADM" moodCode="EVN" negationInd="false">
+							<templateId root="2.16.840.1.113883.10.20.22.4.52"></templateId>
+							<id nullFlavor="UNK"></id>
+							<text>
+								<reference value="#Immunization-1"></reference>
+							</text>
+							<statusCode code="completed"></statusCode>
+							<effectiveTime value="20140212130251"></effectiveTime>
+							<consumable typeCode="CSM">
+								<manufacturedProduct classCode="MANU">
+									<templateId root="2.16.840.1.113883.10.20.22.4.54"></templateId>
+									<manufacturedMaterial classCode="MMAT" determinerCode="KIND">
+										<code nullFlavor="UNK">
+											<originalText>No immunization data is applicable</originalText>
+										</code>
+									</manufacturedMaterial>
+								</manufacturedProduct>
+							</consumable>
+						</substanceAdministration>
+					</entry>
+				</section>
+			</component>
+			<component>
+				<section classCode="DOCSECT" moodCode="EVN">
+					<templateId root="1.3.6.1.4.1.19376.1.5.3.1.3.1"></templateId>
+					<code code="42349-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Reason for referral"></code>
+					<title>Reason for Referral</title>
+					<text>
+						<table width="100%" border="1">
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>Details</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>02/12/2014</td>
+									<td>No reason for referral data is applicable</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+				</section>
+			</component>
+			<component>
+				<section classCode="DOCSECT" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.2.3.1"></templateId>
+					<code code="30954-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Relevant diagnostic tests and/or laboratory data"></code>
+					<title>Results</title>
+					<text>
+						<table width="100%" border="1">
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>Test</th>
+									<th>Value</th>
+									<th>Reference Range</th>
+									<th>Abnormal Flag</th>
+									<th>Comments</th>
+									<th>Ordering Provider</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>02/11/2014 13:54</td>
+									<td ID="Result-100025030729-E38431F6-940F-11E3-B318-1CC4B7D83400">SODIUM</td>
+									<td>141 mmol/L</td>
+									<td>136-145 mmol/L</td>
+									<td>Not available</td>
+									<td>Not available</td>
+									<td>HUSSAIN,SADIA S. M.D.</td>
+								</tr>
+								<tr>
+									<td>02/11/2014 13:54</td>
+									<td ID="Result-100025030730-E38471A2-940F-11E3-B318-1CC4B7D83400">POTASSIUM</td>
+									<td>4.4 mmol/L</td>
+									<td>3.4-5.0 mmol/L</td>
+									<td>Not available</td>
+									<td>Not available</td>
+									<td>HUSSAIN,SADIA S. M.D.</td>
+								</tr>
+								<tr>
+									<td>02/11/2014 13:54</td>
+									<td ID="Result-100025030731-E38496DC-940F-11E3-B318-1CC4B7D83400">CHLORIDE</td>
+									<td>103 mmol/L</td>
+									<td>98-107 mmol/L</td>
+									<td>Not available</td>
+									<td>Not available</td>
+									<td>HUSSAIN,SADIA S. M.D.</td>
+								</tr>
+								<tr>
+									<td>02/11/2014 13:54</td>
+									<td ID="Result-100025030732-E384CB34-940F-11E3-B318-1CC4B7D83400">TOTAL CO2</td>
+									<td>29 mmol/L</td>
+									<td>22-31 mmol/L</td>
+									<td>Not available</td>
+									<td>Not available</td>
+									<td>HUSSAIN,SADIA S. M.D.</td>
+								</tr>
+								<tr>
+									<td>02/11/2014 13:54</td>
+									<td ID="Result-100025030727-E38552A2-940F-11E3-B318-1CC4B7D83400">UREA N</td>
+									<td>14 mg/dL</td>
+									<td>6-23 mg/dL</td>
+									<td>Not available</td>
+									<td>Not available</td>
+									<td>HUSSAIN,SADIA S. M.D.</td>
+								</tr>
+								<tr>
+									<td>02/11/2014 13:54</td>
+									<td ID="Result-100025030734-E3857F3E-940F-11E3-B318-1CC4B7D83400">CALCIUM</td>
+									<td>9.4 mg/dL</td>
+									<td>8.8-10.7 mg/dL</td>
+									<td>Not available</td>
+									<td>Not available</td>
+									<td>HUSSAIN,SADIA S. M.D.</td>
+								</tr>
+								<tr>
+									<td>02/11/2014 13:54</td>
+									<td ID="Result-100025030728-E385CBE2-940F-11E3-B318-1CC4B7D83400">CREATININE</td>
+									<td>1.90 mg/dL</td>
+									<td>0.50-1.20 mg/dL</td>
+									<td>Not available</td>
+									<td>Not available</td>
+									<td>HUSSAIN,SADIA S. M.D.</td>
+								</tr>
+								<tr>
+									<td>02/11/2014 13:54</td>
+									<td ID="Result-100025030726-E386387A-940F-11E3-B318-1CC4B7D83400">GLUCOSE</td>
+									<td>91 mg/dL</td>
+									<td>70-100 mg/dL</td>
+									<td>Not available</td>
+									<td>Not available</td>
+									<td>HUSSAIN,SADIA S. M.D.</td>
+								</tr>
+								<tr>
+									<td>02/11/2014 13:54</td>
+									<td ID="Result-100025030733-E3869EB4-940F-11E3-B318-1CC4B7D83400">ANION GAP</td>
+									<td>10 mmol/L</td>
+									<td>5-17 mmol/L</td>
+									<td>Not available</td>
+									<td>Not available</td>
+									<td>HUSSAIN,SADIA S. M.D.</td>
+								</tr>
+								<tr>
+									<td>02/11/2014 13:54</td>
+									<td ID="Result-100025030735-E3873CFC-940F-11E3-B318-1CC4B7D83400">eGFR</td>
+									<td>38 </td>
+									<td>Not available</td>
+									<td>Not available</td>
+									<td ID="ResultComment-100025030735-E3873CFC-940F-11E3-B318-1CC4B7D83400">
+										<![CDATA[(Abnormal if <60 mL/min/1.73m2
+If patient is black, multiply by 1.21)]]>
+									</td>
+									<td>HUSSAIN,SADIA S. M.D.</td>
+								</tr>
+								<tr>
+									<td>02/10/2014 10:00</td>
+									<td ID="Result-100025030663-E3850202-940F-11E3-B318-1CC4B7D83400">TOTAL CO2</td>
+									<td>29 mmol/L</td>
+									<td>22-31 mmol/L</td>
+									<td>Not available</td>
+									<td>Not available</td>
+									<td>Not available</td>
+								</tr>
+								<tr>
+									<td>02/10/2014 10:00</td>
+									<td ID="Result-100025030662-E3852566-940F-11E3-B318-1CC4B7D83400">ALBUMIN</td>
+									<td>4.1 g/dL</td>
+									<td>3.5-5.2 g/dL</td>
+									<td>Not available</td>
+									<td>Not available</td>
+									<td>Not available</td>
+								</tr>
+								<tr>
+									<td>02/10/2014 10:00</td>
+									<td ID="Result-100025030660-E385A464-940F-11E3-B318-1CC4B7D83400">CALCIUM</td>
+									<td>9.4 mg/dL</td>
+									<td>8.8-10.7 mg/dL</td>
+									<td>Not available</td>
+									<td>Not available</td>
+									<td>Not available</td>
+								</tr>
+								<tr>
+									<td>02/10/2014 10:00</td>
+									<td ID="Result-100025030658-E385FB58-940F-11E3-B318-1CC4B7D83400">CREATININE</td>
+									<td>1.9 mg/dL</td>
+									<td>0.50-1.20 mg/dL</td>
+									<td>Not available</td>
+									<td>Not available</td>
+									<td>Not available</td>
+								</tr>
+								<tr>
+									<td>02/10/2014 10:00</td>
+									<td ID="Result-100025030661-E3866F7A-940F-11E3-B318-1CC4B7D83400">PHOSPHATE</td>
+									<td>4.2 mg/dL</td>
+									<td>2.4-4.3 mg/dL</td>
+									<td>Not available</td>
+									<td>Not available</td>
+									<td>Not available</td>
+								</tr>
+								<tr>
+									<td>02/10/2014 10:00</td>
+									<td ID="Result-100025030659-E3876CE0-940F-11E3-B318-1CC4B7D83400">eGFR</td>
+									<td>38 </td>
+									<td>Not available</td>
+									<td>Not available</td>
+									<td ID="ResultComment-100025030659-E3876CE0-940F-11E3-B318-1CC4B7D83400">
+										<![CDATA[(Abnormal if <60 mL/min/1.73m2
+If patient is black, multiply by 1.21)]]>
+									</td>
+									<td>Not available</td>
+								</tr>
+								<tr>
+									<td>02/10/2014 09:30</td>
+									<td ID="Result-100025030648-E386CBBE-940F-11E3-B318-1CC4B7D83400">Malb</td>
+									<td>4.1 mg/dL</td>
+									<td>0.0-2.0 mg/dL</td>
+									<td>*</td>
+									<td>Not available</td>
+									<td>SINGH,KARANDEEP M.D.</td>
+								</tr>
+								<tr>
+									<td>02/10/2014 09:30</td>
+									<td ID="Result-100025030647-E386EF4A-940F-11E3-B318-1CC4B7D83400">Malb/Cr</td>
+									<td>221 mgAlb/gCre</td>
+									<td>0.0-30 mgAlb/gCre</td>
+									<td>*</td>
+									<td>Not available</td>
+									<td>SINGH,KARANDEEP M.D.</td>
+								</tr>
+								<tr>
+									<td>02/10/2014 09:30</td>
+									<td ID="Result-100025030646-E3871A10-940F-11E3-B318-1CC4B7D83400">TIME SPAN</td>
+									<td>RANDOM</td>
+									<td>Not available</td>
+									<td>Not available</td>
+									<td>Not available</td>
+									<td>SINGH,KARANDEEP M.D.</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry typeCode="DRIV">
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.1"></templateId>
+							<id root="1.3.6.1.4.1.16517" extension="100025030729-E38431F6-940F-11E3-B318-1CC4B7D83400"></id>
+							<code code="2951-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Sodium [Moles/volume] in Serum or Plasma"></code>
+							<statusCode code="completed"></statusCode>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"></templateId>
+									<id root="1.3.6.1.4.1.16517" extension="100025030729-E38431F6-940F-11E3-B318-1CC4B7D83400"></id>
+									<code code="2951-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Sodium [Moles/volume] in Serum or Plasma">
+										<originalText>SODIUM</originalText>
+									</code>
+									<text mediaType="text/plain">
+										<reference value="#Result-100025030729-E38431F6-940F-11E3-B318-1CC4B7D83400"></reference>
+									</text>
+									<statusCode code="completed"></statusCode>
+									<effectiveTime value="201402111354"></effectiveTime>
+									<value xsi:type="PQ" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" value="141" unit="mmol/L"></value>
+									<entryRelationship typeCode="REFR" contextConductionInd="true">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="48766-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Information source"></code>
+											<statusCode code="completed"></statusCode>
+											<value xsi:type="ST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">HUSSAIN,SADIA S. M.D.</value>
+										</observation>
+									</entryRelationship>
+									<referenceRange typeCode="REFV">
+										<observationRange classCode="OBS" moodCode="EVN.CRT">
+											<text representation="TXT" mediaType="text/plain">136-145 mmol/L</text>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+					<entry typeCode="DRIV">
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.1"></templateId>
+							<id root="1.3.6.1.4.1.16517" extension="100025030730-E38471A2-940F-11E3-B318-1CC4B7D83400"></id>
+							<code code="2823-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Potassium [Moles/volume] in Serum or Plasma"></code>
+							<statusCode code="completed"></statusCode>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"></templateId>
+									<id root="1.3.6.1.4.1.16517" extension="100025030730-E38471A2-940F-11E3-B318-1CC4B7D83400"></id>
+									<code code="2823-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Potassium [Moles/volume] in Serum or Plasma">
+										<originalText>POTASSIUM</originalText>
+									</code>
+									<text mediaType="text/plain">
+										<reference value="#Result-100025030730-E38471A2-940F-11E3-B318-1CC4B7D83400"></reference>
+									</text>
+									<statusCode code="completed"></statusCode>
+									<effectiveTime value="201402111354"></effectiveTime>
+									<value xsi:type="PQ" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" value="4.4" unit="mmol/L"></value>
+									<entryRelationship typeCode="REFR" contextConductionInd="true">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="48766-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Information source"></code>
+											<statusCode code="completed"></statusCode>
+											<value xsi:type="ST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">HUSSAIN,SADIA S. M.D.</value>
+										</observation>
+									</entryRelationship>
+									<referenceRange typeCode="REFV">
+										<observationRange classCode="OBS" moodCode="EVN.CRT">
+											<text representation="TXT" mediaType="text/plain">3.4-5.0 mmol/L</text>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+					<entry typeCode="DRIV">
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.1"></templateId>
+							<id root="1.3.6.1.4.1.16517" extension="100025030731-E38496DC-940F-11E3-B318-1CC4B7D83400"></id>
+							<code code="2075-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Chloride [Moles/volume] in Serum or Plasma"></code>
+							<statusCode code="completed"></statusCode>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"></templateId>
+									<id root="1.3.6.1.4.1.16517" extension="100025030731-E38496DC-940F-11E3-B318-1CC4B7D83400"></id>
+									<code code="2075-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Chloride [Moles/volume] in Serum or Plasma">
+										<originalText>CHLORIDE</originalText>
+									</code>
+									<text mediaType="text/plain">
+										<reference value="#Result-100025030731-E38496DC-940F-11E3-B318-1CC4B7D83400"></reference>
+									</text>
+									<statusCode code="completed"></statusCode>
+									<effectiveTime value="201402111354"></effectiveTime>
+									<value xsi:type="PQ" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" value="103" unit="mmol/L"></value>
+									<entryRelationship typeCode="REFR" contextConductionInd="true">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="48766-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Information source"></code>
+											<statusCode code="completed"></statusCode>
+											<value xsi:type="ST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">HUSSAIN,SADIA S. M.D.</value>
+										</observation>
+									</entryRelationship>
+									<referenceRange typeCode="REFV">
+										<observationRange classCode="OBS" moodCode="EVN.CRT">
+											<text representation="TXT" mediaType="text/plain">98-107 mmol/L</text>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+					<entry typeCode="DRIV">
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.1"></templateId>
+							<id root="1.3.6.1.4.1.16517" extension="100025030732-E384CB34-940F-11E3-B318-1CC4B7D83400"></id>
+							<code code="2028-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Carbon dioxide, total [Moles/volume] in Serum or Plasma"></code>
+							<statusCode code="completed"></statusCode>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"></templateId>
+									<id root="1.3.6.1.4.1.16517" extension="100025030732-E384CB34-940F-11E3-B318-1CC4B7D83400"></id>
+									<code code="2028-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Carbon dioxide, total [Moles/volume] in Serum or Plasma">
+										<originalText>TOTAL CO2</originalText>
+									</code>
+									<text mediaType="text/plain">
+										<reference value="#Result-100025030732-E384CB34-940F-11E3-B318-1CC4B7D83400"></reference>
+									</text>
+									<statusCode code="completed"></statusCode>
+									<effectiveTime value="201402111354"></effectiveTime>
+									<value xsi:type="PQ" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" value="29" unit="mmol/L"></value>
+									<entryRelationship typeCode="REFR" contextConductionInd="true">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="48766-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Information source"></code>
+											<statusCode code="completed"></statusCode>
+											<value xsi:type="ST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">HUSSAIN,SADIA S. M.D.</value>
+										</observation>
+									</entryRelationship>
+									<referenceRange typeCode="REFV">
+										<observationRange classCode="OBS" moodCode="EVN.CRT">
+											<text representation="TXT" mediaType="text/plain">22-31 mmol/L</text>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+					<entry typeCode="DRIV">
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.1"></templateId>
+							<id root="1.3.6.1.4.1.16517" extension="100025030727-E38552A2-940F-11E3-B318-1CC4B7D83400"></id>
+							<code code="3094-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Urea nitrogen [Mass/volume] in Serum or Plasma"></code>
+							<statusCode code="completed"></statusCode>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"></templateId>
+									<id root="1.3.6.1.4.1.16517" extension="100025030727-E38552A2-940F-11E3-B318-1CC4B7D83400"></id>
+									<code code="3094-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Urea nitrogen [Mass/volume] in Serum or Plasma">
+										<originalText>UREA N</originalText>
+									</code>
+									<text mediaType="text/plain">
+										<reference value="#Result-100025030727-E38552A2-940F-11E3-B318-1CC4B7D83400"></reference>
+									</text>
+									<statusCode code="completed"></statusCode>
+									<effectiveTime value="201402111354"></effectiveTime>
+									<value xsi:type="PQ" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" value="14" unit="mg/dL"></value>
+									<entryRelationship typeCode="REFR" contextConductionInd="true">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="48766-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Information source"></code>
+											<statusCode code="completed"></statusCode>
+											<value xsi:type="ST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">HUSSAIN,SADIA S. M.D.</value>
+										</observation>
+									</entryRelationship>
+									<referenceRange typeCode="REFV">
+										<observationRange classCode="OBS" moodCode="EVN.CRT">
+											<text representation="TXT" mediaType="text/plain">6-23 mg/dL</text>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+					<entry typeCode="DRIV">
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.1"></templateId>
+							<id root="1.3.6.1.4.1.16517" extension="100025030734-E3857F3E-940F-11E3-B318-1CC4B7D83400"></id>
+							<code code="17861-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Calcium [Mass/volume] in Serum or Plasma"></code>
+							<statusCode code="completed"></statusCode>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"></templateId>
+									<id root="1.3.6.1.4.1.16517" extension="100025030734-E3857F3E-940F-11E3-B318-1CC4B7D83400"></id>
+									<code code="17861-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Calcium [Mass/volume] in Serum or Plasma">
+										<originalText>CALCIUM</originalText>
+									</code>
+									<text mediaType="text/plain">
+										<reference value="#Result-100025030734-E3857F3E-940F-11E3-B318-1CC4B7D83400"></reference>
+									</text>
+									<statusCode code="completed"></statusCode>
+									<effectiveTime value="201402111354"></effectiveTime>
+									<value xsi:type="PQ" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" value="9.4" unit="mg/dL"></value>
+									<entryRelationship typeCode="REFR" contextConductionInd="true">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="48766-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Information source"></code>
+											<statusCode code="completed"></statusCode>
+											<value xsi:type="ST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">HUSSAIN,SADIA S. M.D.</value>
+										</observation>
+									</entryRelationship>
+									<referenceRange typeCode="REFV">
+										<observationRange classCode="OBS" moodCode="EVN.CRT">
+											<text representation="TXT" mediaType="text/plain">8.8-10.7 mg/dL</text>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+					<entry typeCode="DRIV">
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.1"></templateId>
+							<id root="1.3.6.1.4.1.16517" extension="100025030728-E385CBE2-940F-11E3-B318-1CC4B7D83400"></id>
+							<code code="2160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Creatinine [Mass/volume] in Serum or Plasma"></code>
+							<statusCode code="completed"></statusCode>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"></templateId>
+									<id root="1.3.6.1.4.1.16517" extension="100025030728-E385CBE2-940F-11E3-B318-1CC4B7D83400"></id>
+									<code code="2160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Creatinine [Mass/volume] in Serum or Plasma">
+										<originalText>CREATININE</originalText>
+									</code>
+									<text mediaType="text/plain">
+										<reference value="#Result-100025030728-E385CBE2-940F-11E3-B318-1CC4B7D83400"></reference>
+									</text>
+									<statusCode code="completed"></statusCode>
+									<effectiveTime value="201402111354"></effectiveTime>
+									<value xsi:type="PQ" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" value="1.90" unit="mg/dL"></value>
+									<entryRelationship typeCode="REFR" contextConductionInd="true">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="48766-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Information source"></code>
+											<statusCode code="completed"></statusCode>
+											<value xsi:type="ST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">HUSSAIN,SADIA S. M.D.</value>
+										</observation>
+									</entryRelationship>
+									<referenceRange typeCode="REFV">
+										<observationRange classCode="OBS" moodCode="EVN.CRT">
+											<text representation="TXT" mediaType="text/plain">0.50-1.20 mg/dL</text>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+					<entry typeCode="DRIV">
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.1"></templateId>
+							<id root="1.3.6.1.4.1.16517" extension="100025030726-E386387A-940F-11E3-B318-1CC4B7D83400"></id>
+							<code code="6777-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Deprecated Glucose [Mass/volume] in Serum or Plasma"></code>
+							<statusCode code="completed"></statusCode>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"></templateId>
+									<id root="1.3.6.1.4.1.16517" extension="100025030726-E386387A-940F-11E3-B318-1CC4B7D83400"></id>
+									<code code="6777-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Deprecated Glucose [Mass/volume] in Serum or Plasma">
+										<originalText>GLUCOSE</originalText>
+									</code>
+									<text mediaType="text/plain">
+										<reference value="#Result-100025030726-E386387A-940F-11E3-B318-1CC4B7D83400"></reference>
+									</text>
+									<statusCode code="completed"></statusCode>
+									<effectiveTime value="201402111354"></effectiveTime>
+									<value xsi:type="PQ" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" value="91" unit="mg/dL"></value>
+									<entryRelationship typeCode="REFR" contextConductionInd="true">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="48766-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Information source"></code>
+											<statusCode code="completed"></statusCode>
+											<value xsi:type="ST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">HUSSAIN,SADIA S. M.D.</value>
+										</observation>
+									</entryRelationship>
+									<referenceRange typeCode="REFV">
+										<observationRange classCode="OBS" moodCode="EVN.CRT">
+											<text representation="TXT" mediaType="text/plain">70-100 mg/dL</text>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+					<entry typeCode="DRIV">
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.1"></templateId>
+							<id root="1.3.6.1.4.1.16517" extension="100025030733-E3869EB4-940F-11E3-B318-1CC4B7D83400"></id>
+							<code code="10466-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Anion gap 3 in Serum or Plasma"></code>
+							<statusCode code="completed"></statusCode>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"></templateId>
+									<id root="1.3.6.1.4.1.16517" extension="100025030733-E3869EB4-940F-11E3-B318-1CC4B7D83400"></id>
+									<code code="10466-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Anion gap 3 in Serum or Plasma">
+										<originalText>ANION GAP</originalText>
+									</code>
+									<text mediaType="text/plain">
+										<reference value="#Result-100025030733-E3869EB4-940F-11E3-B318-1CC4B7D83400"></reference>
+									</text>
+									<statusCode code="completed"></statusCode>
+									<effectiveTime value="201402111354"></effectiveTime>
+									<value xsi:type="PQ" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" value="10" unit="mmol/L"></value>
+									<entryRelationship typeCode="REFR" contextConductionInd="true">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="48766-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Information source"></code>
+											<statusCode code="completed"></statusCode>
+											<value xsi:type="ST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">HUSSAIN,SADIA S. M.D.</value>
+										</observation>
+									</entryRelationship>
+									<referenceRange typeCode="REFV">
+										<observationRange classCode="OBS" moodCode="EVN.CRT">
+											<text representation="TXT" mediaType="text/plain">5-17 mmol/L</text>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+					<entry typeCode="DRIV">
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.1"></templateId>
+							<id root="1.3.6.1.4.1.16517" extension="100025030735-E3873CFC-940F-11E3-B318-1CC4B7D83400"></id>
+							<code code="33914-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glomerular filtration rate/1.73 sq M.predicted by Creatinine-based formula (MDRD)"></code>
+							<statusCode code="completed"></statusCode>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"></templateId>
+									<id root="1.3.6.1.4.1.16517" extension="100025030735-E3873CFC-940F-11E3-B318-1CC4B7D83400"></id>
+									<code code="33914-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glomerular filtration rate/1.73 sq M.predicted by Creatinine-based formula (MDRD)">
+										<originalText>eGFR</originalText>
+									</code>
+									<text mediaType="text/plain">
+										<reference value="#Result-100025030735-E3873CFC-940F-11E3-B318-1CC4B7D83400"></reference>
+									</text>
+									<statusCode code="completed"></statusCode>
+									<effectiveTime value="201402111354"></effectiveTime>
+									<value xsi:type="PQ" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" value="38"></value>
+									<entryRelationship typeCode="SUBJ" inversionInd="true">
+										<act classCode="ACT" moodCode="EVN">
+											<templateId root="2.16.840.1.113883.10.20.22.4.64"></templateId>
+											<code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation Comment"></code>
+											<text>
+												<reference value="#ResultComment-100025030735-E3873CFC-940F-11E3-B318-1CC4B7D83400"></reference>
+											</text>
+											<statusCode code="completed"></statusCode>
+										</act>
+									</entryRelationship>
+									<entryRelationship typeCode="REFR" contextConductionInd="true">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="48766-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Information source"></code>
+											<statusCode code="completed"></statusCode>
+											<value xsi:type="ST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">HUSSAIN,SADIA S. M.D.</value>
+										</observation>
+									</entryRelationship>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+					<entry typeCode="DRIV">
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.1"></templateId>
+							<id root="1.3.6.1.4.1.16517" extension="100025030663-E3850202-940F-11E3-B318-1CC4B7D83400"></id>
+							<code code="2028-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Carbon dioxide, total [Moles/volume] in Serum or Plasma"></code>
+							<statusCode code="completed"></statusCode>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"></templateId>
+									<id root="1.3.6.1.4.1.16517" extension="100025030663-E3850202-940F-11E3-B318-1CC4B7D83400"></id>
+									<code code="2028-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Carbon dioxide, total [Moles/volume] in Serum or Plasma">
+										<originalText>TOTAL CO2</originalText>
+									</code>
+									<text mediaType="text/plain">
+										<reference value="#Result-100025030663-E3850202-940F-11E3-B318-1CC4B7D83400"></reference>
+									</text>
+									<statusCode code="completed"></statusCode>
+									<effectiveTime value="201402101000"></effectiveTime>
+									<value xsi:type="PQ" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" value="29" unit="mmol/L"></value>
+									<entryRelationship typeCode="REFR" contextConductionInd="true">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="48766-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Information source"></code>
+											<statusCode code="completed"></statusCode>
+											<value xsi:type="ST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Not available</value>
+										</observation>
+									</entryRelationship>
+									<referenceRange typeCode="REFV">
+										<observationRange classCode="OBS" moodCode="EVN.CRT">
+											<text representation="TXT" mediaType="text/plain">22-31 mmol/L</text>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+					<entry typeCode="DRIV">
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.1"></templateId>
+							<id root="1.3.6.1.4.1.16517" extension="100025030662-E3852566-940F-11E3-B318-1CC4B7D83400"></id>
+							<code code="1751-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Albumin [Mass/volume] in Serum or Plasma"></code>
+							<statusCode code="completed"></statusCode>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"></templateId>
+									<id root="1.3.6.1.4.1.16517" extension="100025030662-E3852566-940F-11E3-B318-1CC4B7D83400"></id>
+									<code code="1751-7" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Albumin [Mass/volume] in Serum or Plasma">
+										<originalText>ALBUMIN</originalText>
+									</code>
+									<text mediaType="text/plain">
+										<reference value="#Result-100025030662-E3852566-940F-11E3-B318-1CC4B7D83400"></reference>
+									</text>
+									<statusCode code="completed"></statusCode>
+									<effectiveTime value="201402101000"></effectiveTime>
+									<value xsi:type="PQ" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" value="4.1" unit="g/dL"></value>
+									<entryRelationship typeCode="REFR" contextConductionInd="true">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="48766-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Information source"></code>
+											<statusCode code="completed"></statusCode>
+											<value xsi:type="ST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Not available</value>
+										</observation>
+									</entryRelationship>
+									<referenceRange typeCode="REFV">
+										<observationRange classCode="OBS" moodCode="EVN.CRT">
+											<text representation="TXT" mediaType="text/plain">3.5-5.2 g/dL</text>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+					<entry typeCode="DRIV">
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.1"></templateId>
+							<id root="1.3.6.1.4.1.16517" extension="100025030660-E385A464-940F-11E3-B318-1CC4B7D83400"></id>
+							<code code="17861-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Calcium [Mass/volume] in Serum or Plasma"></code>
+							<statusCode code="completed"></statusCode>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"></templateId>
+									<id root="1.3.6.1.4.1.16517" extension="100025030660-E385A464-940F-11E3-B318-1CC4B7D83400"></id>
+									<code code="17861-6" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Calcium [Mass/volume] in Serum or Plasma">
+										<originalText>CALCIUM</originalText>
+									</code>
+									<text mediaType="text/plain">
+										<reference value="#Result-100025030660-E385A464-940F-11E3-B318-1CC4B7D83400"></reference>
+									</text>
+									<statusCode code="completed"></statusCode>
+									<effectiveTime value="201402101000"></effectiveTime>
+									<value xsi:type="PQ" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" value="9.4" unit="mg/dL"></value>
+									<entryRelationship typeCode="REFR" contextConductionInd="true">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="48766-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Information source"></code>
+											<statusCode code="completed"></statusCode>
+											<value xsi:type="ST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Not available</value>
+										</observation>
+									</entryRelationship>
+									<referenceRange typeCode="REFV">
+										<observationRange classCode="OBS" moodCode="EVN.CRT">
+											<text representation="TXT" mediaType="text/plain">8.8-10.7 mg/dL</text>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+					<entry typeCode="DRIV">
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.1"></templateId>
+							<id root="1.3.6.1.4.1.16517" extension="100025030658-E385FB58-940F-11E3-B318-1CC4B7D83400"></id>
+							<code code="2160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Creatinine [Mass/volume] in Serum or Plasma"></code>
+							<statusCode code="completed"></statusCode>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"></templateId>
+									<id root="1.3.6.1.4.1.16517" extension="100025030658-E385FB58-940F-11E3-B318-1CC4B7D83400"></id>
+									<code code="2160-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Creatinine [Mass/volume] in Serum or Plasma">
+										<originalText>CREATININE</originalText>
+									</code>
+									<text mediaType="text/plain">
+										<reference value="#Result-100025030658-E385FB58-940F-11E3-B318-1CC4B7D83400"></reference>
+									</text>
+									<statusCode code="completed"></statusCode>
+									<effectiveTime value="201402101000"></effectiveTime>
+									<value xsi:type="PQ" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" value="1.9" unit="mg/dL"></value>
+									<entryRelationship typeCode="REFR" contextConductionInd="true">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="48766-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Information source"></code>
+											<statusCode code="completed"></statusCode>
+											<value xsi:type="ST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Not available</value>
+										</observation>
+									</entryRelationship>
+									<referenceRange typeCode="REFV">
+										<observationRange classCode="OBS" moodCode="EVN.CRT">
+											<text representation="TXT" mediaType="text/plain">0.50-1.20 mg/dL</text>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+					<entry typeCode="DRIV">
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.1"></templateId>
+							<id root="1.3.6.1.4.1.16517" extension="100025030661-E3866F7A-940F-11E3-B318-1CC4B7D83400"></id>
+							<code code="2777-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Phosphate [Mass/volume] in Serum or Plasma"></code>
+							<statusCode code="completed"></statusCode>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"></templateId>
+									<id root="1.3.6.1.4.1.16517" extension="100025030661-E3866F7A-940F-11E3-B318-1CC4B7D83400"></id>
+									<code code="2777-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Phosphate [Mass/volume] in Serum or Plasma">
+										<originalText>PHOSPHATE</originalText>
+									</code>
+									<text mediaType="text/plain">
+										<reference value="#Result-100025030661-E3866F7A-940F-11E3-B318-1CC4B7D83400"></reference>
+									</text>
+									<statusCode code="completed"></statusCode>
+									<effectiveTime value="201402101000"></effectiveTime>
+									<value xsi:type="PQ" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" value="4.2" unit="mg/dL"></value>
+									<entryRelationship typeCode="REFR" contextConductionInd="true">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="48766-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Information source"></code>
+											<statusCode code="completed"></statusCode>
+											<value xsi:type="ST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Not available</value>
+										</observation>
+									</entryRelationship>
+									<referenceRange typeCode="REFV">
+										<observationRange classCode="OBS" moodCode="EVN.CRT">
+											<text representation="TXT" mediaType="text/plain">2.4-4.3 mg/dL</text>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+					<entry typeCode="DRIV">
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.1"></templateId>
+							<id root="1.3.6.1.4.1.16517" extension="100025030659-E3876CE0-940F-11E3-B318-1CC4B7D83400"></id>
+							<code code="33914-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glomerular filtration rate/1.73 sq M.predicted by Creatinine-based formula (MDRD)"></code>
+							<statusCode code="completed"></statusCode>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"></templateId>
+									<id root="1.3.6.1.4.1.16517" extension="100025030659-E3876CE0-940F-11E3-B318-1CC4B7D83400"></id>
+									<code code="33914-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Glomerular filtration rate/1.73 sq M.predicted by Creatinine-based formula (MDRD)">
+										<originalText>eGFR</originalText>
+									</code>
+									<text mediaType="text/plain">
+										<reference value="#Result-100025030659-E3876CE0-940F-11E3-B318-1CC4B7D83400"></reference>
+									</text>
+									<statusCode code="completed"></statusCode>
+									<effectiveTime value="201402101000"></effectiveTime>
+									<value xsi:type="PQ" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" value="38"></value>
+									<entryRelationship typeCode="SUBJ" inversionInd="true">
+										<act classCode="ACT" moodCode="EVN">
+											<templateId root="2.16.840.1.113883.10.20.22.4.64"></templateId>
+											<code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation Comment"></code>
+											<text>
+												<reference value="#ResultComment-100025030659-E3876CE0-940F-11E3-B318-1CC4B7D83400"></reference>
+											</text>
+											<statusCode code="completed"></statusCode>
+										</act>
+									</entryRelationship>
+									<entryRelationship typeCode="REFR" contextConductionInd="true">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="48766-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Information source"></code>
+											<statusCode code="completed"></statusCode>
+											<value xsi:type="ST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">Not available</value>
+										</observation>
+									</entryRelationship>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+					<entry typeCode="DRIV">
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.1"></templateId>
+							<id root="1.3.6.1.4.1.16517" extension="100025030648-E386CBBE-940F-11E3-B318-1CC4B7D83400"></id>
+							<code code="14957-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Microalbumin [Mass/volume] in Urine"></code>
+							<statusCode code="completed"></statusCode>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"></templateId>
+									<id root="1.3.6.1.4.1.16517" extension="100025030648-E386CBBE-940F-11E3-B318-1CC4B7D83400"></id>
+									<code code="14957-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Microalbumin [Mass/volume] in Urine">
+										<originalText>Malb</originalText>
+									</code>
+									<text mediaType="text/plain">
+										<reference value="#Result-100025030648-E386CBBE-940F-11E3-B318-1CC4B7D83400"></reference>
+									</text>
+									<statusCode code="completed"></statusCode>
+									<effectiveTime value="201402100930"></effectiveTime>
+									<value xsi:type="PQ" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" value="4.1" unit="mg/dL"></value>
+									<entryRelationship typeCode="REFR" contextConductionInd="true">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="48766-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Information source"></code>
+											<statusCode code="completed"></statusCode>
+											<value xsi:type="ST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">SINGH,KARANDEEP M.D.</value>
+										</observation>
+									</entryRelationship>
+									<referenceRange typeCode="REFV">
+										<observationRange classCode="OBS" moodCode="EVN.CRT">
+											<text representation="TXT" mediaType="text/plain">0.0-2.0 mg/dL</text>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+					<entry typeCode="DRIV">
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.1"></templateId>
+							<id root="1.3.6.1.4.1.16517" extension="100025030647-E386EF4A-940F-11E3-B318-1CC4B7D83400"></id>
+							<code code="14959-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Microalbumin/Creatinine [Mass Ratio] in Urine"></code>
+							<statusCode code="completed"></statusCode>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"></templateId>
+									<id root="1.3.6.1.4.1.16517" extension="100025030647-E386EF4A-940F-11E3-B318-1CC4B7D83400"></id>
+									<code code="14959-1" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Microalbumin/Creatinine [Mass Ratio] in Urine">
+										<originalText>Malb/Cr</originalText>
+									</code>
+									<text mediaType="text/plain">
+										<reference value="#Result-100025030647-E386EF4A-940F-11E3-B318-1CC4B7D83400"></reference>
+									</text>
+									<statusCode code="completed"></statusCode>
+									<effectiveTime value="201402100930"></effectiveTime>
+									<value xsi:type="PQ" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" value="221" unit="mgAlb/gCre"></value>
+									<entryRelationship typeCode="REFR" contextConductionInd="true">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="48766-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Information source"></code>
+											<statusCode code="completed"></statusCode>
+											<value xsi:type="ST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">SINGH,KARANDEEP M.D.</value>
+										</observation>
+									</entryRelationship>
+									<referenceRange typeCode="REFV">
+										<observationRange classCode="OBS" moodCode="EVN.CRT">
+											<text representation="TXT" mediaType="text/plain">0.0-30 mgAlb/gCre</text>
+										</observationRange>
+									</referenceRange>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+					<entry typeCode="DRIV">
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.1"></templateId>
+							<id root="1.3.6.1.4.1.16517" extension="100025030646-E3871A10-940F-11E3-B318-1CC4B7D83400"></id>
+							<code code="13362-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Collection duration of Urine"></code>
+							<statusCode nullFlavor="UNK"></statusCode>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.2"></templateId>
+									<id root="1.3.6.1.4.1.16517" extension="100025030646-E3871A10-940F-11E3-B318-1CC4B7D83400"></id>
+									<code code="13362-9" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Collection duration of Urine">
+										<originalText>TIME SPAN</originalText>
+									</code>
+									<text mediaType="text/plain">
+										<reference value="#Result-100025030646-E3871A10-940F-11E3-B318-1CC4B7D83400"></reference>
+									</text>
+									<statusCode nullFlavor="UNK"></statusCode>
+									<effectiveTime value="201402100930"></effectiveTime>
+									<value xsi:type="ST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">RANDOM</value>
+									<entryRelationship typeCode="REFR" contextConductionInd="true">
+										<observation classCode="OBS" moodCode="EVN">
+											<code code="48766-0" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Information source"></code>
+											<statusCode code="completed"></statusCode>
+											<value xsi:type="ST" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">SINGH,KARANDEEP M.D.</value>
+										</observation>
+									</entryRelationship>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+				</section>
+			</component>
+			<component>
+				<section classCode="DOCSECT" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.2.4.1"></templateId>
+					<code code="8716-3" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Vital signs"></code>
+					<title>Vital Signs</title>
+					<text>
+						<table width="100%" border="1">
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>Vital Sign</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>02/12/2014 13:02</td>
+									<td ID="VitalSigns-1">No vital sign data is applicable</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry typeCode="DRIV" contextConductionInd="true">
+						<organizer classCode="CLUSTER" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.26"></templateId>
+							<id nullFlavor="UNK"></id>
+							<code code="46680005" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED" displayName="vital signs"></code>
+							<statusCode code="completed"></statusCode>
+							<effectiveTime value="20140212130251"></effectiveTime>
+							<component>
+								<observation classCode="OBS" moodCode="EVN">
+									<templateId root="2.16.840.1.113883.10.20.22.4.27"></templateId>
+									<id nullFlavor="UNK"></id>
+									<code nullFlavor="UNK">
+										<originalText>No vital sign data is applicable</originalText>
+									</code>
+									<text mediaType="text/plain">
+										<reference value="#VitalSigns-1"></reference>
+									</text>
+									<statusCode code="completed"></statusCode>
+									<effectiveTime value="20140212130251"></effectiveTime>
+									<value xsi:type="PQ" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" nullFlavor="NAV"></value>
+								</observation>
+							</component>
+						</organizer>
+					</entry>
+				</section>
+			</component>
+			<component>
+				<section>
+					<templateId root="2.16.840.1.113883.10.20.1.13"></templateId>
+					<code code="48764-5" codeSystem="2.16.840.1.113883.6.1"></code>
+					<title>Summary purpose</title>
+					<text>
+						<table width="100%" border="1">
+							<thead>
+								<tr>
+									<th>Reason</th>
+									<th>Comment</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Clinical Summary</td>
+									<td ID="Comment-1">The information contained in this document represents components of the legal health record. It is not the complete legal health record.</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry typeCode="DRIV">
+						<act classCode="ACT" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.1.30"></templateId>
+							<code xsi:type="CE" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" code="23745001" codeSystem="2.16.840.1.113883.6.96" displayName="Documentation procedure"></code>
+							<statusCode code="completed"></statusCode>
+							<entryRelationship typeCode="RSON">
+								<act classCode="ACT" moodCode="EVN">
+									<code code="6035001" codeSystem="2.16.840.1.113883.6.96"></code>
+									<statusCode code="completed"></statusCode>
+									<entryRelationship typeCode="SUBJ" inversionInd="true">
+										<act classCode="ACT" moodCode="EVN">
+											<templateId root="2.16.840.1.113883.10.20.1.40"></templateId>
+											<code code="48767-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Annotation Comment"></code>
+											<text>
+												<reference value="#Comment-1"></reference>
+											</text>
+											<statusCode code="completed"></statusCode>
+										</act>
+									</entryRelationship>
+								</act>
+							</entryRelationship>
+						</act>
+					</entry>
+				</section>
+			</component>
+			<component>
+				<section classCode="DOCSECT" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.2.17"></templateId>
+					<code code="29762-2" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Social History"></code>
+					<title>Social History</title>
+					<text>
+						<table width="100%" border="1">
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>Type</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>02/12/2014</td>
+									<td ID="SocialHistory-1">No smoking status data is applicable</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry typeCode="DRIV" contextConductionInd="true">
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.78"></templateId>
+							<id root="1.3.6.1.4.1.16517" extension="1"></id>
+							<code code="ASSERTION" codeSystem="2.16.840.1.113883.5.4"></code>
+							<text>
+								<reference value="#SocialHistory-1"></reference>
+							</text>
+							<statusCode code="completed"></statusCode>
+							<effectiveTime>
+								<low value="20140212"></low>
+							</effectiveTime>
+							<value xsi:type="CD" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" nullFlavor="UNK"></value>
+						</observation>
+					</entry>
+				</section>
+			</component>
+			<component>
+				<section>
+					<templateId root="2.16.840.1.113883.10.20.22.2.22.1"></templateId>
+					<code code="46240-8" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="History of Encounters"></code>
+					<title>Encounters</title>
+					<text>
+						<table width="100%" border="1">
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>Description</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>02/12/2014 13:02</td>
+									<td ID="Encounter-1">No encounter diagnosis data is applicable</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry typeCode="DRIV">
+						<encounter classCode="ENC" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.49"></templateId>
+							<id nullFlavor="NI"></id>
+							<code code="371531000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED" displayName="encounter report">
+								<originalText>
+									<reference value="#Encounter-1"></reference>
+								</originalText>
+							</code>
+							<effectiveTime value="20140212130251"></effectiveTime>
+						</encounter>
+					</entry>
+				</section>
+			</component>
+			<component>
+				<section classCode="DOCSECT" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.2.14"></templateId>
+					<code code="47420-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Functional status assessment note"></code>
+					<title>Functional Status</title>
+					<text>
+						<table width="100%" border="1">
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>Assessment</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>02/12/2014</td>
+									<td ID="FunctionalStatus-1">No functional assessment data is applicable</td>
+								</tr>
+								<tr>
+									<td>02/12/2014</td>
+									<td ID="FunctionalStatus-2">No cognitive assessment data is applicable</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry typeCode="DRIV" contextConductionInd="true">
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.68"></templateId>
+							<id nullFlavor="NA"></id>
+							<code code="248536006" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED" displayName="Finding of functional performance and activity"></code>
+							<text>
+								<reference value="#FunctionalStatus-1"></reference>
+							</text>
+							<statusCode code="completed"></statusCode>
+							<effectiveTime>
+								<low value="20140212"></low>
+							</effectiveTime>
+							<value xsi:type="CD" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" nullFlavor="UNK"></value>
+						</observation>
+					</entry>
+					<entry typeCode="DRIV" contextConductionInd="true">
+						<observation classCode="OBS" moodCode="EVN">
+							<templateId root="2.16.840.1.113883.10.20.22.4.73"></templateId>
+							<id nullFlavor="NA"></id>
+							<code code="373930000" codeSystem="2.16.840.1.113883.6.96" codeSystemName="SNOMED" displayName="Cognitive function finding"></code>
+							<text>
+								<reference value="#FunctionalStatus-2"></reference>
+							</text>
+							<statusCode code="completed"></statusCode>
+							<effectiveTime>
+								<low value="20140212"></low>
+							</effectiveTime>
+							<value xsi:type="CD" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" nullFlavor="UNK"></value>
+						</observation>
+					</entry>
+				</section>
+			</component>
+			<component>
+				<section classCode="DOCSECT" moodCode="EVN">
+					<templateId root="2.16.840.1.113883.10.20.22.2.10"></templateId>
+					<code code="18776-5" codeSystem="2.16.840.1.113883.6.1" codeSystemName="LOINC" displayName="Treatment plan"></code>
+					<title>Plan of Care</title>
+					<text>
+						<table width="100%" border="1">
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>Care Plan</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>02/12/2014 13:02</td>
+									<td ID="CarePlan-1">No goal and instruction data is applicable</td>
+								</tr>
+							</tbody>
+						</table>
+					</text>
+					<entry typeCode="DRIV" contextConductionInd="true">
+						<observation classCode="OBS" moodCode="GOL">
+							<templateId root="2.16.840.1.113883.10.20.22.4.44"></templateId>
+							<id nullFlavor="NA"></id>
+							<code nullFlavor="UNK">
+								<originalText>No goal and instruction data is applicable</originalText>
+							</code>
+							<text>
+								<reference value="#CarePlan-1"></reference>
+							</text>
+							<statusCode code="completed"></statusCode>
+							<effectiveTime>
+								<low value="201402121302"></low>
+							</effectiveTime>
+						</observation>
+					</entry>
+				</section>
+			</component>
+		</structuredBody>
+	</component>
+</ClinicalDocument>
