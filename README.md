@@ -6,7 +6,7 @@
 ### (Consolidated Clinical Document Architecture)
 
 ### What
-This is a repository to collect **Sample CCDA Documents**. (No protected health information.) These samples are available under the [Creative Commons Attribution 3.0 license](https://creativecommons.org/licenses/by/4.0/).
+This is a repository to collect **Sample CCDA Documents**. (No protected health information.) These samples are available under the [Creative Commons Attribution 4.0 license](https://creativecommons.org/licenses/by/4.0/).
 
 ### Why?
 *Lots* of people will be implementing CCDA very soon; many have already started.
